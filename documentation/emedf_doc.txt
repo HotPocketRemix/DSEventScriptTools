@@ -1,0 +1,1246 @@
+EMEDF -- Guesses / Partial Documentation
+
+2000	システム
+    [ 0] -- Initialize Event
+        (Event Slot Number, Event ID, Arguments)
+        * Arguments is a vararg and can take many arguments. These are passed
+          as parameters to the specified event.
+        * The event slot number is used to distinguish between the same event
+          that is initialized with different parameters.
+	0	イベント起動
+		i	0	%d	イベントスロット番号	[-1:1:99](Default: 0)
+		I	196864	%d	起動イベントID	[0:0:0](Default: 0)
+		I	262400	%d	引数	[0:0:0](Default: 0)
+	1	イベント強制終了
+		i	0	%d	イベントスロット番号	[-1:1:99](Default: 0)
+		I	256	%d	起動イベントID	[0:0:0](Default: 0)
+    [ 2] -- Set network sync
+        (Desired network sync state)
+	2	ネットワーク同期
+		B	1	%d	無効・有効	[ENUM_ENABLE_STATE](Default: 0)
+	3	終了済み条件グループ条件状態クリア
+		B	0	%d	ダミー	[0:0:0](Default: 0)
+    [ 4] -- Issue Prefetch Request
+        (Request ID)
+	4	プリフェッチ要求
+		I	256	%d	要求ID	[0:1:1000000000](Default: 0)
+    [ 5] -- Save request
+        (Dummy Argument)
+	5	セーブ要求
+		B	0	%d	ダミー	[0:0:0](Default: 0)
+2001	タイマー
+2002	ポリ劇
+	1	ポリ劇再生
+		i	1	%d	ポリ劇ID	[0:1:1000000000](Default: 0)
+		I	1	%d	再生方法	[ENUM_CUTSCENE_TYPE](Default: 0)
+    [ 2] -- Play cutscene and warp player
+        (Cutscene ID, Playback method, Point Entity ID, Area ID, Block ID)
+	2	ポリ劇再生＆PCワープ
+		i	1	%d	ポリ劇ID	[0:1:1000000000](Default: 0)
+		I	1	%d	再生方法	[ENUM_CUTSCENE_TYPE](Default: 0)
+		i	1	%d	ポイントエンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	エリアNo	[0:1:255](Default: 0)
+		B	1	%d	ブロックNo	[0:1:255](Default: 0)
+    [ 3] -- Play cutscene to player
+        (Cutscene ID, Playback method, Player Entity ID)
+	3	ポリ劇再生_プレイヤー指定
+		i	1	%d	ポリ劇ID	[0:1:1000000000](Default: 0)
+		I	1	%d	再生方法	[ENUM_CUTSCENE_TYPE](Default: 0)
+		i	0	%08d	プレイヤーエンティティID	[0:1:100000000](Default: 0)
+    [ 4] -- Play cutscene and warp specific player
+        (Cutscene ID, Playback method, Point Entity ID, Area ID, Block ID, Player Entity ID)
+	4	ポリ劇再生＆PCワープ_プレイヤー指定
+		i	1	%d	ポリ劇ID	[0:1:1000000000](Default: 0)
+		I	1	%d	再生方法	[ENUM_CUTSCENE_TYPE](Default: 0)
+		i	1	%d	ポイントエンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	エリアNo	[0:1:255](Default: 0)
+		B	1	%d	ブロックNo	[0:1:255](Default: 0)
+		i	0	%08d	プレイヤーエンティティID	[0:1:100000000](Default: 0)
+    [ 5] -- Play cutscene and rotate player around axis parallel to Y-axis
+        (Cutscene ID, Playback method, Axis X, Axis Z, Rotation, Vertical translation, Player Entity ID)
+	5	ポリ劇再生 & PCY軸回転ワープ_プレイヤー指定
+		i	1	%d	ポリ劇ID	[0:1:1000000000](Default: 0)
+		I	1	%d	再生方法	[ENUM_CUTSCENE_TYPE](Default: 0)
+		f	1	%.2f	回転Y軸X座標[m]	[0.0:0.10000000149:9999.0](Default: 0.0)
+		f	1	%.2f	回転Y軸Z座標[m]	[0.0:1.0:9999.0](Default: 0.0)
+		i	1	%.2f	回転角度[deg]	[-359:1:359](Default: 0)
+		f	1	%.2f	Y軸移動量[m]	[-9999.0:0.10000000149:9999.0](Default: 0.0)
+		i	0	%08d	プレイヤーエンティティID	[0:1:100000000](Default: 0)
+2003	イベント
+    [ 1] -- Animation Playback Request
+        (Entity ID, Animation ID, Loop?, Wait for completion?)
+	1	アニメ再生要求
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	アニメID	[-1:1:1000000000](Default: -1)
+		B	1	%d	ループ指定	[ENUM_BOOL](Default: 0)
+		B	1	%d	終了待つか	[ENUM_BOOL](Default: 0)
+    [ 2] -- Set event flag
+        (Event flag ID, Desired state)
+	2	イベントフラグ設定
+		i	1	%d	イベントフラグID	[0:1:1000000000](Default: 0)
+		B	1	%d	設定フラグ	[ENUM_ON_OFF](Default: 1)
+    [ 3] -- Enable/disable Spawner
+        (Entity ID, Desired state)
+	3	ジェネレータ有効化
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	無効・有効	[ENUM_ENABLE_STATE](Default: 0)
+    [ 4] -- Award item lot
+        (Item Lot ID)
+	4	アイテム取得
+		i	1	%d	抽選パラID	[0:1:1000000000](Default: 0)
+    [ 5] -- Shoot Projectile
+        (Owner Entity ID, Projectile Entity ID, Damipoly ID, Behavior ID, Launch Angle X, Launch Angle Y, Launch Angle Z)
+	5	弾丸発射
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	エンティティID2	[0:1:1000000000](Default: 0)
+		i	1	%d	ダミポリID	[-1:1:255](Default: -1)
+		i	1	%d	行動ID	[0:1:1000000000](Default: 0)
+		i	1	%d	発射角度X	[0:1:359](Default: 0)
+		i	1	%d	発射角度Y	[0:1:359](Default: 0)
+		i	1	%d	発射角度Z	[0:0:359](Default: 0)
+	6	Map当たり有効化
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	無効・有効	[ENUM_ENABLE_STATE](Default: 0)
+	7	Map表示有効化
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	無効・有効	[ENUM_ENABLE_STATE](Default: 0)
+    [ 8] -- Set event state: Cancels / restarts the specified event.
+        (Event ID, Event Slot ID, Event end type)
+	8	イベント状態設定
+		i	1	%d	イベントID	[0:1:1000000000](Default: 0)
+		i	1	%d	イベントスロットID	[0:1:1000000000](Default: 0)
+		B	1	%d	イベント状態	[ENUM_EVENT_END_TYPE](Default: 1)
+	9	イベントフラグ反転
+		i	1	%d	イベントフラグID	[0:1:1000000000](Default: 0)
+	10	イベントナビメッシュ設定
+		h	1	%d	無効・有効	[ENUM_ENABLE_STATE](Default: 0)
+    [11] -- Show/Hide Boss Health Bar
+        (Enable/Disable, Entity ID, Slot Number, Name ID)
+	11	ボスゲージ表示
+		b	1	%d	無効・有効	[ENUM_ENABLE_STATE](Default: 0)
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		h	1	%d	スロット番号	[0:1:1](Default: 0)
+		h	1	%d	ネームID	[0:1:9999](Default: 0)
+    [12] -- Kill Boss
+        (Entity ID)
+	12	ボス撃破処理
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+    [13] -- Modify Navimesh Collision Bitflags
+        (Entity ID, Navimesh Collision Bit, Modification Type)
+	13	ナビメッシュ接続
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		I	1	%d	ナビメッシュの種類	[ENUM_NAVIMESH_TYPE](Default: 128)
+		B	1	%d	種類操作設定	[ENUM_BITOP](Default: 1)
+    [14] -- Warp Player
+        (Area ID, Block ID, Area Entity ID)
+	14	マップ移動要求
+		B	1	%d	エリア番号	[0:1:99](Default: 0)
+		B	1	%d	ブロック番号	[0:1:99](Default: 0)
+		i	1	%d	初期位置イベントID	[-1:1:1000000000](Default: -1)
+	15	中ボス撃破処理
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+    [16] -- Trigger Multiplayer Event
+        (Multiplayer Event ID)
+	16	イベント干渉配信
+		I	1	%d	イベント干渉ID	[0:1:1000000000](Default: 0)
+    [17] -- Randomly set one of the flags in range to the desired state
+        (Event Flag ID Min, Event Flag ID Max, Desired State)
+	17	ランダムイベントフラグ設定
+		I	1	%d	イベントフラグIDMin	[0:1:1000000000](Default: 0)
+		I	1	%d	イベントフラグIDMax	[0:1:1000000000](Default: 0)
+		B	1	%d	設定フラグ	[ENUM_ON_OFF](Default: 1)
+    [18] -- Force animation
+        (Entity ID, Animation ID, Loop, Wait for completion, Does not wait for transition)
+	18	強制アニメ再生要求
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	アニメID	[-1:1:1000000000](Default: -1)
+		B	1	%d	ループ指定	[ENUM_BOOL](Default: 0)
+		B	1	%d	終了待つか	[ENUM_BOOL](Default: 0)
+		B	1	%d	待機遷移しないか	[ENUM_BOOL](Default: 0)
+    [19] -- Set Area Texture ParamBank Slot Index
+        (Area ID, Texture ParamBank Slot Index)
+	19	描画パラムバンクスロットインデックス設定
+		h	1	%d	エリアNo	[0:1:9999](Default: 0)
+		h	1	%d	描画パラムバンクスロットインデックス	[0:1:9999](Default: 0)
+	20	一時復活ポイント設定
+		i	1	%d	復活ポイントエンティティID	[0:1:1000000000](Default: 0)
+    [21] -- Increment NG+ Counter
+        (Dummy)
+	21	ゲームクリア周回加算
+		B	1	%d	ダミー	[0:1:1](Default: 0)
+    [22] -- Batch set event flag to given state
+        (Starting event flag ID, Ending event flag ID, Desired state)
+	22	イベントフラグまとめ設定
+		i	1	%d	イベントフラグID_開始	[0:1:1000000000](Default: 0)
+		i	1	%d	イベントフラグID_終了	[0:1:1000000000](Default: 0)
+		B	1	%d	設定フラグ	[ENUM_ON_OFF](Default: 1)
+    [23] -- Set Player Respawn Point
+        (Respawn Point ID)
+	23	復活ポイント設定
+		i	1	%d	復活ポイントエンティティID	[0:1:1000000000](Default: 0)
+    [24] -- Remove Items From Player
+        (Item type, Item ID, Quantity)
+	24	所持アイテムを削除
+		i	1	%d	装備タイプ	[ENUM_ITEM_TYPE](Default: 1)
+		i	1	%d	装備ID	[0:1:1000000000](Default: 0)
+		i	1	%d	数	[0:1:999](Default: 0)
+    [25] -- Place NPC Summon Sign
+        (Sign Type, Entity ID, Summon Point, Summon Event Flag ID, Dismissal Event Flag ID)
+	25	AIプレイヤー召還SOS作成
+		i	1	%d	召還タイプ	[ENUM_SIGN_TYPE](Default: 0)
+		i	1	%d	召還NPCのエンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	作成ポイントエンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	召還イベントフラグ	[-1:1:1000000000](Default: 0)
+		i	1	%d	解散イベントフラグ	[-1:1:1000000000](Default: 0)
+    [26] -- Set Visibility of Tip Message
+        (Entity ID, Desired State)
+	26	Mapヒント血文字設定
+		i	1	%d	ヒント血文字エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	無効・有効	[ENUM_ENABLE_STATE](Default: 0)
+	27	タイトル抜け
+		B	1	%d	ダミー	[0:1:1](Default: 0)
+    [28] -- Award Achivement
+        (Achievement ID)
+	28	トロフィー開放
+		i	1	%d	トロフィーId	[0:1:1000000000](Default: 0)
+	29	傾向値の加算
+		B	1	%d	傾向タイプ	[ENUM_TENDENCY_TYPE](Default: 0)
+		b	1	%d	加算値	[-100:1:100](Default: 0)
+    [30] -- Disable Vagrant Spawning
+        (Spawning Disabled?)
+	30	ベイグラント無効
+		B	1	%d	無効にするか	[ENUM_BOOL](Default: 1)
+    [31] -- Increment Event Value
+        (Event Flag ID, Number of Bits, Maximum Value)
+	31	イベント値+1
+		i	1	%d	イベントフラグ先頭	[0:1:1000000000](Default: 0)
+		I	1	%d	使用フラグ数(Bit数)	[1:1:32](Default: 1)
+		I	1	%d	最大値制限	[0:1:1000000000](Default: 0)
+    [32] -- Clear event value
+        (Start of Event Flag, Number of Bits)
+	32	イベント値クリア
+		i	1	%d	イベントフラグ先頭	[0:1:1000000000](Default: 0)
+		I	1	%d	使用フラグ数(Bit数)	[1:1:32](Default: 1)
+    [33] -- Set Snuggly Next Trade
+        (Event Flag ID)
+	33	鷹娘アイテム情報設定
+		i	1	%d	イベントフラグID	[0:1:1000000000](Default: 0)
+    [34] -- Snuggly Item Drop
+        (Item Lot ID, Area Entity ID, Event Flag ID, Hitbox Entity ID)
+	34	鷹娘アイテムドロップ
+		i	1	%d	アイテム抽選ID	[0:1:1000000000](Default: 0)
+		i	1	%d	配置領域エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	イベントフラグID	[0:1:1000000000](Default: 0)
+		i	1	%d	ヒットエンティティId	[-1:1:1000000000](Default: 0)
+    [35] -- Move dropped items & bloodstains
+        (Source Area Entity ID, Destination Area Entity ID)
+	35	血痕＆ドロップアイテム移動
+		i	1	%d	移動元領域エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	移動先領域エンティティID	[0:1:1000000000](Default: 0)
+    [36] -- Award Item (Except to Clients)
+        (Item Lot ID)
+	36	クライアントでもアイテム取得
+		i	1	%d	抽選パラID	[0:1:1000000000](Default: 0)
+    [37] -- Battle of Stoicism 1v1 Ranking Request
+	37	闘技場１対１ランキング登録要求
+    [38] -- Battle of Stoicism 2v2 Ranking Request
+	38	闘技場２対２ランキング登録要求
+    [39] -- Battle of Stoicism FFA Ranking Request
+	39	闘技場バトルロイヤルランキング登録要求
+    [40] -- Battle of Stoicism Exit Request
+	40	闘技場マルチ退場要求
+    [41] -- Activate player killplane
+        (Map ID, Block ID, Y coordinate threshold, Target Model ID)
+	41	指定Y座標以下強制キャラ死亡
+		i	1	%d	マップ番号	[0:1:99](Default: 0)
+		i	1	%d	ブロック番号	[0:1:99](Default: 0)
+		f	1	%0.3f	Y座標閾値	[-9999.0:0.00999999977648:9999.0](Default: 0.0)
+		i	1	%d	対象モデルID	[0:1:9999](Default: 0)
+2004	キャラ
+    [ 1] -- Enable/disable character's AI
+        (Entity ID, Enable/Disable)
+	1	ロジック状態切り替え
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	無効・有効	[ENUM_ENABLE_STATE](Default: 0)
+    [ 2] -- Switch character allegience
+        (Entity ID, New team)
+	2	チームタイプ切り替え
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	チームタイプ	[ENUM_TEAM_TYPE](Default: 0)
+    [ 3] -- Warp Request
+        (Entity ID, Warp Destination Type, Destination Target ID, Damipoly ID)
+	3	ワープ要求
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	ワープ先タイプ	[ENUM_CATEGORY](Default: 0)
+		i	1	%d	ワープ先ターゲットID	[0:1:1000000000](Default: 0)
+		i	1	%d	ダミポリID	[-1:1:255](Default: -1)
+    [ 4] -- Forced death request
+        (Entity ID, Yield souls)
+	4	強制死亡要求
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	ソウル取得するか	[ENUM_BOOL](Default: 1)
+    [ 5] -- Invalidate character
+        (Entity ID, Desired validation state)
+	5	キャラ無効化
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	無効・有効	[ENUM_ENABLE_STATE](Default: 0
+    [ 6] -- EzState instruction request
+        (Entity ID, Command, Slot)
+	6	EzState命令要求
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	コマンド	[0:1:1000000000](Default: 0)
+		B	1	%d	スロット	[0:1:3](Default: 0)
+    [ 7] -- "Create Bullet Owner"
+        (Entity ID)
+	7	弾丸オーナー作成
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+    [ 8] -- "Set Special Effect"
+        (Entity ID, Special Effect ID)
+	8	特殊効果設定
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	特殊効果ID	[0:1:1000000000](Default: 0)
+    [ 9] -- "Special Standby Setting"
+        (Entity ID, Standby animation, Damage animation, Cancel animation, Death animation, Standby return animation)
+	9	特殊待機設定
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	待機アニメ	[-1:1:1000000000](Default: -1)
+		i	1	%d	ダメージアニメ	[-1:1:1000000000](Default: -1)
+		i	1	%d	キャンセルアニメ	[-1:1:1000000000](Default: -1)
+		i	1	%d	死亡アニメ	[-1:1:1000000000](Default: -1)
+		i	1	%d	待機復帰アニメ	[-1:1:1000000000](Default: -1)
+    [10] -- Gravity Invalidation
+        (Entity ID, Desired state)
+	10	重力無効化
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	無効・有効	[ENUM_ENABLE_STATE](Default: 0)
+	11	イベントターゲット指定
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	エンティティID2	[0:1:1000000000](Default: 0)
+    [12] -- Enables/disables character immortality: (Character can take damage, but cannot die)
+        (Entity ID, Desired state)
+	12	キャラ不死設定
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	無効・有効	[ENUM_ENABLE_STATE](Default: 0)
+    [13] -- Set character's "Nest" (Probably AI Home Location)
+        (Entity ID, Area ID)
+	13	キャラの巣を設定
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	領域エンティティID	[0:1:1000000000](Default: 0)
+    [14] -- "Rotate Character"
+        (Entity ID to rotate, Entity ID to face)
+	14	キャラの旋回
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	エンティティID2	[0:1:1000000000](Default: 0)
+    [15] -- Set Character Invicibility: (Character cannot die)
+        (Entity ID, Desired State)
+	15	キャラの無敵
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	無効・有効	[ENUM_ENABLE_STATE](Default: 0)
+    [16] -- Clear AI Target List
+        (Entity ID)
+	16	ターゲットクリア
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+    [17] -- AI instruction request
+        (Entity ID, Command ID, Slot number)
+	17	AI命令要求
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	コマンドID	[-1:1:1000000000](Default: 0)
+		B	1	%d	スロット番号	[0:1:3](Default: 0)
+    [18] -- Set Event Point
+        (Entity ID, Event Area Entity ID, Reaction Range)
+	18	イベントポイント設定
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	エンティティID2	[0:1:1000000000](Default: 0)
+		f	0	%0.3f	反応範囲	[0.0:1.0:100000000.0](Default: 0.0)
+    [19] -- Set AI ID
+        (Entity ID, AI ID)
+	19	ロジックID設定
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	ロジックID	[0:1:1000000000](Default: 0)
+    [20] -- AI Re-plan
+        (Entity ID)
+	20	ロジックリプランニング
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+    [21] -- Cancel Special Effect
+        (Entity ID, Special Effect ID)
+	21	特殊効果解除
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	特殊効果ID	[0:1:1000000000](Default: 0)
+    [22] -- Create multipart-NPC part
+        (Entity ID, Part NPC type, Part Index, Part HP, Damage Correction, Body Damage Correction, Invincible?, Start in stop state?)
+	22	イベント部位＿作成
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		h	1	%d	イベント部位ID	[0:1:10000](Default: 0)
+		h	1	%d	部位グループIdx	[ENUM_SITE_TYPE](Default: 1)
+		i	1	%d	部位HP	[-1:1:1000000000](Default: 0)
+		f	1	%d	部位ダメージ補正	[0.0:1.0:9999.0](Default: 1.0)
+		f	1	%d	本体ダメージ補正	[0.0:1.0:9999.0](Default: 1.0)
+		B	1	%d	無敵か	[ENUM_BOOL](Default: 0)
+		B	1	%d	停止状態で開始	[ENUM_BOOL](Default: 0)
+    [23] -- Set multipart-NPC part HP
+        (Entity ID, Part NPC type, Desired HP, Overwrite Max HP?)
+	23	イベント部位＿HP設定
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	イベント部位ID	[0:1:10000](Default: 0)
+		i	1	%d	設定HP	[-100000000:1:100000000](Default: 0)
+		B	1	%d	最大HP上書き可能か	[ENUM_BOOL](Default: 0)
+    [24] -- Set multipart-NPC part SE and SFX
+        (Entity ID, Part NPC type, Defense Material SE ID, Defense Material SFX ID)
+	24	イベント部位＿SEとSFX設定
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	イベント部位ID	[0:1:10000](Default: 0)
+		i	1	%d	防御材質SEID	[-1:1:1000000000](Default: -1)
+		i	1	%d	防御材質SfxID	[-1:1:1000000000](Default: -1)
+    [25] -- Set multipart-NPC part bullet damage magnification
+        (Entity ID, Part NPC type, Desired magnification)
+	25	イベント部位＿弾丸倍率設定
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	イベント部位ID	[0:1:10000](Default: 0)
+		f	1	%d	弾丸ダメージ倍率	[0.0:1.0:9999.0](Default: 1.0)
+    [26] -- Change character display mask
+        (Entity ID, Bit Number, Switch type)
+	26	キャラの表示マスク変更
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	ビット何番目	[0:1:32](Default: 0)
+		B	1	%d	切替タイプ	[ENUM_ON_OFF_CHANGE](Default: 1)
+    [27] -- Change character hitbox mask
+        (Entity ID, Bit Number, Switch type)
+	27	キャラの当たりマスク変更
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	ビット何番目	[0:1:32](Default: 0)
+		B	1	%d	切替タイプ	[ENUM_ON_OFF_CHANGE](Default: 1)
+    [28] -- Set Network Update Authority: Sets if this player should be the authority for the data about a given entity.
+        (Entity ID, Authority Level)
+	28	ネットワーク更新権限を設定
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	更新権限値	[ENUM_UPDATE_AUTH](Default: 0)
+    [29] -- "Setting to remove from back lead" (Possibly: Entity to remove from background loading??)
+        (Entity ID, Should Be Removed)
+	29	バックリードから外すか設定
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	外すか	[ENUM_BOOL](Default: 1)
+    [30] -- Set Health Bar Display
+        (Entity ID, Desired State)
+	30	HPゲージ表示設定
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	無効・有効	[ENUM_ENABLE_STATE](Default: 0)
+    [31] -- Set Character Map Collision
+        (Entity ID, Disable Collision?)
+	31	キャラのマップヒット無効化設定
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	無効にするか	[ENUM_BOOL](Default: 1)
+    [32] -- Issue AI Event Request
+        (Entity ID, Command ID, Slot Number, Start Event Flag ID, End Event Flag ID)
+	32	AI命令要求＋フラグ数
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	コマンドID	[-1:1:1000000000](Default: 0)
+		B	1	%d	スロット番号	[0:1:3](Default: 0)
+		i	0	%08d	開始対象イベントフラグID	[0:1:100000000](Default: 0)
+		i	0	%08d	終了対象イベントフラグID	[0:1:100000000](Default: 0)
+    [33] -- Create Referred Damage Pair
+        (Source Entity ID, Target Entity ID)
+	33	道連れダメージ
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	エンティティID2	[0:1:1000000000](Default: 0)
+    [34] -- Set Network Update Rate for Entity
+        (Entity ID, Fixed Frequency?, Frequency)
+	34	更新頻度指定
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	更新頻度固定	[ENUM_BOOL](Default: 1)
+		b	1	%d	更新頻度	[ENUM_CHARACTER_UPDATE_RATE](Default: 0)
+    [35] -- Set Entity "Back Lead" Status
+        (Entity ID, Desired Status)
+	35	常時バックリード設定
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	無効・有効	[ENUM_ENABLE_STATE](Default: 0)
+    [36] -- Hellkite Breath Control
+        (Entity ID, Object Entity ID, Animation ID)
+	36	ヘルカイトブレス制御
+		i	1	%d	キャラエンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	ObjエンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	キャラアニメId	[0:1:1000000000](Default: 0)
+    [37] -- Mandatory treasure
+        (Entity ID)
+	37	強制宝化
+		i	1	%d	キャラエンティティID	[0:1:1000000000](Default: 0)
+    [38] -- Betray Current Covenant
+        (Dummy)
+	38	裏切り
+		B	1	%d	ダミー	[0:1:1](Default: 0)
+    [39] -- Enable/Disable Entity Animations
+        (Entity ID, Desired Status)
+	39	キャラアタリ無効化
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	無効・有効	[ENUM_ENABLE_STATE](Default: 0)
+    [40] -- Issue Warp Request and set floor: "Floor" possibly refers to the hitbox the entity should stand on.
+        (Entity ID, Warp Destination Type, Destination Target ID, Damipoly ID, Warp Desination Hitbox Entity ID)
+	40	床設定有りワープ要求
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	ワープ先タイプ	[ENUM_CATEGORY](Default: 0)
+		i	1	%d	ワープ先ターゲットID	[0:1:1000000000](Default: 0)
+		i	1	%d	ダミポリID	[-1:1:255](Default: -1)
+		i	1	%d	ワープ先HitエンティティID	[0:1:1000000000](Default: 0)
+    [41] -- Short Warp Request
+        (Entity ID, Warp Destination Type, Destination Target ID, Damipoly ID)
+	41	ショートワープ要求
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	ワープ先タイプ	[ENUM_CATEGORY](Default: 0)
+		i	1	%d	ワープ先ターゲットID	[0:1:1000000000](Default: 0)
+		i	1	%d	ダミポリID	[-1:1:255](Default: -1)
+    [42] -- Issue Warp Request and copy "floor setting" of Entity: "Floor" possibly refers to the hitbox the entity should stand on.
+        (Entity ID, Warp Destination Type, Destination Target ID, Damipoly ID, Entity ID to copy floor setting from)
+	42	床設定コピーしてワープ要求
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	ワープ先タイプ	[ENUM_CATEGORY](Default: 0)
+		i	1	%d	ワープ先ターゲットID	[0:1:1000000000](Default: 0)
+		i	1	%d	ダミポリID	[-1:1:255](Default: -1)
+		i	1	%d	床設定コピー元キャラエンティティID	[0:1:1000000000](Default: 0)
+    [43] -- Animation Reset Request
+        (Entity ID, Interpolation Method)
+	43	キャラのアニメリセット要求
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	補間方法	[ENUM_INTERPOLATION_STATE](Default: 0)
+    [44] -- Switch character allegience and exit forced standby animation
+        (Entity ID, New team type)
+	44	チームタイプ切り替え＆強制特殊待機解除
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	チームタイプ	[ENUM_TEAM_TYPE](Default: 0)
+	[45] -- NPC Humanity Registration
+        (NPC Entity ID, "First Event Flag ID to retain humanity ID")
+    45	NPC人間性登録
+		i	1	%d	NPCエンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	人間性保持する先頭イベントフラグID	[0:1:1000000000](Default: 0)
+    [46] -- Increment Player PvP Sin
+        (Dummy)
+	46	賞金首ポイント加算
+		B	1	%d	ダミー	[0:1:1](Default: 0)
+    [47] -- "Equal Recovery": Possibly trigger a garbage collection?
+	47	篝火相当回復
+2005	オブジェクト
+    [ 1] -- Request Object destruction
+        (Entity ID, Slot number)
+	1	オブジェ破壊要求
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		b	1	%d	スロット番号	[0:1:3](Default: 0)
+    [ 2] -- Request Object restoration
+        (Entity ID)
+	2	オブジェ復帰要求
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+    [ 3] -- Object activation
+        (Entity ID, Activation status)
+	3	オブジェ有効化
+		i	1	%d	対象オブジェクトのエンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	有効化設定	[ENUM_ENABLE_STATE](Default: 0)
+    [ 4] -- Treasure activation
+        (Entity ID, Activation status)
+	4	宝有効化
+		i	1	%d	対象オブジェクトのエンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	有効化設定	[ENUM_ENABLE_STATE](Default: 0)
+    [ 5] -- ObjAct start
+        (Entity ID, Object parameter ID, Relative IDX)
+	5	ObjAct起動
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	オブジェアクトパラメータID	[-1:1:1000000000](Default: -1)
+		i	1	%d	対象の相対Idx	[-1:1:1000000000](Default: -1)
+    [ 6] -- ObjAct activation
+        (Entity ID, Object parameter ID, Activation setting)
+	6	ObjAct有効化
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	オブジェアクトパラメータID	[-1:1:1000000000](Default: -1)
+		B	1	%d	有効化設定	[ENUM_ENABLE_STATE](Default: 0)
+    [ 7] -- "Reproduction of object animation" (Perhaps sets the object as though it just completed the given animation?)
+        (Entity ID of object, Animation ID)
+	7	オブジェアニメ再現
+		i	1	%d	対象オブジェクトのエンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	アニメID	[0:1:1000000000](Default: 0)
+    [ 8] -- "Reproduction of object destruction" (Perhaps sets the object as though it was just destroyed?)
+        (Entity ID, Slot Number)
+	8	オブジェ破壊再現
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		b	1	%d	スロット番号	[0:1:3](Default: 0)
+    [ 9] -- Create damage-dealing Object
+        (Event Flag ID, Entity ID, Damipoly ID, Behavior ID, Target type, Radius, Life, Repetition Time)
+	9	オブジェダメージ作成
+		i	1	%d	イベントフラグID	[0:1:1000000000](Default: 0)
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	ダミポリID	[0:1:1000000000](Default: 0)
+		i	1	%d	行動ID	[0:1:1000000000](Default: 0)
+		i	1	%d	対象	[ENUM_DAMAGE_TARGET_TYPE](Default: 1)
+		f	1	%0.3f	半径	[0.0:1.0:9999.0](Default: 0.0)
+		f	1	%0.3f	寿命	[0.0:1.0:9999.0](Default: 0.0)
+		f	1	%0.3f	反復時間（秒）	[0.0:1.0:9999.0](Default: 0.0)
+    [10] -- Register Statue Object
+        (Entity ID, Area number, Block number, Statue type)
+	10	石像オブジェ登録
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	エリア番号	[0:1:99](Default: 0)
+		B	1	%d	ブロック番号	[0:1:99](Default: 0)
+		B	1	%d	石像タイプ	[ENUM_STATUE_TYPE](Default: 0)
+    [11] -- Warp Object to Character
+        (Entity ID, Character Entity ID, Damipoly ID)
+	11	Objワープ要求
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	キャラエンティティID	[-1:1:1000000000](Default: -1)
+		h	1	%d	ダミポリID	[-1:1:255](Default: -1)
+    [12] -- Remove Object Event Flag
+        (Event Flag ID)
+	12	オブジェイベント削除
+		i	1	%d	イベントフラグID	[0:1:1000000000](Default: 0)
+    [13] -- Set Object invulnerability
+        (Entity ID, Desired invulnerability state)
+	13	オブジェ破壊禁止
+		i	1	%d	対象オブジェクトのエンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	有効化設定	[ENUM_ENABLE_STATE](Default: 0)
+    [14] -- ObjAct activation (IDX Designation)
+        (Entity ID, Object parameter ID, Relative IDX, Desired activation)
+	14	ObjAct有効化(IDX指定)
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	オブジェアクトパラメータID	[-1:1:1000000000](Default: -1)
+		i	1	%d	対象の相対Idx	[-1:1:1000000000](Default: -1)
+		B	1	%d	有効化設定	[ENUM_ENABLE_STATE](Default: 0)
+    [15] -- "Treasure redemption" (Possibly makes the "Pick up item / Open Chest" prompt visible?)
+        (Entity ID)
+	15	宝再抽選
+		i	1	%d	対象オブジェクトのエンティティID	[0:1:1000000000](Default: 0)
+2006	SFX
+    [ 1] -- Delete Map SFX
+        (Entity ID, Should Erase only root)
+	1	マップSFX削除
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	根元のみ消すか	[ENUM_BOOL](Default: 1)
+    [ 2] -- Create Map SFX
+        (Entity ID)
+	2	マップSFX作成
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+    [ 3] -- Create one-off SFX
+        (SFX Type, Entity ID, Damipoly ID, SFX ID)
+	3	ワンショットSFX作成
+		i	1	%d	タイプ	[ENUM_CATEGORY](Default: 0)
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	ダミポリID	[-1:1:1000000000](Default: -1)
+		i	1	%d	SFX ID	[0:1:1000000000](Default: 0)
+    [ 4] -- Create SFX attached to Object
+        (Entity ID, Damipoly ID, SFX ID)
+	4	OBJ追従SFX作成
+		i	1	%d	OBJのエンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	ダミポリID	[0:1:1000000000](Default: 0)
+		i	1	%d	SfxID	[0:1:1000000000](Default: 0)
+    [ 5] -- Delete SFX attached to Object
+        (Entity ID, Delete root?)
+	5	OBJ追従SFX削除
+		i	1	%d	OBJのエンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	ルート削除か？	[ENUM_BOOL](Default: 1)
+2007	メッセージ
+    [ 1] -- Display Generic Dialog
+        (Message ID, Button Type, Number of Buttons, Entity ID, Display Distance)
+	1	汎用ダイアログ表示
+		i	1	%d	メッセージID	[0:1:1000000000](Default: 0)
+		h	1	%d	ボタン種類	[ENUM_BUTTON_TYPE](Default: 0)
+		h	1	%d	ボタン数	[ENUM_BUTTON_NUMBER](Default: 6)
+		i	1	%d	エンティティID	[-1:1:1000000000](Default: -1)
+		f	1	%.3f	表示距離	[0.0:0.00999999977648:100.0](Default: 0.0)
+    [ 2] -- Display Text Banner
+        (Banner Type)
+	2	テキスト演出
+		B	1	%d	テキストタイプ	[ENUM_TEXT_BANNER_TYPE](Default: 8)
+    [ 3] -- Display Status Explanation Message
+        (Message ID, Pad Enabled?)
+	3	状況説明表示
+		i	1	%d	メッセージID	[0:1:1000000000](Default: 0)
+		B	1	%d	Pad有効か	[ENUM_ENABLE_STATE](Default: 0)
+    [ 4] -- Display Battlefield Message
+        (Message ID, Display Location Index)
+	4	闘技場メッセージ表示
+		i	1	%d	メッセージID	[0:1:1000000000](Default: 0)
+		B	1	%d	表示場所インデックス	[0:1:1](Default: 0)
+    [ 5] -- Set Battle of Stoicism Participant 1 Nametag
+	5	闘技場死亡Aメッセージタグ設定
+		i	0	%08d	プレイヤーエンティティID	[0:1:100000000](Default: 0)
+    [ 6] -- Set Battle of Stoicism Participant 2 Nametag
+	6	闘技場死亡Bメッセージタグ設定
+		i	0	%08d	プレイヤーエンティティID	[0:1:100000000](Default: 0)
+    [ 7] -- Set Battle of Stoicism Participant 3 Nametag
+	7	闘技場死亡Cメッセージタグ設定
+		i	0	%08d	プレイヤーエンティティID	[0:1:100000000](Default: 0)
+    [ 8] -- Set Battle of Stoicism Participant 4 Nametag
+	8	闘技場死亡Dメッセージタグ設定
+		i	0	%08d	プレイヤーエンティティID	[0:1:100000000](Default: 0)
+    [ 9] -- Display Battle of Stoicism Dissolution Message
+        (Message ID)
+	9	闘技場解散情報メッセージ
+		i	1	%d	メッセージID	[0:1:1000000000](Default: 0)
+2008	カメラ
+	1	カメラ変更
+		i	1	%d	通常カメラID	[-1:1:1000000000](Default: -1)
+		i	1	%d	ロックカメラID	[-1:1:1000000000](Default: -1)
+	2	カメラ振動
+		i	1	%d	振動ID	[0:1:1000000000](Default: 0)
+		i	1	%d	タイプ	[ENUM_CATEGORY](Default: 0)
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	ダミポリID	[-1:1:1000000000](Default: -1)
+		f	1	%.3f	減衰開始距離	[0.0:0.00999999977648:999.0](Default: 0.0)
+		f	1	%.3f	減衰完了距離	[0.0:0.00999999977648:999.0](Default: 0.0)
+    [ 3] -- Set locked camera slot number
+        (Area ID, Block ID, Locked camera slot number)
+	3	ロックカメラスロット番号を設定
+		B	1	%d	エリアNo	[0:1:255](Default: 0)
+		B	1	%d	ブロックNo	[0:1:255](Default: 0)
+		H	1	%d	ロックカメラスロット番号	[0:1:9999](Default: 0)
+2009	スクリプト
+    [ 0] -- Register Ladder
+        (Event Flag ID #1, Event Flag ID #2, Entity ID)
+	0	ハシゴ登録
+		i	1	%d	イベントフラグID	[0:1:1000000000](Default: 0)
+		i	1	%d	イベントフラグID2	[0:1:1000000000](Default: 0)
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+	1	徘徊デーモン初期化
+		i	1	%d	イベントフラグID	[0:1:1000000000](Default: 0)
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	出現用イベントフラグID	[0:1:1000000000](Default: 0)
+	2	徘徊デーモン登録
+		i	1	%d	イベントフラグID	[0:1:1000000000](Default: 0)
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	エンティティID2	[0:1:1000000000](Default: 0)
+    [ 3] -- Register Bonfire
+        (Event Flag ID, Entity ID, "Reaction Distance", "Reaction Angle", "Initial Basic Spot Point")
+        * "Initial Basic Spot Point" is possibly the kindle level of the bonfire? 10 = kindled once, 30 = kindled 3 times?
+	3	篝火登録
+		i	1	%d	イベントフラグID	[0:1:1000000000](Default: 0)
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		f	0	%0.3f	反応距離	[0.0:1.0:100000000.0](Default: 0.0)
+		f	0	%0.3f	反応角度	[0.0:1.0:100000000.0](Default: 0.0)
+		i	1	%d	初期基本スポットポイント	[0:1:1000000000](Default: 0)
+    [ 4] -- Activate NPC buffs
+        (Entity ID)
+	4	マルチドーピング
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+	5	回復の泉登録
+		i	1	%d	イベントフラグID	[0:1:1000000000](Default: 0)
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+    [ 6] -- Issue Boss Room Entry Notification
+        (Dummy)
+	6	ボス部屋侵入通知
+		B	1	%d	ダミー	[0:1:1](Default: 0)
+2010	サウンド
+	1	BGM再生
+		B	1	%d	再生設定	[ENUM_ON_OFF](Default: 0)
+		H	1	%.d	スロットNo	[0:1:20](Default: 0)
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	サウンドタイプ	[ENUM_SOUND_TYPE](Default: 0)
+		i	1	%d	サウンドID	[0:1:1000000000](Default: 0)
+    [ 2] -- Play Sound Effect
+        (Entity ID, Sound type, Sound ID)
+	2	SE再生
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		i	1	%d	サウンドタイプ	[ENUM_SOUND_TYPE](Default: 0)
+		i	1	%d	サウンドID	[0:1:1000000000](Default: 0)
+    [ 3] -- Enable Map Sound
+        (Entity ID, Enable / Disable)
+	3	マップサウンド有効化
+		i	1	%d	エンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	有効・無効	[ENUM_ENABLE_STATE](Default: 0)
+2011	ヒット
+    [ 1] -- Activate hitbox
+        (Entity ID, Activation state)
+	1	ヒットパーツ有効化
+		i	1	%d	ヒットパーツのエンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	有効化設定	[ENUM_ENABLE_STATE](Default: 0)
+	2	ヒットパーツバックリードマスク有効化
+		i	1	%d	ヒットパーツのエンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	有効化設定	[ENUM_ENABLE_STATE](Default: 0)
+2012	マップ
+    [ 1] -- Activate map part
+        (Map Part ID, Activation state)
+	1	マップパーツ有効化
+		i	1	%d	マップパーツのエンティティID	[0:1:1000000000](Default: 0)
+		B	1	%d	有効化設定	[ENUM_ENABLE_STATE](Default: 0)
+1000	【実行制御】システム
+	0	条件グループ条件状態で待機
+		B	0	%d	条件成立条件状態	[ENUM_CONDITION_STATE](Default: 1)
+		b	0	%d	対象条件グループ	[ENUM_REGISTER](Default: 0)
+    [ 1] -- Skip instructions, conditional on register state
+        (Lines to skip, Desired register state, Register)
+	1	条件グループ条件状態でアクションスキップ
+		B	0	%d	スキップアクション数	[0:1:99](Default: 1)
+		B	0	%d	条件成立条件状態	[ENUM_CONDITION_STATE](Default: 1)
+		b	0	%d	対象条件グループ	[ENUM_REGISTER](Default: 0)
+    [ 2] -- Terminate event, conditional on register state
+        (Event end type, Desired register state, Register)
+	2	条件グループ条件状態でイベント終了
+		B	0	%d	実行イベント終了タイプ	[ENUM_EVENT_END_TYPE](Default: 0)
+		B	0	%d	条件成立条件状態	[ENUM_CONDITION_STATE](Default: 1)
+		b	0	%d	対象条件グループ	[ENUM_REGISTER](Default: 0)
+    [ 3] -- Unconditional instruction skip
+        (Lines to skip)
+	3	無条件でアクションスキップ
+		B	0	%d	スキップアクション数	[0:1:99](Default: 1)
+    [ 4] -- Unconditional event end
+        (Event end type)
+	4	無条件でイベント終了
+		B	0	%d	実行イベント終了タイプ	[ENUM_EVENT_END_TYPE](Default: 0)
+    [ 5] -- Conditionally skip instructions depending on value comparison
+        (Lines to skip, Comparison type, Left-hand side, Right-hand side)
+	5	パラメータ比較状態でアクションスキップ
+		B	0	%d	スキップアクション数	[0:1:99](Default: 1)
+		b	0	%d	比較タイプ	[ENUM_COMPARISON_TYPE](Default: 0)
+		i	1	%d	左辺値	[-1:1:1000000000](Default: 0)
+		i	1	%d	右辺値	[-1:1:1000000000](Default: 0)
+    [ 6] -- Terminate event, conditional on value comparison
+        (Event end type, Comparison type, Left-hand side, Right-hand side)
+	6	パラメータ比較状態でイベント終了
+		B	0	%d	実行イベント終了タイプ	[ENUM_EVENT_END_TYPE](Default: 0)
+		b	0	%d	比較タイプ	[ENUM_COMPARISON_TYPE](Default: 0)
+		i	1	%d	左辺値	[-1:1:1000000000](Default: 0)
+		i	1	%d	右辺値	[-1:1:1000000000](Default: 0)
+    [ 7] -- Skip instructions, conditional on register state (What is the difference 
+            between this and 1000[ 1]?)
+        (Number of rows to skip, Desired register state, Target register)
+	7	終了済み条件グループ条件状態でアクションスキップ
+		B	0	%d	スキップアクション数	[0:1:99](Default: 1)
+		B	0	%d	条件成立条件状態	[ENUM_CONDITION_STATE](Default: 1)
+		b	0	%d	対象条件グループ	[ENUM_REGISTER](Default: 0)
+    [ 8] -- Terminate event, conditional on register state (What is the difference 
+            between this and 1000[ 2]?)
+        (Event end type, Desired register state, Register)
+	8	終了済み条件グループ条件状態でイベント終了
+		B	0	%d	実行イベント終了タイプ	[ENUM_EVENT_END_TYPE](Default: 0)
+		B	0	%d	条件成立条件状態	[ENUM_CONDITION_STATE](Default: 1)
+		b	0	%d	対象条件グループ	[ENUM_REGISTER](Default: 0)
+    [ 9] -- Wait for network to approve event
+        (Timeout (seconds))
+	9	イベント結果ネットワーク承認
+		f	0	%0.3f	タイムアウト時間(秒)	[0.0:0.00999999977648:9999.0](Default: 3.0)
+1001	【実行制御】タイマー
+    [ 0] -- Wait for a set number of seconds.
+        (Number of seconds to wait)
+	0	経過秒数で待機
+		f	0	%0.3f	目標秒	[0.0:0.00999999977648:9999.0](Default: 0.0)
+    [ 1] -- Wait for a set number of frames.
+        (Number of frames to wait)
+	1	経過フレーム数で待機
+		i	0	%d	目標フレーム	[0:1:99999](Default: 0)
+    [ 2] -- Wait for a random number of seconds
+        (Minimum number of seconds, Maximum number of seconds)
+	2	経過ランダム秒数で待機
+		f	0	%0.3f	目標秒最小値	[0.0:0.00999999977648:9999.0](Default: 0.0)
+		f	0	%0.3f	目標秒最大値	[0.0:0.00999999977648:9999.0](Default: 0.0)
+	3	経過ランダムフレーム数で待機
+		i	0	%d	目標フレーム最小値	[0:1:99999](Default: 0)
+		i	0	%d	目標フレーム最大値	[0:1:99999](Default: 0)
+1003	【実行制御】イベント
+	0	イベントフラグ状態で待機
+		B	0	%d	条件成立フラグ状態	[ENUM_ON_OFF_CHANGE](Default: 1)
+		B	0	%d	基準イベントフラグIDタイプ	[ENUM_FLAG_TYPE](Default: 0)
+		i	0	%08d	対象イベントフラグID	[0:1:100000000](Default: 0)
+    [ 1] -- Conditionally skip instructions depending on event flag state
+        (Lines to skip, Flag state needed for skip, Event flag type, Event flag ID)
+	1	イベントフラグ状態でアクションスキップ
+		B	0	%d	スキップアクション数	[0:1:99](Default: 1)
+		B	0	%d	条件成立フラグ状態	[ENUM_ON_OFF](Default: 1)
+		B	0	%d	基準イベントフラグIDタイプ	[ENUM_FLAG_TYPE](Default: 0)
+		i	0	%08d	対象イベントフラグID	[0:1:100000000](Default: 0)
+    [ 2] -- Terminate event, conditional on event flag state
+        (Event end type, Flag state needed for end, Event flag type, Event flag ID)
+	2	イベントフラグ状態でイベント終了
+		B	0	%d	実行イベント終了タイプ	[ENUM_EVENT_END_TYPE](Default: 0)
+		B	0	%d	条件成立フラグ状態	[ENUM_ON_OFF](Default: 1)
+		B	0	%d	基準イベントフラグIDタイプ	[ENUM_FLAG_TYPE](Default: 0)
+		i	0	%08d	対象イベントフラグID	[0:1:100000000](Default: 0)
+    [ 3] -- Skip instructions, conditional on batch event flag state
+        (Lines to skip, Flag states needed for skip, Event flag type, Starting event flag ID, Ending event flag ID)
+	3	複数イベントフラグ状態でアクションスキップ
+		B	0	%d	スキップアクション数	[0:1:99](Default: 1)
+		B	0	%d	条件成立フラグ状態	[ENUM_LOGICAL_OPERATION_TYPE](Default: 0)
+		B	0	%d	基準イベントフラグIDタイプ	[ENUM_FLAG_TYPE](Default: 0)
+		i	0	%08d	開始対象イベントフラグID	[0:1:100000000](Default: 0)
+		i	0	%08d	終了対象イベントフラグID	[0:1:100000000](Default: 0)
+    [ 4] -- Terminate event, conditional on batch event flag state
+        (Event end type, Flag states needed for skip, Event flag type, Starting event flag ID, Ending event flag ID)
+	4	複数イベントフラグ状態でイベント終了
+		B	0	%d	実行イベント終了タイプ	[ENUM_EVENT_END_TYPE](Default: 0)
+		B	0	%d	条件成立フラグ状態	[ENUM_LOGICAL_OPERATION_TYPE](Default: 0)
+		B	0	%d	基準イベントフラグIDタイプ	[ENUM_FLAG_TYPE](Default: 0)
+		i	0	%08d	開始対象イベントフラグID	[0:1:100000000](Default: 0)
+		i	0	%08d	終了対象イベントフラグID	[0:1:100000000](Default: 0)
+    [ 5] -- Skip instructions, conditional on multiplayer status
+        (Lines to skip, Conditional multiplayer status)
+	5	マルチプレイ状態でアクションスキップ
+		B	0	%d	スキップアクション数	[0:1:99](Default: 1)
+		b	1	%d	条件成立マルチプレイ状態	[ENUM_MULTIPLAYER_STATE](Default: 0)
+    [ 6] -- Terminate event, conditional on multiplayer status
+        (Event end type, Conditional multiplayer status)
+	6	マルチプレイ状態でイベント終了
+		B	0	%d	実行イベント終了タイプ	[ENUM_EVENT_END_TYPE](Default: 0)
+		b	1	%d	条件成立マルチプレイ状態	[ENUM_MULTIPLAYER_STATE](Default: 0)
+    [ 7] -- Conditionally skip instructions depending on PC current area
+        (Number of lines, PC inside / outside area, Area ID, Block ID)
+	7	マップIDでイベントをアクションをスキップする
+		B	0	%d	スキップアクション数	[0:1:99](Default: 1)
+		B	0	%d	同じか？	[ENUM_BOOL](Default: 1)
+		B	0	%d	エリアNo	[0:1:99](Default: 10)
+		B	0	%d	ブロックNo	[0:1:99](Default: 10)
+	8	マップIDでイベント終了
+		B	0	%d	実行イベント終了タイプ	[ENUM_EVENT_END_TYPE](Default: 0)
+		B	0	%d	同じか	[ENUM_BOOL](Default: 1)
+		B	0	%d	エリアNo	[0:1:99](Default: 10)
+		B	0	%d	ブロックNo	[0:1:99](Default: 10)
+1005	【実行制御】オブジェクト
+	0	オブジェクト破壊状態で待機
+		B	0	%d	条件成立破壊状態	[ENUM_DAMAGE_STATE](Default: 1)
+		i	0	%08d	対象オブジェクトのエンティティID	[0:1:100000000](Default: 0)
+    [ 1] -- Conditionally skip instructions depending on object destruction state
+        (Number of lines, Desired destruction state, Entity ID)
+	1	オブジェクト破壊状態でアクションスキップ
+		B	0	%d	スキップアクション数	[0:1:99](Default: 1)
+		B	0	%d	条件成立破壊状態	[ENUM_DAMAGE_STATE](Default: 1)
+		i	0	%08d	対象オブジェクトのエンティティID	[0:1:100000000](Default: 0)
+    [ 2] -- Terminate event, conditional on object destruction state
+        (Event end type, Desired destruction state, Entity ID)
+	2	オブジェクト破壊状態でイベント終了
+		B	0	%d	実行イベント終了タイプ	[ENUM_EVENT_END_TYPE](Default: 0)
+		B	0	%d	条件成立破壊状態	[ENUM_DAMAGE_STATE](Default: 1)
+		i	0	%08d	対象オブジェクトのエンティティID	[0:1:100000000](Default: 0)
+0	《条件登録》システム
+    [ 0] -- Condition (Evaluate register): Evaluates target register (according to its type),
+         --     compares this to the desired result, and stores the result in the result register.
+        (Result register, Desired result, Target register)
+	0	条件グループ条件状態で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		B	0	%d	条件成立条件状態	[ENUM_CONDITION_STATE](Default: 1)
+		b	0	%d	対象条件グループ	[ENUM_REGISTER](Default: 0)
+	1	パラメータ比較状態で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		b	0	%d	比較タイプ	[ENUM_COMPARISON_TYPE](Default: 0)
+		i	1	%d	左辺値	[-1:1:1000000000](Default: 0)
+		i	1	%d	右辺値	[-1:1:1000000000](Default: 0)
+1	《条件登録》タイマー
+    [ 0] -- Condition (Seconds passed)
+        (Result register, Number of seconds)
+	0	経過秒数で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		f	0	%0.3f	目標秒数	[0.0:0.00999999977648:9999.0](Default: 0.0)
+    [ 1] -- Condition (Frames passed)
+        (Result register, Number of frames)
+	1	経過フレーム数で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	0	%d	目標フレーム数	[0:1:99999](Default: 0)
+	2	経過ランダム秒数で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		f	0	%0.3f	目標秒数最小値	[0.0:0.00999999977648:9999.0](Default: 0.0)
+		f	0	%0.3f	目標秒数最大値	[0.0:0.00999999977648:9999.0](Default: 0.0)
+	3	経過ランダムフレーム数で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	0	%d	目標フレーム数最小値	[0:1:99999](Default: 0)
+		i	0	%d	目標フレーム数最大値	[0:1:99999](Default: 0)
+3	《条件登録》イベント
+    [ 0] -- Condition (Event Flag Status)
+        (Result register, Flag state, Flag type, Event flag ID)
+	0	イベントフラグ状態で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		B	0	%d	条件成立フラグ状態	[ENUM_ON_OFF_CHANGE](Default: 1)
+		B	0	%d	基準イベントフラグIDタイプ	[ENUM_FLAG_TYPE](Default: 0)
+		i	0	%08d	対象イベントフラグID	[0:1:100000000](Default: 0)
+    [ 1] -- Condition (Batch Event Flag Status)
+        (Result register, Flag states needed, Event flag type, Starting event flag ID, Ending event flag ID)
+	1	複数イベントフラグ状態で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		B	0	%d	条件成立フラグ状態	[ENUM_LOGICAL_OPERATION_TYPE](Default: 0)
+		B	0	%d	基準イベントフラグIDタイプ	[ENUM_FLAG_TYPE](Default: 0)
+		i	0	%08d	開始対象イベントフラグID	[0:1:100000000](Default: 0)
+		i	0	%08d	終了対象イベントフラグID	[0:1:100000000](Default: 0)
+    [ 2] -- Condition (Trigger Volume): Checks if the target entity is inside/outside the given trigger volume.
+        (Result register, Inside / Outside, Entity ID, Area Entity ID)
+	2	対象の領域内外状態で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		B	0	%d	条件成立内外状態	[ENUM_CONTAINED](Default: 1)
+		i	0	%08d	対象エンティティID	[0:1:100000000](Default: 0)
+		i	0	%08d	領域エンティティID	[0:1:100000000](Default: 0)
+    [ 3] -- Condition (Entity Within Radius of Entity): Checks if Entity A is within / without a certain distance of Entity B.
+        (Result register, Desired range, Target A, Target B, Distance)
+	3	対象同士の一定距離内外状態で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		B	0	%d	条件成立内外状態	[ENUM_CONTAINED](Default: 1)
+		i	0	%08d	対象AエンティティID	[0:1:100000000](Default: 0)
+		i	0	%08d	対象BエンティティID	[0:1:100000000](Default: 0)
+		f	0	%0.3f	指定距離	[0.0:1.0:100000000.0](Default: 0.0)
+    [ 4] -- Condition (PC Has(n't) Item)
+        (Result register, Item type, Item ID, Owned state)
+	4	アイテムの所有状態で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		B	0	%08d	装備品タイプ	[ENUM_ITEM_TYPE](Default: 0)
+		i	0	%08d	装備ID	[0:1:100000000](Default: 0)
+		B	0	%d	条件成立所有状態	[ENUM_OWN_STATE](Default: 1)
+    [ 5] -- Condition (Action Button State)
+        (Result register, Category, Target Entity ID, Reaction angle, Damipoly ID, Reaction distance, Help ID, Reaction attribute, Pad ID)
+	5	アクションボタン状態で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	1	%d	判定カテゴリ	[ENUM_CATEGORY](Default: 0)
+		i	0	%08d	対象エンティティID	[0:1:100000000](Default: 0)
+		f	0	%0.3ｆ	反応角度(Degree)	[0.0:1.0:100000000.0](Default: 0.0)
+		h	0	%d	ダミポリID	[-1:1:255](Default: 0)
+		f	0	%0.3f	反応距離	[0.0:1.0:100000000.0](Default: 0.0)
+		i	0	%d	ヘルプID	[0:1:100000000](Default: 0)
+		B	1	%d	反応属性	[ENUM_REACTION_ATTRIBUTE](Default: 255)
+		i	0	%d	パッド認識番号	[0:1:100000000](Default: 0)
+    [ 6] -- Condition (Multiplayer State): Used to check if the PC is Host/Client or Multiplayer/Singleplayer.
+        (Result register, Required status)
+	6	ゲームのマルチプレイ状態で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		b	1	%d	条件成立マルチプレイ状態	[ENUM_MULTIPLAYER_STATE](Default: 0)
+    [ 7] -- Condition (Trigger Volume for all players)
+        (Result register, Inside / Outside, Area Entity ID)
+	7	全プレイヤーの領域内外状態で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		B	0	%d	条件成立内外状態	[ENUM_CONTAINED](Default: 1)
+		i	0	%08d	領域エンティティID	[0:1:100000000](Default: 0)
+    [ 8] -- Condition (Game Area): Used to check if the PC is in / not in the given Area/Block (i.e. Map)
+        (Result register, Inside / Outside, Area ID, Block ID)
+	8	現在マップIDで判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		B	0	%d	同じか？	[ENUM_BOOL](Default: 1)
+		B	0	%d	エリアNo	[0:1:99](Default: 10)
+		B	1	%d	ブロックNo	[0:1:99](Default: 0)
+    [ 9] -- Condition (Multiplayer Event)
+        (Reuslt register, Multiplayer Event ID)
+	9	イベント干渉で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		I	0	%08d	イベント干渉ID	[0:1:100000000](Default: 0)
+    [10] -- Condition (Count True Event Flags)
+        (Result register, Event Flag Type, Start Event Flag ID, End Event Flag ID, Comparison Type, Count Threshold)
+	10	複数イベントフラグTRUE数で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		B	0	%d	基準イベントフラグIDタイプ	[ENUM_FLAG_TYPE](Default: 0)
+		i	0	%08d	開始対象イベントフラグID	[0:1:100000000](Default: 0)
+		i	0	%08d	終了対象イベントフラグID	[0:1:100000000](Default: 0)
+		b	0	%d	比較タイプ	[ENUM_COMPARISON_TYPE](Default: 4)
+		i	0	%d	カウント閾値	[0:1:1000000000](Default: 0)
+    [11] -- Condition (World Tendency): Used to check if the PC is gravelorded
+        (Result register, Tendency type, Comparison type, Tendency threshold)
+	11	傾向値で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		B	256	%d	傾向タイプ	[ENUM_TENDENCY_TYPE](Default: 0)
+		B	256	%d	比較タイプ	[ENUM_COMPARISON_TYPE](Default: 0)
+		B	256	%d	傾向閾値	[0:1:100](Default: 0)
+    [12] -- Condition (Event Value)
+        (Result register, Event Flag ID, Number of Bits, Comparison Type, Threshold)
+	12	イベント値で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	1	%08d	イベントフラグ先頭	[0:1:1000000000](Default: 0)
+		B	1	%d	使用フラグ数(Bit数)	[1:1:32](Default: 1)
+		B	256	%d	比較タイプ	[ENUM_COMPARISON_TYPE](Default: 0)
+		I	256	%08d	値閾値	[0:1:100000000](Default: 0)
+    [13] -- Condition (Action Button State (Boss Room))
+        (Result register, Category, Target Entity ID, Reaction angle, Damipoly ID, Reaction distance, Help ID, Reaction attribute, Pad ID)
+	13	ボス部屋アクションボタン状態で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	1	%d	判定カテゴリ	[ENUM_CATEGORY](Default: 0)
+		i	0	%08d	対象エンティティID	[0:1:100000000](Default: 0)
+		f	0	%0.3ｆ	反応角度(Degree)	[0.0:1.0:100000000.0](Default: 0.0)
+		h	0	%d	ダミポリID	[-1:1:255](Default: 0)
+		f	0	%0.3f	反応距離	[0.0:1.0:100000000.0](Default: 0.0)
+		i	0	%d	ヘルプID	[0:1:100000000](Default: 0)
+		B	1	%d	反応属性	[ENUM_REACTION_ATTRIBUTE](Default: 255)
+		i	0	%d	パッド認識番号	[0:1:100000000](Default: 0)
+    [14] -- Condition (Item Dropped In Area)
+        (Result register, Area to check)
+	14	領域内でアイテム捨てたかで判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	0	%08d	領域エンティティID	[0:1:100000000](Default: 0)
+    [15] -- Condition (Dropped Item)
+        (Result register, Item type, Item ID)
+	15	どのアイテムを捨てたかで判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	1	%08d	アイテムタイプ	[ENUM_ITEM_TYPE](Default: 0)
+		i	0	%08d	アイテムID	[0:1:100000000](Default: 0)
+    [16] -- Condition (PC Has(n't) Item -- Including BotBox)
+        (Result register, Item type, Item ID, Owned state)
+	16	倉庫含むアイテムの所有状態で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		B	0	%08d	装備品タイプ	[ENUM_ITEM_TYPE](Default: 0)
+		i	0	%08d	装備ID	[0:1:100000000](Default: 0)
+		B	0	%d	条件成立所有状態	[ENUM_OWN_STATE](Default: 1)
+    [17] -- Condition (NG+ Cycle)
+        (Result register, Comparison type, Number of completed playthroughs)
+	17	ゲームクリア周回数で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		B	256	%d	比較タイプ	[ENUM_COMPARISON_TYPE](Default: 0)
+		B	256	%03d	周回数閾値	[0:1:255](Default: 0)
+    [18] -- Condition (Line Segment Direction & Action Button)
+            (Result register, Category, Target Entity ID, Reaction angle, Damipoly ID, Reaction distance, Help ID, Reaction attribute, Pad ID, Line Segment Endpoint Entity ID)
+	18	線分方向判定アクションボタン状態で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	1	%d	判定カテゴリ	[ENUM_CATEGORY](Default: 0)
+		i	0	%08d	対象エンティティID	[0:1:100000000](Default: 0)
+		f	0	%0.3ｆ	反応角度(Degree)	[0.0:1.0:100000000.0](Default: 0.0)
+		h	0	%d	ダミポリID	[-1:1:255](Default: 0)
+		f	0	%0.3f	反応距離	[0.0:1.0:100000000.0](Default: 0.0)
+		i	0	%d	ヘルプID	[0:1:100000000](Default: 0)
+		B	1	%d	反応属性	[ENUM_REACTION_ATTRIBUTE](Default: 255)
+		i	0	%d	パッド認識番号	[0:1:100000000](Default: 0)
+		i	0	%08d	線分対象OBJエンティティID	[0:1:100000000](Default: 0)
+    [19] -- Condition (Line Segment Direction & Action Button (Boss Room))
+            (Result register, Category, Target Entity ID, Reaction angle, Damipoly ID, Reaction distance, Help ID, Reaction attribute, Pad ID, Line Segment Endpoint Entity ID)
+	19	線分方向判定ボス部屋アクションボタン状態で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	1	%d	判定カテゴリ	[ENUM_CATEGORY](Default: 0)
+		i	0	%08d	対象エンティティID	[0:1:100000000](Default: 0)
+		f	0	%0.3ｆ	反応角度(Degree)	[0.0:1.0:100000000.0](Default: 0.0)
+		h	0	%d	ダミポリID	[-1:1:255](Default: 0)
+		f	0	%0.3f	反応距離	[0.0:1.0:100000000.0](Default: 0.0)
+		i	0	%d	ヘルプID	[0:1:100000000](Default: 0)
+		B	1	%d	反応属性	[ENUM_REACTION_ATTRIBUTE](Default: 255)
+		i	0	%d	パッド認識番号	[0:1:100000000](Default: 0)
+		i	0	%08d	線分対象OBJエンティティID	[0:1:100000000](Default: 0)
+    [20] -- Condition (Compare Event Flag Values)
+        (Result register, Left-side Event Flag, Left-side Number of Bits, Comparison Type, Right-side Event Flag, Right-side Number of Bits)
+	20	イベント値とイベント値の比較で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	1	%08d	イベントフラグ先頭左辺値	[0:1:1000000000](Default: 0)
+		B	1	%d	使用フラグ数左辺値(Bit数)	[1:1:32](Default: 1)
+		B	256	%d	比較タイプ	[ENUM_COMPARISON_TYPE](Default: 0)
+		i	1	%08d	イベントフラグ先頭右辺値	[0:1:1000000000](Default: 0)
+		B	1	%d	使用フラグ数右辺値(Bit数)	[1:1:32](Default: 1)
+    [21] -- Condition (Owns DLC)
+        (Result register, Owns?)
+	21	ＤＬＣが購入済みかで判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		B	0	%d	ＤＬＣ購入済みか	[ENUM_BOOL](Default: 1)
+    [22] -- Condition (Online Mode)
+        (Result register, Online?)
+	22	オンラインモードかで判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		B	0	%d	オンラインモードか	[ENUM_BOOL](Default: 1)
+4	《条件登録》キャラ
+    [ 0] -- Condition (Entity Dead)
+        (Result register, Entity ID, Desired status)
+	0	キャラの死亡状態で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	0	%08d	対象エンティティID	[0:1:1000000000](Default: 0)
+		B	0	%d	条件成立死亡状態	[ENUM_DEATH_STATUS](Default: 1)
+    [ 1] -- Condition (Entity Hostile)
+        (Result register, Entity ID, Attacker Entity ID)
+	1	キャラのダメージ状態で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	0	%08d	対象エンティティID	[0:1:1000000000](Default: 0)
+		i	0	%08d	攻撃者エンティティID	[0:1:1000000000](Default: 0)
+    [ 2] -- Condition (Entity Health Ratio)
+        (Result register, Entity ID, Comparison Type, Comparand Ratio)
+	2	キャラのHP比率で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	0	%08d	対象エンティティID	[0:1:1000000000](Default: 0)
+		b	0	%d	比較タイプ	[ENUM_COMPARISON_TYPE](Default: 0)
+		f	0	%0.3f	判定比率	[0.0:1.0:100000000.0](Default: 0.0)
+    [ 3] -- Condition (Character Type)
+        (Result register, Entity ID, Character type)
+	3	キャラのキャラタイプで判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	0	%08d	対象エンティティID	[0:1:1000000000](Default: 0)
+		b	0	%d	キャラタイプ	[ENUM_CHARACTER_TYPE](Default: 0)
+    [ 4] -- Condition (Entity Target): Possibly conditional on if the specified entity is targeting the targeted entity
+        (Result register, Entity ID, Targeted Entity ID, Has target?)
+	4	対象のターゲット状態で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	0	%08d	判定対象エンティティID	[0:1:1000000000](Default: 0)
+		i	0	%08d	ターゲット対象エンティティID	[0:1:1000000000](Default: 0)
+		B	0	%d	あるか？(成立条件)	[ENUM_BOOL](Default: 1)
+    [ 5] -- Condition (Special Effect)
+        (Result register, Entity ID, Special Effect ID, Has Effect?)
+	5	特殊効果IDがあるか
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	0	%08d	対象エンティティID	[0:1:1000000000](Default: 0)
+		i	0	%d	特殊効果ID	[-1:1:1000000000](Default: -1)
+		B	0	%d	あるか？(成立条件)	[ENUM_BOOL](Default: 1)
+    [ 6] -- Condition (NPC Part HP)
+        (Result register, Entity ID, Part NPC ID, HP Threshold, Comparison Type)
+	6	イベント部位＿HP
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	0	%08d	対象エンティティID	[0:1:1000000000](Default: 0)
+		i	0	%d	イベント部位ID	[0:1:1000000000](Default: 0)
+		i	0	%d	HP閾値	[0:1:1000000000](Default: 0)
+		b	0	%d	比較タイプ	[ENUM_COMPARISON_TYPE](Default: 4)
+    [ 7] -- Condition (Character "Back lead" Status): Possibly conditional on character being background loaded
+        (Result register, Entity ID, "Back lead OK?")
+	7	キャラがバックリード状態判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	0	%08d	対象エンティティID	[0:1:1000000000](Default: 0)
+		B	0	%d	バックリードOK?	[ENUM_BOOL](Default: 1)
+    [ 8] -- Condition (Event Message ID Match)
+        (Result register, Entity ID, Event Message ID, Match)
+	8	イベントメッセージIDが一致判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	0	%08d	対象エンティティID	[0:1:1000000000](Default: 0)
+		i	0	%08d	監視対象のイベントメッセージID	[-1:1:1000000000](Default: -1)
+		B	0	%d	一致するか？	[ENUM_BOOL](Default: 1)
+    [ 9] -- Condition (AI State)
+        (Result register, Entity ID, Desired AI State)
+	9	対象のAI状態で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	0	%08d	対象エンティティID	[0:1:1000000000](Default: 0)
+		B	0	%d	AI状態	[ENUM_AI_STATUS_TYPE](Default: 0)
+    [10] -- Condition (Player Using Skull Lantern)
+        (Result register, Active?)
+	10	プレイヤーランタン武器装備判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		B	0	%d	ランタンモードか？	[ENUM_BOOL](Default: 1)
+    [11] -- Condition (Player's Class)
+        (Result register, Class Type)
+	11	プレイヤーの職業で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		B	0	%d	監視職業	[ENUM_CLASS_TYPE](Default: 0)
+    [12] -- Condition (Player's Covenent)
+        (Result register, Covenent Index)
+	12	プレイヤーの誓約で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		B	0	%d	監視誓約値	[ENUM_COVENANT_TYPE](Default: 0)
+    [13] -- Condition (Player's Soul Level)
+        (Result register, Comparison Type, Comparison Value)
+	13	プレイヤーのソウルレベルで判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		B	256	%d	比較タイプ	[ENUM_COMPARISON_TYPE](Default: 0)
+		I	256	%08d	比較値	[0:1:100000000](Default: 0)
+    [14] -- Condition (Entity HP Value)
+        (Result register, Entity ID, Comparison Type, Comparison Value)
+	14	キャラのHP値で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	0	%08d	対象エンティティID	[0:1:1000000000](Default: 0)
+		B	256	%d	比較タイプ	[ENUM_COMPARISON_TYPE](Default: 0)
+		i	256	%08d	比較値	[0:1:100000000](Default: 0)
+5	《条件登録》オブジェクト
+    [ 0] -- Condition (Destroyed Object)
+        (Result register, Required state, Entity ID)
+	0	オブジェクト破壊状態で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		B	0	%d	条件成立破壊状態	[ENUM_DAMAGE_STATE](Default: 1)
+		i	0	%08d	対象オブジェクトのエンティティID	[0:1:100000000](Default: 0)
+    [ 1] -- Condition (Damaged Object)
+        (Result register, Entity ID, Attacker Entity ID)
+	1	オブジェクトのダメージ状態で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	0	%08d	対象エンティティID	[0:1:100000000](Default: 0)
+		i	0	%08d	攻撃者エンティティID	[-1:1:100000000](Default: 0)
+    [ 2] -- "ObjAct Execution Judgement"
+        (Register to use, Execution event ID)
+	2	ObjAct実行判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	0	%08d	実行イベントID	[0:1:100000000](Default: 0)
+	3	オブジェクトのHP状態で判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	0	%08d	対象エンティティID	[0:1:100000000](Default: 0)
+		b	0	%d	比較タイプ	[ENUM_COMPARISON_TYPE](Default: 4)
+		i	0	%d	HP閾値	[0:1:1000000000](Default: 0)
+11	《条件登録》ヒット
+    [ 0] -- Condition (Moving on Hitbox): Checks if there is a local player moving on the specified hitbox
+        (Result register, Hitbox Entity ID)
+	0	ヒット上に動いているキャラが居るかで判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	0	%08d	対象ヒットのエンティティID	[0:1:100000000](Default: 0)
+    [ 1] -- Condition (Running on Hitbox): Checks if there is a local player running on the specified hitbox
+        (Result register, Hitbox Entity ID)
+	1	ヒット上に暴れているキャラが居るかで判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	0	%08d	対象ヒットのエンティティID	[0:1:100000000](Default: 0)
+    [ 2] -- Condition (Standing on Hitbox): Checks if there is a local player standing on the specified hitbox
+        (Result register, Hitbox Entity ID)
+	2	ヒット上にローカルプレイヤが居るかで判定
+		b	0	%d	登録条件グループ	[ENUM_REGISTER](Default: 0)
+		i	0	%08d	対象ヒットのエンティティID	[0:1:100000000](Default: 0)

@@ -1,0 +1,347 @@
+
+[ai状態タイプ]{0: 通常, 1: 認識, 2: 警戒, 3: 戦闘}
+ENUM_AI_STATUS_TYPE = {
+    0: "Normal", 
+    1: "Recognition", 
+    2: "Alert", 
+    3: "Battle"
+}
+
+[ビット操作タイプ]{0: 追加, 1: 削除, 2: 反転}
+ENUM_BITOP = {
+    0: "Add", 
+    1: "Delete", 
+    2: "Invert"
+}
+
+[BOOL]{0: いいえ, 1: はい}
+ENUM_BOOL = {
+    0: "FALSE", 
+    1: "TRUE"
+}
+
+[ボタン数]{1: １ボタン, 2: ２ボタン, 6: ボタン無し}
+ENUM_BUTTON_NUMBER = {
+    1: "1 Button", 
+    2: "2 Button", 
+    6: "No Button"
+}
+
+[ボタンタイプ]{0: YES/NO, 1: OK/CANCEL}
+ENUM_BUTTON_TYPE = {
+    0: "YES/NO", 
+    1: "OK/CANCEL"
+}
+
+[判定カテゴリ]{0: オブジェクト, 1: 領域, 2: キャラクター}
+ENUM_CATEGORY = {
+    0: "Object", 
+    1: "Area", 
+    2: "Character"
+}
+
+
+[キャラタイプ]{0: 生存, 1: 白ゴースト, 2: 黒ゴースト, 8: グレイゴースト, 12: 侵入者}
+ENUM_CHARACTER_TYPE = {
+    0: "Survival", 
+    1: "White Ghost", 
+    2: "Black Ghost", 
+    8: "Gray Ghost", 
+    12: "Intruder"
+}
+
+[キャラ更新レベル]{-1: 更新なし, 0: 常に更新, 2: 2フレームに1回, 5: 5フレームに1回}
+ENUM_CHARACTER_UPDATE_RATE = {
+    -1: "Never", 
+    0: "Always", 
+    2: "Every 2 frames", 
+    5: "Every 5 frames"
+}
+
+[アーキタイプ]{0: 戦士, 1: 騎士, 2: 放浪者, 3: 盗賊, 4: 狩人, 5: 魔術師, 6: 呪術師, 7: 僧侶, 8: 野武士, 9: 持たざるもの, 20: 仮：戦士, 21: 仮：騎士, 22: 仮：魔術師, 23: 仮：呪術師, 24: チ：戦士, 25: チ：騎士, 26: チ：魔術師, 27: チ：呪術師}
+
+ * Note: The translations are not accurate. Instead, they are based on what classes the game actually has corresponding to each value.
+
+ENUM_CLASS_TYPE = {
+    0: "Warrior", 
+    1: "Knight", 
+    2: "Wanderer", 
+    3: "Thief", 
+    4: "Bandit", 
+    5: "Hunter", 
+    6: "Sorcerer", 
+    7: "Pyromancer", 
+    8: "Cleric", 
+    9: "Deprived", 
+    20: "Temp: Warrior", 
+    21: "Temp: Knight", 
+    22: "Temp: Sorcerer", 
+    23: "Temp: Pyromancer", 
+    24: "Chi: Warrior", 
+    25: "Chi: Knight", 
+    26: "Chi: Sorcerer", 
+    27: "Chi: Pyromancer"
+}
+
+[比較タイプ]{0: ＝, 1: ！＝, 2: ＞, 3: ＜, 4: ＞＝, 5: ＜＝}
+ENUM_COMPARISON_TYPE = {
+    0: "==", 
+    1: "!=", 
+    2: ">", 
+    3: "<", 
+    4: ">=", 
+    5: "<="
+}
+
+[条件状態]{0: 不成立, 1: 成立}
+ENUM_CONDITION_STATE = {
+    0: "FALSE", 
+    1: "TRUE"
+}
+
+[内外状態]{0: 外側, 1: 内側}
+ENUM_CONTAINED = {
+    0: "Outside", 
+    1: "Inside"
+}
+
+[ポリ劇再生タイプ]{0: スキップ有り, 2: スキップ無し, 8: スキップ有り フェードアウトスキップ, 10: スキップ無し フェードアウトスキップ}
+ENUM_CUTSCENE_TYPE = {
+    0: "Skippable", 
+    2: "Unskippable", 
+    8: "Skippable with Fade-out", 
+    10: "Unskippable with Fade-out"
+}
+
+[ダメージ対象]{1: キャラ, 2: マップ, 3: キャラ＋マップ}
+ENUM_DAMAGE_TARGET_TYPE = {
+    1: "Character", 
+    2: "Map", 
+    3: "Character & Map"
+}
+
+[死亡状態]{0: 生存, 1: 死亡}
+ENUM_DEATH_STATUS = {
+    0: "Alive", 
+    1: "Dead"
+}
+
+[無効・有効]{0: 無効, 1: 有効}
+ENUM_ENABLE_STATE = {
+    0: "DISABLE", 
+    1: "ENABLE"
+}
+
+[イベント終了タイプ]{0: 終了, 1: リスタート}
+ENUM_EVENT_END_TYPE = {
+    0: "END", 
+    1: "RESTART"
+}
+
+[基準イベントフラグIDタイプ]{0: なし, 1: イベントID, 2: イベントID+スロット番号}
+ENUM_FLAG_TYPE = {
+    0: "Event Flag ID", 
+    1: "Event ID", 
+    2: "Event ID with Slot Number"
+}
+
+[補間]{0: 補間有り, 1: 補間無し}
+ENUM_INTERPOLATION_STATE = {
+    0: "Interpolated", 
+    1: "Not Interpolated"
+}
+
+[装備タイプ]{0: 武器, 1: 防具, 2: 装飾, 3: 道具}
+ENUM_ITEM_TYPE = {
+    0: "Weapon", 
+    1: "Armor", 
+    2: "Ring", 
+    3: "Item"
+}
+
+[論理演算タイプ]{0: 全てON, 1: 全てOFF, 2: どれかがON, 3: どれかがOFF}
+ENUM_LOGICAL_OPERATION_TYPE = {
+    0: "all ON", 
+    1: "all OFF", 
+    2: "not all OFF", 
+    3: "not all ON"
+}
+
+[マルチプレイ状態]{0: ホスト, 1: クライアント, 2: マルチプレイ中, 3: シングルプレイ中}
+ENUM_MULTIPLAYER_STATE = {
+    0: "Host", 
+    1: "Client", 
+    2: "Multiplayer", 
+    3: "Singleplayer"
+}
+
+[ナビメッシュタイプ]{1: 通行不可, 2: 出口, 4: 障害物, 8: 壁, 64: 着地点, 128: イベント, 256: 崖, 512: 広い, 1024: 梯子, 2048: 穴, 4096: 扉, 8192: 閉扉, 32: 壁に接する床 }
+ENUM_NAVIMESH_TYPE = {
+    1: "Solid", 
+    2: "Exit", 
+    4: "Obstacle", 
+    8: "Wall", 
+    32: "Wall-touching Floor", 
+    64: "Landing Point", 
+    128: "Event", 
+    256: "Cliff", 
+    512: "Wide", 
+    1024: "Ladder", 
+    2048: "Hole", 
+    4096: "Door", 
+    8192: "Closed Door"
+}
+
+[ON・OFF]{0: OFF, 1: ON}
+ENUM_ON_OFF = {
+    0: "OFF", 
+    1: "ON"
+}
+
+[ON・OFF・CHANGE]{0: OFF, 1: ON, 2: CHANGE}
+ENUM_ON_OFF_CHANGE = {
+    0: "OFF", 
+    1: "ON", 
+    2: "CHANGE"
+}
+
+[所有状態]{0: 非所有, 1: 所有}
+ENUM_OWN_STATE = {
+    0: "Does not own", 
+    1: "Owns"
+}
+
+[反応属性]{48: 生存&グレイ, 255: 全て}
+ENUM_REACTION_ATTRIBUTE = {
+    48: "Survival & Gray", 
+    255: "All"
+}
+
+[条件グループ]{-7: OR(07), -6: OR(06), -5: OR(05), -4: OR(04), -3: OR(03), -2: OR(02), -1: OR(01), 0: 実行条件, 1: AND(01), 2: AND(02), 3: AND(03), 4: AND(04), 5: AND(05), 6: AND(06), 7: AND(07)}
+ENUM_REGISTER = {
+    -7: "OR(07)", 
+    -6: "OR(06)", 
+    -5: "OR(05)", 
+    -4: "OR(04)", 
+    -3: "OR(03)", 
+    -2: "OR(02)", 
+    -1: "OR(01)", 
+    0: "MAIN", 
+    1: "AND(01)", 
+    2: "AND(02)", 
+    3: "AND(03)", 
+    4: "AND(04)", 
+    5: "AND(05)", 
+    6: "AND(06)", 
+    7: "AND(07)"
+}
+
+[SOSサインタイプ]{0: 青瞳サイン, 1: 黒瞳サイン, 2: 赤瞳サイン, 3: 探知サイン, 4: 白救援サイン, 5: 黒救援サイン}
+ENUM_SIGN_TYPE = {
+    0: "Blue Eye Sign", 
+    1: "Black Eye Sign", 
+    2: "Red Eye Sign", 
+    3: "Detection Sign", 
+    4: "White Help Sign", 
+    5: "Black Help Sign"
+}
+
+[部位タイプ]{1: 部位１, 2: 部位２, 3: 部位３, 4: 部位４, 5: 部位５, 6: 部位６, 7: 弱点, 8: 部位７, 9: 部位８}
+ENUM_SITE_TYPE = {
+    1: "Part 1", 
+    2: "Part 2", 
+    3: "Part 3", 
+    4: "Part 4", 
+    5: "Part 5", 
+    6: "Part 6", 
+    7: "Weak Point", 
+    8: "Part 7", 
+    9: "Part 8"
+}
+
+[サウンドタイプ]{0: a:環境音, 1: c:キャラモーション, 2: f:メニューSE, 3: o:オブジェクト, 4: p:ポリ劇専用SE, 5: s:SFX, 6: m:BGM, 7: v:音声, 8: x:床材質依存, 9: b:鎧材質依存, 10: g:ゴースト}
+ENUM_SOUND_TYPE = {
+    0: "a: Evironmental Sound", 
+    1: "c: Character Motion", 
+    2: "f: Menu SE", 
+    3: "o: Object", 
+    4: "p: Poly Drama",
+    5: "s: SFX", 
+    6: "m: BGM", 
+    7: "v: Voice", 
+    8: "x: Floor Material Dependence", 
+    9: "b: Armor Material Dependence", 
+    10: "g: Ghost"
+}
+
+[石像タイプ]{0: 石化像, 1: 結晶化像}
+ENUM_STATUE_TYPE = {
+    0: "Petrified", 
+    1: "Crystallized"
+}
+
+[チームタイプ]{255: デフォルト, 0: 無効, 1: 生存プレイヤー, 2: ホワイトゴースト, 3: ブラックゴースト, 4: グレイゴースト, 5: 徘徊ゴースト, 6: 敵, 7: 強敵, 8: 味方, 9: 味方（怒）, 10: おとり敵, 11: 赤子, 12: 戦う味方, 13: 侵入者}
+ENUM_TEAM_TYPE = {
+    255: "Default", 
+    0: "Invalid", 
+    1: "Survival", 
+    2: "White Ghost", 
+    3: "Black Ghost", 
+    4: "Gray Ghost", 
+    5: "Wandering Ghost", 
+    6: "Enemy", 
+    7: "Strong Enemy", 
+    8: "Ally", 
+    9: "Hostile Ally", 
+    10: "Decoy Enemy", 
+    11: "Red Child", 
+    12: "Fighting Ally", 
+    13: "Intruder"
+}
+    
+[傾向タイプ]{0: 白傾向, 1: 黒傾向}
+ENUM_TENDENCY_TYPE = {
+    0: "White Tendency", 
+    1: "Black Tendency"
+}
+
+[テキスト演出タイプ]{1: デーモン撃破, 2: 死亡, 3: 復活, 4: ソウル取得, 5: 目標撃破, 6: ゴースト死亡, 7: 黒ゴースト死亡, 8: マップ名, 12: おめでとう, 15: 闘技場勝利, 16: 闘技場敗北, 17: 闘技場引き分け}
+ENUM_TEXT_BANNER_TYPE = {
+    1: "Demon Killed", 
+    2: "Death", 
+    3: "Revival", 
+    4: "Soul Acquisition", 
+    5: "Target Killed", 
+    6: "Ghost Death", 
+    7: "Black Ghost Death", 
+    8: "Map Name", 
+    12: "Congratulations", 
+    15: "Stadium Victory", 
+    16: "Stadium Defeat", 
+    17: "Stadium Draw"
+}
+
+[更新権限値]{0: 通常, 4095: 強制}
+ENUM_UPDATE_AUTH = {
+    0: "Normal", 
+    4095: "Forced"
+}
+
+
+
+* This is not a real enum in the file, but it's convenient to record these values somewhere.
+* It's normally just encoded as integer value between 0 and 20.
+
+ENUM_COVENANT_TYPE = {
+    0: "None", 
+    1: "Way of White", 
+    2: "Princess's Guard", 
+    3: "Warrior of Sunlight", 
+    4: "Darkwraith", 
+    5: "Path of the Dragon",
+    6: "Gravelord Servant", 
+    7: "Forest Hunter", 
+    8: "Darkmoon Blade", 
+    9: "Chaos Servant"
+}
+
