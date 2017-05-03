@@ -5,7 +5,7 @@ For event script mod developers:
 * [documentation](documentation) contains files useful when making mods, most importantly an unpacked version of `common.emedf` and its enums. For those interested in writing their own tools to deal with `.emevd` files, the file format specification sheet is also included here.
 
 For event script mod developers & Dark Souls technical enthusiasts:
-* [Unpacked Emevd](Unpacked%20Emevd) contains numerical and verbose unpacked versions of all the vanilla `.emevd` files in the game. These include the "dummy" area files `m##.enevd` which rarely contains any scripts and never run. The verbose versions are included so that those who do not wish to unpack the files themselves but still examine them may do so.
+* [Unpacked Emevd](Unpacked%20Emevd) contains numerical and verbose unpacked versions of all the vanilla `.emevd` files in the game. These include the "dummy" area files `m##.emevd` which rarely contains any scripts and never run. The verbose versions are included so that those who do not wish to unpack the files themselves but still examine them may do so.
 * [Unpacked Emeld](Unpacked%20Emeld) contains unpacked versions of the vanilla `.emeld` event description files. These files are not loaded by the vanilla game, but are useful for determining the purpose of existing events.
 
 Usage Instructions:
