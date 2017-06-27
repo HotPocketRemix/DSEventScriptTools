@@ -104,7 +104,8 @@ class Instruction:
         self.parameter_replacements.append(param)
         
     def export_as_raw_numeric(self):
-        returnList = ["%4d[%02d] (%s)" % (self.instr_class, self.instr_index, self.arg_format_string) + str(self.argument_list)]
+        arg_list_string = "[" + ", ".join([str(i) for i in self.argument_list]) + "]"
+        returnList = ["%4d[%02d] (%s)" % (self.instr_class, self.instr_index, self.arg_format_string) + arg_list_string]
         for param in self.parameter_replacements:
             returnList.append("   ^" + param.export_as_raw_numeric())
         return returnList
