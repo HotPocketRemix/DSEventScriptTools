@@ -43,6 +43,8 @@ if __name__ == '__main__':
         help="Emit the opened file as a pretty-printed version, suitable for easy inspection.")
     parser.add_argument("-o", "--output", metavar="OUTFILE", action="store", dest="out_file", default="-",
         help="Write output to OUTFILE instead of stdout. Use \"-\" for stdout if required.")
+    parser.add_argument("-s", "--suppress", action="store_true", dest="suppress_line_numbers", default=False,
+        help="Suppress line numbers when emitting a pretty-printed version, to allow for easier diffing.")
     
     args = parser.parse_args()
     
@@ -62,7 +64,7 @@ if __name__ == '__main__':
                 if args.should_write_numeric:
                     out.write(emevd.export_as_raw_numeric())
                 else: # args.should_write_pretty
-                    out.write(emevd.export_as_human_readable())
+                    out.write(emevd.export_as_human_readable(suppress_line_numbers = args.suppress_line_numbers))
         else: # Write as binary .emevd
             with _smart_open(args.out_file, mode='wb') as out:
                 out.write(emevd.export_as_emevd())

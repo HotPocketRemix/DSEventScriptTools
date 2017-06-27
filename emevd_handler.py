@@ -104,13 +104,12 @@ class Instruction:
         self.parameter_replacements.append(param)
         
     def export_as_raw_numeric(self):
-        arg_list_string = "[" + ", ".join([str(i) for i in self.argument_list]) + "]"
-        returnList = ["%4d[%02d] (%s)" % (self.instr_class, self.instr_index, self.arg_format_string) + arg_list_string]
+        returnList = ["%4d[%02d] (%s)" % (self.instr_class, self.instr_index, self.arg_format_string) + str(self.argument_list)]
         for param in self.parameter_replacements:
             returnList.append("   ^" + param.export_as_raw_numeric())
         return returnList
         
-    def export_as_human_readable(self, line_number):    
+    def export_as_human_readable(self):    
         fixed_args = []
         var_args = []
         
@@ -121,7 +120,7 @@ class Instruction:
         else:
             fixed_args = self.argument_list[:split_point]
             var_args = self.argument_list[split_point:]
-        return "%3d" % line_number + ' ' + evd_command_to_readable.translate(self.instr_class, self.instr_index, fixed_args, var_args)
+        return evd_command_to_readable.translate(self.instr_class, self.instr_index, fixed_args, var_args)
         
     def apply_parameter_replacement(self):
         """Applies any parameter replacement instructions to this instruction,
@@ -215,11 +214,14 @@ class Event:
         return "Parameters: {" + ", ".join(['X' + str(i) + ':' + str(j) for (i,j) in sorted_parameter_list]) + "} (" + \
             "".join(["|".join(total_instr_parameter_types['X' + str(i) + ':' + str(j)]) for (i,j) in sorted_parameter_list]) + ")"
             
-    def export_as_human_readable(self):
+    def export_as_human_readable(self, suppress_line_numbers = False):
         returnString = "Event ID: " + str(self.event_id) + ", Int: " + str(self.unknown_int)
         returnString += "\n" + self.build_parameter_types()
         for i, instr in enumerate(self.instr_list):
-            returnString += "\n    " + instr.export_as_human_readable(i)
+            returnString += "\n    "
+            if not suppress_line_numbers:
+                returnString += "%3d" % i + ' '
+            returnString += instr.export_as_human_readable()
         return returnString
         
     def export_as_binary(self, instr_offset, arg_offset, param_offset):
@@ -313,8 +315,8 @@ class EmevdData:
     def export_as_raw_numeric(self):
         return "\n\n".join([event.export_as_raw_numeric() for event in self.event_list])
     
-    def export_as_human_readable(self):
-        return "\n\n".join([event.export_as_human_readable() for event in self.event_list])
+    def export_as_human_readable(self, suppress_line_numbers = False):
+        return "\n\n".join([event.export_as_human_readable(suppress_line_numbers) for event in self.event_list])
     
     def export_as_emevd(self):
         event_table_binary = ""
