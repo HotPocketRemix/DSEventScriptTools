@@ -1,41 +1,41 @@
 # Dark Souls Scripting Enums
 
-**ENUM_AI_STATUS_TYPE**
+## ENUM_AI_STATUS_TYPE
 
     0. Normal
     1. Recognition
     2. Alert
     3. Battle
 
-**ENUM_BITOP**
+## ENUM_BITOP
 
     0. Add
     1. Delete
     2. Invert
 
-**ENUM_BOOL**
+## ENUM_BOOL
 
     0. FALSE
     1. TRUE
 
-**ENUM_BUTTON_NUMBER**
+## ENUM_BUTTON_NUMBER
 
     1. 1 Button
     2. 2 Button
     6. No Button
 
-**ENUM_BUTTON_TYPE**
+## ENUM_BUTTON_TYPE
 
     0. YES/NO
     1. OK/CANCEL
 
-**ENUM_CATEGORY**
+## ENUM_CATEGORY
 
     0. Object
     1. Area
     2. Character
 
-**ENUM_CHARACTER_TYPE**
+## ENUM_CHARACTER_TYPE
 
     0. Survival
     1. White Ghost
@@ -43,7 +43,7 @@
     8. Gray Ghost
     12. Intruder
 
-**ENUM_CHARACTER_UPDATE_RATE**
+## ENUM_CHARACTER_UPDATE_RATE
 
     -1. Never
     0. Always
@@ -51,7 +51,7 @@
     5. Every 5 frames
 
 
-**ENUM_CLASS_TYPE**
+## ENUM_CLASS_TYPE
  * Note: The translations are not accurate. Instead, they are based on what classes the game actually has corresponding to each value.
 
     0. Warrior
@@ -73,7 +73,7 @@
     26. Chi: Sorcerer
     27. Chi: Pyromancer
 
-**ENUM_COMPARISON_TYPE**
+## ENUM_COMPARISON_TYPE
 
     0. ==
     1. !=
@@ -82,77 +82,77 @@
     4. >=
     5. <=
 
-**ENUM_CONDITION_STATE**
+## ENUM_CONDITION_STATE
 
     0. FALSE
     1. TRUE
 
-**ENUM_CONTAINED**
+## ENUM_CONTAINED
 
     0. Outside
     1. Inside
 
-**ENUM_CUTSCENE_TYPE**
+## ENUM_CUTSCENE_TYPE
 
     0. Skippable
     2. Unskippable
     8. Skippable with Fade-out
     10. Unskippable with Fade-out
 
-**ENUM_DAMAGE_TARGET_TYPE**
+## ENUM_DAMAGE_TARGET_TYPE
 
     1. Character
     2. Map
     3. Character & Map
 
-**ENUM_DEATH_STATUS**
+## ENUM_DEATH_STATUS
 
     0. Alive
     1. Dead
 
-**ENUM_ENABLE_STATE**
+## ENUM_ENABLE_STATE
 
     0. DISABLE
     1. ENABLE
 
-**ENUM_EVENT_END_TYPE**
+## ENUM_EVENT_END_TYPE
 
     0. END
     1. RESTART
 
-**ENUM_FLAG_TYPE**
+## ENUM_FLAG_TYPE
 
     0. Event Flag ID
     1. Event ID
     2. Event ID with Slot Number
 
-**ENUM_INTERPOLATION_STATE**
+## ENUM_INTERPOLATION_STATE
 
     0. Interpolated
     1. Not Interpolated
 
-**ENUM_ITEM_TYPE**
+## ENUM_ITEM_TYPE
 
     0. Weapon
     1. Armor
     2. Ring
     3. Item
 
-**ENUM_LOGICAL_OPERATION_TYPE**
+## ENUM_LOGICAL_OPERATION_TYPE
 
     0. all ON
     1. all OFF
     2. not all OFF
     3. not all ON
 
-**ENUM_MULTIPLAYER_STATE**
+## ENUM_MULTIPLAYER_STATE
 
     0. Host
     1. Client
     2. Multiplayer
     3. Singleplayer
 
-**ENUM_NAVIMESH_TYPE**
+## ENUM_NAVIMESH_TYPE
 
     1. Solid
     2. Exit
@@ -168,28 +168,28 @@
     4096. Door
     8192. Closed Door
 
-**ENUM_ON_OFF**
+## ENUM_ON_OFF
 
     0. OFF
     1. ON
 
-**ENUM_ON_OFF_CHANGE**
+## ENUM_ON_OFF_CHANGE
 
     0. OFF
     1. ON
     2. CHANGE
 
-**ENUM_OWN_STATE**
+## ENUM_OWN_STATE
 
     0. Does not own
     1. Owns
 
-**ENUM_REACTION_ATTRIBUTE**
+## ENUM_REACTION_ATTRIBUTE
 
     48. Survival & Gray
     255. All
 
-**ENUM_REGISTER**
+## ENUM_REGISTER
 
     -7. OR(07)
     -6. OR(06)
@@ -207,7 +207,7 @@
     6. AND(06)
     7. AND(07)
 
-**ENUM_SIGN_TYPE**
+## ENUM_SIGN_TYPE
 
     0. Blue Eye Sign
     1. Black Eye Sign
@@ -216,7 +216,7 @@
     4. White Help Sign
     5. Black Help Sign
 
-**ENUM_SITE_TYPE**
+## ENUM_SITE_TYPE
 
     1. Part 1
     2. Part 2
@@ -228,7 +228,7 @@
     8. Part 7
     9. Part 8
 
-**ENUM_SOUND_TYPE**
+## ENUM_SOUND_TYPE
 
     0. a: Evironmental Sound
     1. c: Character Motion
@@ -242,12 +242,12 @@
     9. b: Armor Material Dependence
     10. g: Ghost
 
-**ENUM_STATUE_TYPE**
+## ENUM_STATUE_TYPE
 
     0. Petrified
     1. Crystallized
 
-**ENUM_TEAM_TYPE**
+## ENUM_TEAM_TYPE
 
     255. Default
     0. Invalid
@@ -265,12 +265,12 @@
     12. Fighting Ally
     13. Intruder
 
-**ENUM_TENDENCY_TYPE**
+## ENUM_TENDENCY_TYPE
 
     0. White Tendency
     1. Black Tendency
 
-**ENUM_TEXT_BANNER_TYPE**
+## ENUM_TEXT_BANNER_TYPE
 
     1. Demon Killed
     2. Death
@@ -285,12 +285,12 @@
     16. Stadium Defeat
     17. Stadium Draw
 
-**ENUM_UPDATE_AUTH**
+## ENUM_UPDATE_AUTH
 
     0. Normal
     4095. Forced
 
-**ENUM_COVENANT_TYPE**
+## ENUM_COVENANT_TYPE
 * This is not a real enum in the file, but it's convenient to record these values somewhere.
 * It's normally just encoded as integer value between 0 and 20.
 
