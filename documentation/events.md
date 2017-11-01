@@ -32,16 +32,16 @@ EMEDF -- Guesses / Partial Documentation
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-| Desired register state | B (%d) | [ENUM_CONDITION_STATE](enums.md#ENUM_CONDITION_STATE) | 1 | |
-| Target Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+| Desired register state | B (%d) | [ENUM_CONDITION_STATE](enums.md#enum_condition_state) | 1 | |
+| Target Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | |
 
 ### 1 - パラメータ比較状態で判定
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-| Comparison type | b (%d) | [ENUM_COMPARISON_TYPE](enums.md#ENUM_COMPARISON_TYPE) | 0 | |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+| Comparison type | b (%d) | [ENUM_COMPARISON_TYPE](enums.md#enum_comparison_type) | 0 | |
 | Left operand | i (%d) | -1:1:1000000000 | 0 | |
 | Right operand | i (%d) | -1:1:1000000000 | 0 | |
 
@@ -53,7 +53,7 @@ EMEDF -- Guesses / Partial Documentation
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
 | Seconds Quantity | f (%0.3f) | 0.0:0.00999999977648:9999.0 | 0.0 | |
 
 ### 1 - Condition (Frames passed)
@@ -62,21 +62,21 @@ EMEDF -- Guesses / Partial Documentation
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
 | Frames Quantity | i (%d) | 0:1:99999 | 0 | |
 
 ### 2 - 経過ランダム秒Quantityで判定
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
 | Seconds Quantity Min | f (%0.3f) | 0.0:0.00999999977648:9999.0 | 0.0 | |
 | Seconds Quantit yMax | f (%0.3f) | 0.0:0.00999999977648:9999.0 | 0.0 | |
 
 ### 3 - 経過ランダムフレームQuantityで判定
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
 | Frames Quantity Min | i (%d) | 0:1:99999 | 0 | |
 | Frames Quantity Max | i (%d) | 0:1:99999 | 0 | |
 
@@ -86,18 +86,18 @@ EMEDF -- Guesses / Partial Documentation
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-| Desired Flag State | B (%d) | [ENUM_ON_OFF_CHANGE](enums.md#ENUM_ON_OFF_CHANGE) | 1 | |
-| Event flag type | B (%d) | [ENUM_FLAG_TYPE](enums.md#ENUM_FLAG_TYPE) | 0 | |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+| Desired Flag State | B (%d) | [ENUM_ON_OFF_CHANGE](enums.md#enum_on_off_change) | 1 | |
+| Event flag type | B (%d) | [ENUM_FLAG_TYPE](enums.md#enum_flag_type) | 0 | |
 | Event flag ID | i (%08d) | 0:1:100000000 | 0 | |
 
 ### 1 - Condition (Batch Event Flag Status)
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-| Desired Flag State | B (%d) | [ENUM_LOGICAL_OPERATION_TYPE](enums.md#ENUM_LOGICAL_OPERATION_TYPE) | 0 | |
-| Event flag type | B (%d) | [ENUM_FLAG_TYPE](enums.md#ENUM_FLAG_TYPE) | 0 | |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+| Desired Flag State | B (%d) | [ENUM_LOGICAL_OPERATION_TYPE](enums.md#enum_logical_operation_type) | 0 | |
+| Event flag type | B (%d) | [ENUM_FLAG_TYPE](enums.md#enum_flag_type) | 0 | |
 | Start Event Flag ID | i (%08d) | 0:1:100000000 | 0 | |
 | End Event Flag ID | i (%08d) | 0:1:100000000 | 0 | |
 
@@ -107,8 +107,8 @@ Checks if the target entity is inside/outside the given trigger volume.
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-| Inside or outside? | B (%d) | [ENUM_CONTAINED](enums.md#ENUM_CONTAINED) | 1 | Are we checking whether the object is inside or outside the volume? |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+| Inside or outside? | B (%d) | [ENUM_CONTAINED](enums.md#enum_contained) | 1 | Are we checking whether the object is inside or outside the volume? |
 | Target Entity ID | i (%08d) | 0:1:100000000 | 0 | |
 | Area ID | i (%08d) | 0:1:100000000 | 0 | |
 
@@ -120,8 +120,8 @@ Checks if Entity A is within / without a certain distance of Entity B.
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-| Inside or outside? | B (%d) | [ENUM_CONTAINED](enums.md#ENUM_CONTAINED) | 1 | Are we checking whether the object is inside or outside the radius? |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+| Inside or outside? | B (%d) | [ENUM_CONTAINED](enums.md#enum_contained) | 1 | Are we checking whether the object is inside or outside the radius? |
 | Entity A ID | i (%08d) | 0:1:100000000 | 0 | |
 | Entity B ID | i (%08d) | 0:1:100000000 | 0 | |
 | Radius | f (%0.3f) | 0.0:1.0:100000000.0 | 0.0 | |
@@ -130,46 +130,46 @@ Checks if Entity A is within / without a certain distance of Entity B.
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-| Item type | B (%08d) | [ENUM_ITEM_TYPE](enums.md#ENUM_ITEM_TYPE) | 0 | |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+| Item type | B (%08d) | [ENUM_ITEM_TYPE](enums.md#enum_item_type) | 0 | |
 | Item ID | i (%08d) | 0:1:100000000 | 0 | |
-| Owned state | B (%d) | [ENUM_OWN_STATE](enums.md#ENUM_OWN_STATE) | 1 | Are we checking whether the PC has the item or not? |
+| Owned state | B (%d) | [ENUM_OWN_STATE](enums.md#enum_own_state) | 1 | Are we checking whether the PC has the item or not? |
 
 ### 5 - Condition (Action Button State)
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-| Category | i (%d) | [ENUM_CATEGORY](enums.md#ENUM_CATEGORY) | 0 | |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+| Category | i (%d) | [ENUM_CATEGORY](enums.md#enum_category) | 0 | |
 | Target Entity ID | i (%08d) | 0:1:100000000 | 0 | |
 | Reaction Angle | f (%0.3ｆ) | 0.0:1.0:100000000.0 | 0.0 | |
 | Damipoly ID | h (%d) | -1:1:255 | 0 | |
 | Reaction Radius | f (%0.3f) | 0.0:1.0:100000000.0 | 0.0 | |
 | Help ID | i (%d) | 0:1:100000000 | 0 | |
-| Reaction Attribute | B (%d) | [ENUM_REACTION_ATTRIBUTE](enums.md#ENUM_REACTION_ATTRIBUTE) | 255 | |
+| Reaction Attribute | B (%d) | [ENUM_REACTION_ATTRIBUTE](enums.md#enum_reaction_attribute) | 255 | |
 | Pad ID | i (%d) | 0:1:100000000 | 0 | |
 
 ### 6 - Condition (Multiplayer State): Used to check if the PC is Host/Client or Multiplayer/Singleplayer.
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-| Desired multiplayer status | b (%d) | [ENUM_MULTIPLAYER_STATE](enums.md#ENUM_MULTIPLAYER_STATE) | 0 | |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+| Desired multiplayer status | b (%d) | [ENUM_MULTIPLAYER_STATE](enums.md#enum_multiplayer_state) | 0 | |
 
 ### 7 - Condition (Trigger Volume for all players)
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-Inside or outside? | B (%d) | [ENUM_CONTAINED](enums.md#ENUM_CONTAINED) | 1 | Are we checking whether the object is inside or outside the volume? |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+Inside or outside? | B (%d) | [ENUM_CONTAINED](enums.md#enum_contained) | 1 | Are we checking whether the object is inside or outside the volume? |
 | Area ID | i (%08d) | 0:1:100000000 | 0 | |
 
 ### 8 - Condition (Game Area): Used to check if the PC is in / not in the given Area/Block (i.e. Map)
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-| Inside / Outside | B (%d) | [ENUM_BOOL](enums.md#ENUM_BOOL) | 1 | Are we checking whether the object is inside or outside the area/block? |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+| Inside / Outside | B (%d) | [ENUM_BOOL](enums.md#enum_bool) | 1 | Are we checking whether the object is inside or outside the area/block? |
 | Area ID | B (%d) | 0:1:99 | 10 | |
 | Block ID | B (%d) | 0:1:99 | 0 | |
 
@@ -177,97 +177,97 @@ Inside or outside? | B (%d) | [ENUM_CONTAINED](enums.md#ENUM_CONTAINED) | 1 | Ar
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
 | Multiplayer Event ID | I (%08d) | 0:1:100000000 | 0 | |
 
 ### 10 - Condition (Count True Event Flags)
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-| Event flag type | B (%d) | [ENUM_FLAG_TYPE](enums.md#ENUM_FLAG_TYPE) | 0 | |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+| Event flag type | B (%d) | [ENUM_FLAG_TYPE](enums.md#enum_flag_type) | 0 | |
 | Start Event Flag ID | i (%08d) | 0:1:100000000 | 0 | |
 | End Event Flag ID | i (%08d) | 0:1:100000000 | 0 | |
-| Comparison type | b (%d) | [ENUM_COMPARISON_TYPE](enums.md#ENUM_COMPARISON_TYPE) | 4 | |
+| Comparison type | b (%d) | [ENUM_COMPARISON_TYPE](enums.md#enum_comparison_type) | 4 | |
 | Count Threshold | i (%d) | 0:1:1000000000 | 0 | |
 
 ### 11 - Condition (World Tendency): Used to check if the PC is gravelorded
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-| Tendency type | B (%d) | [ENUM_TENDENCY_TYPE](enums.md#ENUM_TENDENCY_TYPE) | 0 | |
-| Comparison type | B (%d) | [ENUM_COMPARISON_TYPE](enums.md#ENUM_COMPARISON_TYPE) | 0 | |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+| Tendency type | B (%d) | [ENUM_TENDENCY_TYPE](enums.md#enum_tendency_type) | 0 | |
+| Comparison type | B (%d) | [ENUM_COMPARISON_TYPE](enums.md#enum_comparison_type) | 0 | |
 | Tendency threshold | B (%d) | 0:1:100 | 0 | |
 
 ### 12 - Condition (Event Value)
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
 | Start of Event Flag ID | i (%08d) | 0:1:1000000000 | 0 | |
 | Number of Bits | B (%d) | 1:1:32 | 1 | |
-| Comparison type | B (%d) | [ENUM_COMPARISON_TYPE](enums.md#ENUM_COMPARISON_TYPE) | 0 | |
+| Comparison type | B (%d) | [ENUM_COMPARISON_TYPE](enums.md#enum_comparison_type) | 0 | |
 | Threshold | I (%08d) | 0:1:100000000 | 0 | |
 
 ### 13 - Condition (Action Button State (Boss Room))
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-| Category | i (%d) | [ENUM_CATEGORY](enums.md#ENUM_CATEGORY) | 0 | |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+| Category | i (%d) | [ENUM_CATEGORY](enums.md#enum_category) | 0 | |
 | Target typeEntity ID | i (%08d) | 0:1:100000000 | 0 | |
 | Reaction Angle | f (%0.3ｆ) | 0.0:1.0:100000000.0 | 0.0 | |
 | Damipoly ID | h (%d) | -1:1:255 | 0 | |
 | Reaction Radius | f (%0.3f) | 0.0:1.0:100000000.0 | 0.0 | |
 | Help ID | i (%d) | 0:1:100000000 | 0 | |
-| Reaction Attribute | B (%d) | [ENUM_REACTION_ATTRIBUTE](enums.md#ENUM_REACTION_ATTRIBUTE) | 255 | |
+| Reaction Attribute | B (%d) | [ENUM_REACTION_ATTRIBUTE](enums.md#enum_reaction_attribute) | 255 | |
 | Pad ID | i (%d) | 0:1:100000000 | 0 | |
 
 ### 14 - Condition (Item Dropped In Area)
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
 | Area ID | i (%08d) | 0:1:100000000 | 0 | |
 
 ### 15 - Condition (Dropped Item)
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-| Item type | i (%08d) | [ENUM_ITEM_TYPE](enums.md#ENUM_ITEM_TYPE) | 0 | |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+| Item type | i (%08d) | [ENUM_ITEM_TYPE](enums.md#enum_item_type) | 0 | |
 | Item ID | i (%08d) | 0:1:100000000 | 0 | |
 
 ### 16 - Condition (PC Has(n't) Item -- Including Bottomless Box)
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-| Item type | B (%08d) | [ENUM_ITEM_TYPE](enums.md#ENUM_ITEM_TYPE) | 0 | |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+| Item type | B (%08d) | [ENUM_ITEM_TYPE](enums.md#enum_item_type) | 0 | |
 | Item ID | i (%08d) | 0:1:100000000 | 0 | |
-| Owned state | B (%d) | [ENUM_OWN_STATE](enums.md#ENUM_OWN_STATE) | 1 | |
+| Owned state | B (%d) | [ENUM_OWN_STATE](enums.md#enum_own_state) | 1 | |
 
 ### 17 - Condition (NG+ Cycle)
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-| Comparison type | B (%d) | [ENUM_COMPARISON_TYPE](enums.md#ENUM_COMPARISON_TYPE) | 0 | |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+| Comparison type | B (%d) | [ENUM_COMPARISON_TYPE](enums.md#enum_comparison_type) | 0 | |
 | Number of completed playthroughs | B (%03d) | 0:1:255 | 0 | |
 
 ### 18 - Condition (Line Segment Direction & Action Button)
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-| Category | i (%d) | [ENUM_CATEGORY](enums.md#ENUM_CATEGORY) | 0 | |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+| Category | i (%d) | [ENUM_CATEGORY](enums.md#enum_category) | 0 | |
 | Target typeEntity ID | i (%08d) | 0:1:100000000 | 0 | |
 | Reaction Angle | f (%0.3ｆ) | 0.0:1.0:100000000.0 | 0.0 | |
 | Damipoly ID | h (%d) | -1:1:255 | 0 | |
 | Reaction Radius | f (%0.3f) | 0.0:1.0:100000000.0 | 0.0 | |
 | Help ID | i (%d) | 0:1:100000000 | 0 | |
-| Reaction Attribute | B (%d) | [ENUM_REACTION_ATTRIBUTE](enums.md#ENUM_REACTION_ATTRIBUTE) | 255 | |
+| Reaction Attribute | B (%d) | [ENUM_REACTION_ATTRIBUTE](enums.md#enum_reaction_attribute) | 255 | |
 | Pad ID | i (%d) | 0:1:100000000 | 0 | |
 | Line Segment Endpoint Entity ID | i (%08d) | 0:1:100000000 | 0 | |
 
@@ -275,14 +275,14 @@ Inside or outside? | B (%d) | [ENUM_CONTAINED](enums.md#ENUM_CONTAINED) | 1 | Ar
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-| Category | i (%d) | [ENUM_CATEGORY](enums.md#ENUM_CATEGORY) | 0 | |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+| Category | i (%d) | [ENUM_CATEGORY](enums.md#enum_category) | 0 | |
 | Target typeEntity ID | i (%08d) | 0:1:100000000 | 0 | |
 | Reaction Angle | f (%0.3ｆ) | 0.0:1.0:100000000.0 | 0.0 | |
 | Damipoly ID | h (%d) | -1:1:255 | 0 | |
 | Reaction Radius | f (%0.3f) | 0.0:1.0:100000000.0 | 0.0 | |
 | Help ID | i (%d) | 0:1:100000000 | 0 | |
-| Reaction Attribute | B (%d) | [ENUM_REACTION_ATTRIBUTE](enums.md#ENUM_REACTION_ATTRIBUTE) | 255 | |
+| Reaction Attribute | B (%d) | [ENUM_REACTION_ATTRIBUTE](enums.md#enum_reaction_attribute) | 255 | |
 | Pad ID | i (%d) | 0:1:100000000 | 0 | |
 | Line Segment Endpoint Entity ID | i (%08d) | 0:1:100000000 | 0 | |
 
@@ -290,10 +290,10 @@ Inside or outside? | B (%d) | [ENUM_CONTAINED](enums.md#ENUM_CONTAINED) | 1 | Ar
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
 | Left-side Event Flag | i (%08d) | 0:1:1000000000 | 0 | |
 | Left-side Number of Bits | B (%d) | 1:1:32 | 1 | |
-| Comparison type | B (%d) | [ENUM_COMPARISON_TYPE](enums.md#ENUM_COMPARISON_TYPE) | 0 | |
+| Comparison type | B (%d) | [ENUM_COMPARISON_TYPE](enums.md#enum_comparison_type) | 0 | |
 | Right-side Event Flag | i (%08d) | 0:1:1000000000 | 0 | |
 | Right-side Number of Bits | B (%d) | 1:1:32 | 1 | |
 
@@ -301,15 +301,15 @@ Inside or outside? | B (%d) | [ENUM_CONTAINED](enums.md#ENUM_CONTAINED) | 1 | Ar
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-| Owns DLC? | B (%d) | [ENUM_BOOL](enums.md#ENUM_BOOL) | 1 | Are we checking if the PC does or doesn't own the DLC? |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+| Owns DLC? | B (%d) | [ENUM_BOOL](enums.md#enum_bool) | 1 | Are we checking if the PC does or doesn't own the DLC? |
 
 ### 22 - Condition (Online Mode)
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-| Online state | B (%d) | [ENUM_BOOL](enums.md#ENUM_BOOL) | 1 | Are we checking if the PC does or doesn't own the DLC? |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+| Online state | B (%d) | [ENUM_BOOL](enums.md#enum_bool) | 1 | Are we checking if the PC does or doesn't own the DLC? |
 
 ## 4 - Character comparisons
 
@@ -317,9 +317,9 @@ Inside or outside? | B (%d) | [ENUM_CONTAINED](enums.md#ENUM_CONTAINED) | 1 | Ar
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
 | Character Entity ID | i (%08d) | 0:1:1000000000 | 0 | |
-| Desired death status | B (%d) | [ENUM_DEATH_STATUS](enums.md#ENUM_DEATH_STATUS) | 1 | |
+| Desired death status | B (%d) | [ENUM_DEATH_STATUS](enums.md#enum_death_status) | 1 | |
 
 ### 1 - Condition (Entity Hostile)
 
@@ -327,7 +327,7 @@ Checks whether an entity is an enemy to a given entity.
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
 | Character Entity ID | i (%08d) | 0:1:1000000000 | 0 | |
 | Enemy Entity ID | i (%08d) | 0:1:1000000000 | 0 | |
 
@@ -335,18 +335,18 @@ Checks whether an entity is an enemy to a given entity.
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
 | Character Entity ID | i (%08d) | 0:1:1000000000 | 0 | |
-| Comparison type | b (%d) | [ENUM_COMPARISON_TYPE](enums.md#ENUM_COMPARISON_TYPE) | 0 | |
+| Comparison type | b (%d) | [ENUM_COMPARISON_TYPE](enums.md#enum_comparison_type) | 0 | |
 | Comparand Ratio | f (%0.3f) | 0.0:1.0:100000000.0 | 0.0 | *Possibly meant to be the enemy entity ID?* |
 
 ### 3 - Condition (Character Type)
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
 | Character Entity ID | i (%08d) | 0:1:1000000000 | 0 | |
-| Character Type | b (%d) | [ENUM_CHARACTER_TYPE](enums.md#ENUM_CHARACTER_TYPE) | 0 | |
+| Character Type | b (%d) | [ENUM_CHARACTER_TYPE](enums.md#enum_character_type) | 0 | |
 
 ### 4 - Condition (Entity Target):
 
@@ -354,29 +354,29 @@ Checks whether an entity is an enemy to a given entity.
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
 | Character Entity ID | i (%08d) | 0:1:1000000000 | 0 | |
 | Targeted Entity ID | i (%08d) | 0:1:1000000000 | 0 | |
-| Desired target presence | B (%d) | [ENUM_BOOL](enums.md#ENUM_BOOL) | 1 | |
+| Desired target presence | B (%d) | [ENUM_BOOL](enums.md#enum_bool) | 1 | |
 
 ### 5 - Condition (Special Effect)
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
 | Character Entity ID | i (%08d) | 0:1:1000000000 | 0 | |
 | Special Effect ID | i (%d) | -1:1:1000000000 | -1 | |
-| Desired effect presence | B (%d) | [ENUM_BOOL](enums.md#ENUM_BOOL) | 1 | |
+| Desired effect presence | B (%d) | [ENUM_BOOL](enums.md#enum_bool) | 1 | |
 
 ### 6 - Condition (NPC Part HP)
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
 | Character Entity ID | i (%08d) | 0:1:1000000000 | 0 | |
 | Part NPC type | i (%d) | 0:1:1000000000 | 0 | |
 | HP Threshold | i (%d) | 0:1:1000000000 | 0 | |
-| Comparison type | b (%d) | [ENUM_COMPARISON_TYPE](enums.md#ENUM_COMPARISON_TYPE) | 4 | |
+| Comparison type | b (%d) | [ENUM_COMPARISON_TYPE](enums.md#enum_comparison_type) | 4 | |
 
 ### 7 - Condition (Character "Back lead" Status)
 
@@ -384,63 +384,63 @@ Possibly conditional on character being background loaded
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
 | Character Entity ID | i (%08d) | 0:1:1000000000 | 0 | |
-| *Back lead OK?* | B (%d) | [ENUM_BOOL](enums.md#ENUM_BOOL) | 1 | |
+| *Back lead OK?* | B (%d) | [ENUM_BOOL](enums.md#enum_bool) | 1 | |
 
 ### 8 - Condition (Event Message ID Match)
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
 | Character Entity ID | i (%08d) | 0:1:1000000000 | 0 | |
 | Event Message ID | i (%08d) | -1:1:1000000000 | -1 | |
-| Desired match? | B (%d) | [ENUM_BOOL](enums.md#ENUM_BOOL) | 1 | |
+| Desired match? | B (%d) | [ENUM_BOOL](enums.md#enum_bool) | 1 | |
 
 ### 9 - Condition (AI State)
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
 | Character Entity ID | i (%08d) | 0:1:1000000000 | 0 | |
-| AI State | B (%d) | [ENUM_AI_STATUS_TYPE](enums.md#ENUM_AI_STATUS_TYPE) | 0 | |
+| AI State | B (%d) | [ENUM_AI_STATUS_TYPE](enums.md#enum_ai_status_type) | 0 | |
 
 ### 10 - Condition (Player Using Skull Lantern)
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-| Desired lamp state? | B (%d) | [ENUM_BOOL](enums.md#ENUM_BOOL) | 1 | |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+| Desired lamp state? | B (%d) | [ENUM_BOOL](enums.md#enum_bool) | 1 | |
 
 ### 11 - Condition (Player's Class)
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-| Player Class Type | B (%d) | [ENUM_CLASS_TYPE](enums.md#ENUM_CLASS_TYPE) | 0 | |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+| Player Class Type | B (%d) | [ENUM_CLASS_TYPE](enums.md#enum_class_type) | 0 | |
 
 ### 12 - Condition (Player's Covenent)
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-| Player Covenant Type | B (%d) | [ENUM_COVENANT_TYPE](enums.md#ENUM_COVENANT_TYPE) | 0 | |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+| Player Covenant Type | B (%d) | [ENUM_COVENANT_TYPE](enums.md#enum_covenant_type) | 0 | |
 
 ### 13 - Condition (Player's Soul Level)
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-| Comparison type | B (%d) | [ENUM_COMPARISON_TYPE](enums.md#ENUM_COMPARISON_TYPE) | 0 | |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+| Comparison type | B (%d) | [ENUM_COMPARISON_TYPE](enums.md#enum_comparison_type) | 0 | |
 | Soul value | I (%08d) | 0:1:100000000 | 0 | |
 
 ### 14 - Condition (Entity HP Value)
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
 | Target Entity ID | i (%08d) | 0:1:1000000000 | 0 | |
-| Comparison type | B (%d) | [ENUM_COMPARISON_TYPE](enums.md#ENUM_COMPARISON_TYPE) | 0 | |
+| Comparison type | B (%d) | [ENUM_COMPARISON_TYPE](enums.md#enum_comparison_type) | 0 | |
 | Health value | i (%08d) | 0:1:100000000 | 0 | |
 
 ## 5 - Object comparisons
@@ -449,15 +449,15 @@ Possibly conditional on character being background loaded
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
-| Desired object damage state | B (%d) | [ENUM_DAMAGE_STATE](enums.md#ENUM_DAMAGE_STATE) | 1 | |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
+| Desired object damage state | B (%d) | [ENUM_DAMAGE_STATE](enums.md#enum_damage_state) | 1 | |
 | Object Entity ID | i (%08d) | 0:1:100000000 | 0 | |
 
 ### 1 - Condition (Damaged Object)
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
 | Object Entity ID | i (%08d) | 0:1:100000000 | 0 | |
 | Attacker Entity ID | i (%08d) | -1:1:100000000 | 0 | |
 
@@ -465,15 +465,15 @@ Possibly conditional on character being background loaded
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
 | 実行Event ID | i (%08d) | 0:1:100000000 | 0 | |
 
 ### 3 - Condition (Object HP)
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
 | Object Entity ID | i (%08d) | 0:1:100000000 | 0 | |
-| Comparison type | b (%d) | [ENUM_COMPARISON_TYPE](enums.md#ENUM_COMPARISON_TYPE) | 4 | |
+| Comparison type | b (%d) | [ENUM_COMPARISON_TYPE](enums.md#enum_comparison_type) | 4 | |
 | HP Threshold | i (%d) | 0:1:1000000000 | 0 | |
 
 ## 11 - Condition registration hitbox
@@ -484,7 +484,7 @@ Checks if there is a local player moving on the specified hitbox
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
 | Hitbox Entity ID | i (%08d) | 0:1:100000000 | 0 | |
 
 ### 1 - Condition (Running on Hitbox):
@@ -493,7 +493,7 @@ Checks if there is a local player running on the specified hitbox
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
 | Hitbox Entity ID | i (%08d) | 0:1:100000000 | 0 | |
 
 ### 2 - Condition (Standing on Hitbox):
@@ -502,7 +502,7 @@ Checks if there is a local player standing on the specified hitbox
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Result Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | Where the result is stored |
+| Result Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | Where the result is stored |
 | Hitbox Entity ID | i (%08d) | 0:1:100000000 | 0 | |
 
 ## 1000 - Program control flow - Registers
@@ -512,24 +512,24 @@ A collection of program flow controls that select behaviour based on the state i
 ### 0 - 条件グループ条件状態で待機
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Desired register state | B (%d) | [ENUM_CONDITION_STATE](enums.md#ENUM_CONDITION_STATE) | 1 | |
-| Condition Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | |
+| Desired register state | B (%d) | [ENUM_CONDITION_STATE](enums.md#enum_condition_state) | 1 | |
+| Condition Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | |
 
 ### 1 - Skip instructions, conditional on register state
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Lines to skip | B (%d) | 0:1:99 | 1 | |
-| Desired register state | B (%d) | [ENUM_CONDITION_STATE](enums.md#ENUM_CONDITION_STATE) | 1 | |
-| Condition Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | |
+| Desired register state | B (%d) | [ENUM_CONDITION_STATE](enums.md#enum_condition_state) | 1 | |
+| Condition Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | |
 
 ### 2 - Terminate event, conditional on register state
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Event end type | B (%d) | [ENUM_EVENT_END_TYPE](enums.md#ENUM_EVENT_END_TYPE) | 0 | |
-| Desired register state | B (%d) | [ENUM_CONDITION_STATE](enums.md#ENUM_CONDITION_STATE) | 1 | |
-| Condition Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | |
+| Event end type | B (%d) | [ENUM_EVENT_END_TYPE](enums.md#enum_event_end_type) | 0 | |
+| Desired register state | B (%d) | [ENUM_CONDITION_STATE](enums.md#enum_condition_state) | 1 | |
+| Condition Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | |
 
 ### 3 - Unconditional instruction skip
 
@@ -541,14 +541,14 @@ A collection of program flow controls that select behaviour based on the state i
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Event end type | B (%d) | [ENUM_EVENT_END_TYPE](enums.md#ENUM_EVENT_END_TYPE) | 0 | |
+| Event end type | B (%d) | [ENUM_EVENT_END_TYPE](enums.md#enum_event_end_type) | 0 | |
 
 ### 5 - Conditionally skip instructions depending on value comparison
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Lines to skip | B (%d) | 0:1:99 | 1 | |
-| Comparison type | b (%d) | [ENUM_COMPARISON_TYPE](enums.md#ENUM_COMPARISON_TYPE) | 0 | |
+| Comparison type | b (%d) | [ENUM_COMPARISON_TYPE](enums.md#enum_comparison_type) | 0 | |
 | Left operand | i (%d) | -1:1:1000000000 | 0 | |
 | Right operand | i (%d) | -1:1:1000000000 | 0 | |
 
@@ -556,8 +556,8 @@ A collection of program flow controls that select behaviour based on the state i
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Event end type | B (%d) | [ENUM_EVENT_END_TYPE](enums.md#ENUM_EVENT_END_TYPE) | 0 | |
-| Comparison type | b (%d) | [ENUM_COMPARISON_TYPE](enums.md#ENUM_COMPARISON_TYPE) | 0 | |
+| Event end type | B (%d) | [ENUM_EVENT_END_TYPE](enums.md#enum_event_end_type) | 0 | |
+| Comparison type | b (%d) | [ENUM_COMPARISON_TYPE](enums.md#enum_comparison_type) | 0 | |
 | Left operand | i (%d) | -1:1:1000000000 | 0 | |
 | Right operand | i (%d) | -1:1:1000000000 | 0 | |
 
@@ -568,8 +568,8 @@ A collection of program flow controls that select behaviour based on the state i
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Lines to skip | B (%d) | 0:1:99 | 1 | |
-| Desired register state | B (%d) | [ENUM_CONDITION_STATE](enums.md#ENUM_CONDITION_STATE) | 1 | |
-| Condition Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | |
+| Desired register state | B (%d) | [ENUM_CONDITION_STATE](enums.md#enum_condition_state) | 1 | |
+| Condition Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | |
 
 ### 8 - Terminate event, conditional on register state
 
@@ -577,9 +577,9 @@ A collection of program flow controls that select behaviour based on the state i
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Event end type | B (%d) | [ENUM_EVENT_END_TYPE](enums.md#ENUM_EVENT_END_TYPE) | 0 | |
-| Desired register state | B (%d) | [ENUM_CONDITION_STATE](enums.md#ENUM_CONDITION_STATE) | 1 | |
-| Condition Register | b (%d) | [ENUM_REGISTER](enums.md#ENUM_REGISTER) | 0 | |
+| Event end type | B (%d) | [ENUM_EVENT_END_TYPE](enums.md#enum_event_end_type) | 0 | |
+| Desired register state | B (%d) | [ENUM_CONDITION_STATE](enums.md#enum_condition_state) | 1 | |
+| Condition Register | b (%d) | [ENUM_REGISTER](enums.md#enum_register) | 0 | |
 
 ### 9 - Wait for network to approve event
 
@@ -622,8 +622,8 @@ A collection of program flow controls that select behaviour based on the state i
 ### 0 - イベントフラグ状態で待機
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Desired Flag State | B (%d) | [ENUM_ON_OFF_CHANGE](enums.md#ENUM_ON_OFF_CHANGE) | 1 | |
-| Event flag type | B (%d) | [ENUM_FLAG_TYPE](enums.md#ENUM_FLAG_TYPE) | 0 | |
+| Desired Flag State | B (%d) | [ENUM_ON_OFF_CHANGE](enums.md#enum_on_off_change) | 1 | |
+| Event flag type | B (%d) | [ENUM_FLAG_TYPE](enums.md#enum_flag_type) | 0 | |
 | Event flag ID | i (%08d) | 0:1:100000000 | 0 | |
 
 ### 1 - Conditionally skip instructions depending on event flag state
@@ -631,17 +631,17 @@ A collection of program flow controls that select behaviour based on the state i
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Lines to skip | B (%d) | 0:1:99 | 1 | |
-| Desired Flag State | B (%d) | [ENUM_ON_OFF](enums.md#ENUM_ON_OFF) | 1 | |
-| Event flag type | B (%d) | [ENUM_FLAG_TYPE](enums.md#ENUM_FLAG_TYPE) | 0 | |
+| Desired Flag State | B (%d) | [ENUM_ON_OFF](enums.md#enum_on_off) | 1 | |
+| Event flag type | B (%d) | [ENUM_FLAG_TYPE](enums.md#enum_flag_type) | 0 | |
 | Event flag ID | i (%08d) | 0:1:100000000 | 0 | |
 
 ### 2 - Terminate event, conditional on event flag state
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Event end type | B (%d) | [ENUM_EVENT_END_TYPE](enums.md#ENUM_EVENT_END_TYPE) | 0 | |
-| Desired Flag State | B (%d) | [ENUM_ON_OFF](enums.md#ENUM_ON_OFF) | 1 | |
-| Event flag type | B (%d) | [ENUM_FLAG_TYPE](enums.md#ENUM_FLAG_TYPE) | 0 | |
+| Event end type | B (%d) | [ENUM_EVENT_END_TYPE](enums.md#enum_event_end_type) | 0 | |
+| Desired Flag State | B (%d) | [ENUM_ON_OFF](enums.md#enum_on_off) | 1 | |
+| Event flag type | B (%d) | [ENUM_FLAG_TYPE](enums.md#enum_flag_type) | 0 | |
 | Event flag ID | i (%08d) | 0:1:100000000 | 0 | |
 
 ### 3 - Skip instructions, conditional on batch event flag state
@@ -649,8 +649,8 @@ A collection of program flow controls that select behaviour based on the state i
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Lines to skip | B (%d) | 0:1:99 | 1 | |
-| Desired Flag State | B (%d) | [ENUM_LOGICAL_OPERATION_TYPE](enums.md#ENUM_LOGICAL_OPERATION_TYPE) | 0 | |
-| Event flag type | B (%d) | [ENUM_FLAG_TYPE](enums.md#ENUM_FLAG_TYPE) | 0 | |
+| Desired Flag State | B (%d) | [ENUM_LOGICAL_OPERATION_TYPE](enums.md#enum_logical_operation_type) | 0 | |
+| Event flag type | B (%d) | [ENUM_FLAG_TYPE](enums.md#enum_flag_type) | 0 | |
 | Start Event Flag ID | i (%08d) | 0:1:100000000 | 0 | |
 | End Event Flag ID | i (%08d) | 0:1:100000000 | 0 | |
 
@@ -658,9 +658,9 @@ A collection of program flow controls that select behaviour based on the state i
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Event end type | B (%d) | [ENUM_EVENT_END_TYPE](enums.md#ENUM_EVENT_END_TYPE) | 0 | |
-| Desired Flag State | B (%d) | [ENUM_LOGICAL_OPERATION_TYPE](enums.md#ENUM_LOGICAL_OPERATION_TYPE) | 0 | |
-| Event flag type | B (%d) | [ENUM_FLAG_TYPE](enums.md#ENUM_FLAG_TYPE) | 0 | |
+| Event end type | B (%d) | [ENUM_EVENT_END_TYPE](enums.md#enum_event_end_type) | 0 | |
+| Desired Flag State | B (%d) | [ENUM_LOGICAL_OPERATION_TYPE](enums.md#enum_logical_operation_type) | 0 | |
+| Event flag type | B (%d) | [ENUM_FLAG_TYPE](enums.md#enum_flag_type) | 0 | |
 | Start Event Flag ID | i (%08d) | 0:1:100000000 | 0 | |
 | End Event Flag ID | i (%08d) | 0:1:100000000 | 0 | |
 
@@ -669,21 +669,21 @@ A collection of program flow controls that select behaviour based on the state i
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Lines to skip | B (%d) | 0:1:99 | 1 | |
-| Desired multiplayer status | b (%d) | [ENUM_MULTIPLAYER_STATE](enums.md#ENUM_MULTIPLAYER_STATE) | 0 | |
+| Desired multiplayer status | b (%d) | [ENUM_MULTIPLAYER_STATE](enums.md#enum_multiplayer_state) | 0 | |
 
 ### 6 - Terminate event, conditional on multiplayer status
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Event end type | B (%d) | [ENUM_EVENT_END_TYPE](enums.md#ENUM_EVENT_END_TYPE) | 0 | |
-| Desired multiplayer status | b (%d) | [ENUM_MULTIPLAYER_STATE](enums.md#ENUM_MULTIPLAYER_STATE) | 0 | |
+| Event end type | B (%d) | [ENUM_EVENT_END_TYPE](enums.md#enum_event_end_type) | 0 | |
+| Desired multiplayer status | b (%d) | [ENUM_MULTIPLAYER_STATE](enums.md#enum_multiplayer_state) | 0 | |
 
 ### 7 - Conditionally skip instructions depending on PC current area
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Lines to skip | B (%d) | 0:1:99 | 1 | |
-| Inside? | B (%d) | [ENUM_BOOL](enums.md#ENUM_BOOL) | 1 | |
+| Inside? | B (%d) | [ENUM_BOOL](enums.md#enum_bool) | 1 | |
 | Area ID | B (%d) | 0:1:99 | 10 | |
 | Block ID | B (%d) | 0:1:99 | 10 | |
 
@@ -691,8 +691,8 @@ A collection of program flow controls that select behaviour based on the state i
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Event end type | B (%d) | [ENUM_EVENT_END_TYPE](enums.md#ENUM_EVENT_END_TYPE) | 0 | |
-| Inside? | B (%d) | [ENUM_BOOL](enums.md#ENUM_BOOL) | 1 | |
+| Event end type | B (%d) | [ENUM_EVENT_END_TYPE](enums.md#enum_event_end_type) | 0 | |
+| Inside? | B (%d) | [ENUM_BOOL](enums.md#enum_bool) | 1 | |
 | Area ID | B (%d) | 0:1:99 | 10 | |
 | Block ID | B (%d) | 0:1:99 | 10 | |
 
@@ -701,7 +701,7 @@ A collection of program flow controls that select behaviour based on the state i
 ### 0 - オブジェクト破壊状態で待機
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Desired object damage state | B (%d) | [ENUM_DAMAGE_STATE](enums.md#ENUM_DAMAGE_STATE) | 1 | |
+| Desired object damage state | B (%d) | [ENUM_DAMAGE_STATE](enums.md#enum_damage_state) | 1 | |
 | Target Entity ID | i (%08d) | 0:1:100000000 | 0 | |
 
 ### 1 - Conditionally skip instructions depending on object destruction state
@@ -709,15 +709,15 @@ A collection of program flow controls that select behaviour based on the state i
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Lines to skip | B (%d) | 0:1:99 | 1 | |
-| Desired object damage state | B (%d) | [ENUM_DAMAGE_STATE](enums.md#ENUM_DAMAGE_STATE) | 1 | |
+| Desired object damage state | B (%d) | [ENUM_DAMAGE_STATE](enums.md#enum_damage_state) | 1 | |
 | Object Entity ID | i (%08d) | 0:1:100000000 | 0 | |
 
 ### 2 - Terminate event, conditional on object destruction state
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Event end type | B (%d) | [ENUM_EVENT_END_TYPE](enums.md#ENUM_EVENT_END_TYPE) | 0 | |
-| Desired object damage state | B (%d) | [ENUM_DAMAGE_STATE](enums.md#ENUM_DAMAGE_STATE) | 1 | |
+| Event end type | B (%d) | [ENUM_EVENT_END_TYPE](enums.md#enum_event_end_type) | 0 | |
+| Desired object damage state | B (%d) | [ENUM_DAMAGE_STATE](enums.md#enum_damage_state) | 1 | |
 | Object Entity ID | i (%08d) | 0:1:100000000 | 0 | |
 
 ## 2000 - System Events
@@ -754,7 +754,7 @@ Sets the desired network sync state.
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Is enabled | B (%d) | [ENUM_ENABLE_STATE](enums.md#ENUM_ENABLE_STATE) | 0 | |
+| Is enabled | B (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
 
 ### 3 - 終了済み条件グループ条件状態クリア
 | Name | Type (Format) | Values | Default Value | Notes |
@@ -779,13 +779,13 @@ Sets the desired network sync state.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Cutscene ID | i (%d) | 0:1:1000000000 | 0 | |
-| Playback method | I (%d) | [ENUM_CUTSCENE_TYPE](enums.md#ENUM_CUTSCENE_TYPE) | 0 | |
+| Playback method | I (%d) | [ENUM_CUTSCENE_TYPE](enums.md#enum_cutscene_type) | 0 | |
 
 ### 2 - Play cutscene and warp player
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Cutscene ID | i (%d) | 0:1:1000000000 | 0 | |
-| Playback method | I (%d) | [ENUM_CUTSCENE_TYPE](enums.md#ENUM_CUTSCENE_TYPE) | 0 | |
+| Playback method | I (%d) | [ENUM_CUTSCENE_TYPE](enums.md#enum_cutscene_type) | 0 | |
 | Point Entity ID | i (%d) | 0:1:1000000000 | 0 | |
 | Area ID | B (%d) | 0:1:255 | 0 | |
 | Block ID | B (%d) | 0:1:255 | 0 | |
@@ -795,7 +795,7 @@ Sets the desired network sync state.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Cutscene ID | i (%d) | 0:1:1000000000 | 0 | |
-| Playback method | I (%d) | [ENUM_CUTSCENE_TYPE](enums.md#ENUM_CUTSCENE_TYPE) | 0 | |
+| Playback method | I (%d) | [ENUM_CUTSCENE_TYPE](enums.md#enum_cutscene_type) | 0 | |
 | Player Entity ID | i (%08d) | 0:1:100000000 | 0 | |
 
 ### 4 - Play cutscene and warp specific player
@@ -803,7 +803,7 @@ Sets the desired network sync state.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Cutscene ID | i (%d) | 0:1:1000000000 | 0 | |
-| Playback method | I (%d) | [ENUM_CUTSCENE_TYPE](enums.md#ENUM_CUTSCENE_TYPE) | 0 | |
+| Playback method | I (%d) | [ENUM_CUTSCENE_TYPE](enums.md#enum_cutscene_type) | 0 | |
 | Point Entity ID | i (%d) | 0:1:1000000000 | 0 | |
 | Area ID | B (%d) | 0:1:255 | 0 | |
 | Block ID | B (%d) | 0:1:255 | 0 | |
@@ -814,7 +814,7 @@ Sets the desired network sync state.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Cutscene ID | i (%d) | 0:1:1000000000 | 0 | |
-| Playback method | I (%d) | [ENUM_CUTSCENE_TYPE](enums.md#ENUM_CUTSCENE_TYPE) | 0 | |
+| Playback method | I (%d) | [ENUM_CUTSCENE_TYPE](enums.md#enum_cutscene_type) | 0 | |
 | Axis X[m] | f (%.2f) | 0.0:0.10000000149:9999.0 | 0.0 | |
 | Axis Y[m] | f (%.2f) | 0.0:1.0:9999.0 | 0.0 | |
 | Rotation[deg] | i (%.2f) | -359:1:359 | 0 | |
@@ -829,22 +829,22 @@ Sets the desired network sync state.
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
 | Animation ID | i (%d) | -1:1:1000000000 | -1 | |
-| Loop? | B (%d) | [ENUM_BOOL](enums.md#ENUM_BOOL) | 0 | |
-| Wait for completion? | B (%d) | [ENUM_BOOL](enums.md#ENUM_BOOL) | 0 | |
+| Loop? | B (%d) | [ENUM_BOOL](enums.md#enum_bool) | 0 | |
+| Wait for completion? | B (%d) | [ENUM_BOOL](enums.md#enum_bool) | 0 | |
 
 ### 2 - Set event flag
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Event flag ID | i (%d) | 0:1:1000000000 | 0 | |
-| Desired state | B (%d) | [ENUM_ON_OFF](enums.md#ENUM_ON_OFF) | 1 | |
+| Desired state | B (%d) | [ENUM_ON_OFF](enums.md#enum_on_off) | 1 | |
 
 ### 3 - Enable/disable Spawner
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Is Enabled | B (%d) | [ENUM_ENABLE_STATE](enums.md#ENUM_ENABLE_STATE) | 0 | |
+| Is Enabled | B (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
 
 ### 4 - Award item lot
 
@@ -869,14 +869,14 @@ Sets the desired network sync state.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Is Enabled | B (%d) | [ENUM_ENABLE_STATE](enums.md#ENUM_ENABLE_STATE) | 0 | |
+| Is Enabled | B (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
 
 ### 7 - Map表示有効化
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Is Enabled | B (%d) | [ENUM_ENABLE_STATE](enums.md#ENUM_ENABLE_STATE) | 0 | |
+| Is Enabled | B (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
 
 ### 8 - Set event state: Cancels / restarts the specified event.
 
@@ -884,7 +884,7 @@ Sets the desired network sync state.
 |-|-|-|-|-|
 | Event ID | i (%d) | 0:1:1000000000 | 0 | |
 | Event Slot ID | i (%d) | 0:1:1000000000 | 0 | |
-| Event end type | B (%d) | [ENUM_EVENT_END_TYPE](enums.md#ENUM_EVENT_END_TYPE) | 1 | |
+| Event end type | B (%d) | [ENUM_EVENT_END_TYPE](enums.md#enum_event_end_type) | 1 | |
 
 ### 9 - イベントフラグ反転
 
@@ -896,13 +896,13 @@ Sets the desired network sync state.
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Is Enabled | h (%d) | [ENUM_ENABLE_STATE](enums.md#ENUM_ENABLE_STATE) | 0 | |
+| Is Enabled | h (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
 
 ### 11 - Show/Hide Boss Health Bar
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Is Enabled | b (%d) | [ENUM_ENABLE_STATE](enums.md#ENUM_ENABLE_STATE) | 0 | |
+| Is Enabled | b (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
 | Slot number | h (%d) | 0:1:1 | 0 | |
 | Name ID | h (%d) | 0:1:9999 | 0 | |
@@ -916,8 +916,8 @@ Sets the desired network sync state.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Navimesh Collision Bit | I (%d) | [ENUM_NAVIMESH_TYPE](enums.md#ENUM_NAVIMESH_TYPE) | 128 | |
-| Modification Type | B (%d) | [ENUM_BITOP](enums.md#ENUM_BITOP) | 1 | |
+| Navimesh Collision Bit | I (%d) | [ENUM_NAVIMESH_TYPE](enums.md#enum_navimesh_type) | 128 | |
+| Modification Type | B (%d) | [ENUM_BITOP](enums.md#enum_bitop) | 1 | |
 
 ### 14 - Warp Player
 
@@ -945,7 +945,7 @@ Sets the desired network sync state.
 |-|-|-|-|-|
 | Event flag ID Min | I (%d) | 0:1:1000000000 | 0 | |
 | Event flag ID Max | I (%d) | 0:1:1000000000 | 0 | |
-| Desired state | B (%d) | [ENUM_ON_OFF](enums.md#ENUM_ON_OFF) | 1 | |
+| Desired state | B (%d) | [ENUM_ON_OFF](enums.md#enum_on_off) | 1 | |
 
 ### 18 - Force animation
 
@@ -953,9 +953,9 @@ Sets the desired network sync state.
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
 | Animation ID | i (%d) | -1:1:1000000000 | -1 | |
-| Loop? | B (%d) | [ENUM_BOOL](enums.md#ENUM_BOOL) | 0 | |
-| Wait for completion? | B (%d) | [ENUM_BOOL](enums.md#ENUM_BOOL) | 0 | |
-| Does not wait for transition | B (%d) | [ENUM_BOOL](enums.md#ENUM_BOOL) | 0 | |
+| Loop? | B (%d) | [ENUM_BOOL](enums.md#enum_bool) | 0 | |
+| Wait for completion? | B (%d) | [ENUM_BOOL](enums.md#enum_bool) | 0 | |
+| Does not wait for transition | B (%d) | [ENUM_BOOL](enums.md#enum_bool) | 0 | |
 
 ### 19 - Set Area Texture ParamBank Slot Index
 
@@ -984,7 +984,7 @@ Sets the desired network sync state.
 |-|-|-|-|-|
 | Starting event flag ID | i (%d) | 0:1:1000000000 | 0 | |
 | Ending event flag ID | i (%d) | 0:1:1000000000 | 0 | |
-| Desired state | B (%d) | [ENUM_ON_OFF](enums.md#ENUM_ON_OFF) | 1 | |
+| Desired state | B (%d) | [ENUM_ON_OFF](enums.md#enum_on_off) | 1 | |
 
 ### 23 - Set Player Respawn Point
 
@@ -996,7 +996,7 @@ Sets the desired network sync state.
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Item type | i (%d) | [ENUM_ITEM_TYPE](enums.md#ENUM_ITEM_TYPE) | 1 | |
+| Item type | i (%d) | [ENUM_ITEM_TYPE](enums.md#enum_item_type) | 1 | |
 | Item ID | i (%d) | 0:1:1000000000 | 0 | |
 | Quantity | i (%d) | 0:1:999 | 0 | |
 
@@ -1004,7 +1004,7 @@ Sets the desired network sync state.
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Sign Type | i (%d) | [ENUM_SIGN_TYPE](enums.md#ENUM_SIGN_TYPE) | 0 | |
+| Sign Type | i (%d) | [ENUM_SIGN_TYPE](enums.md#enum_sign_type) | 0 | |
 | Called NPC Entity ID | i (%d) | 0:1:1000000000 | 0 | |
 | Creation point entity ID| i (%d) | 0:1:1000000000 | 0 | |
 | Summon Event Flag ID | i (%d) | -1:1:1000000000 | 0 | |
@@ -1015,7 +1015,7 @@ Sets the desired network sync state.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Blood Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Is visible | B (%d) | [ENUM_ENABLE_STATE](enums.md#ENUM_ENABLE_STATE) | 0 | |
+| Is visible | B (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
 
 ### 27 - タイトル抜け
 | Name | Type (Format) | Values | Default Value | Notes |
@@ -1031,14 +1031,14 @@ Sets the desired network sync state.
 ### 29 - *Add to trend value?*
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| *Trend Type?* | B (%d) | [ENUM_TENDENCY_TYPE](enums.md#ENUM_TENDENCY_TYPE) | 0 | |
+| *Trend Type?* | B (%d) | [ENUM_TENDENCY_TYPE](enums.md#enum_tendency_type) | 0 | |
 | Amount | b (%d) | -100:1:100 | 0 | |
 
 ### 30 - Disable Vagrant Spawning
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Is disabled | B (%d) | [ENUM_BOOL](enums.md#ENUM_BOOL) | 1 | |
+| Is disabled | B (%d) | [ENUM_BOOL](enums.md#enum_bool) | 1 | |
 
 ### 31 - Increment Event Value
 
@@ -1107,21 +1107,21 @@ Sets the desired network sync state.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Is Enabled | B (%d) | [ENUM_ENABLE_STATE](enums.md#ENUM_ENABLE_STATE) | 0 | |
+| Is Enabled | B (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
 
 ### 2 - Switch character allegiance
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Team Type | B (%d) | [ENUM_TEAM_TYPE](enums.md#ENUM_TEAM_TYPE) | 0 | |
+| Team Type | B (%d) | [ENUM_TEAM_TYPE](enums.md#enum_team_type) | 0 | |
 
 ### 3 - Warp Request
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Warp Destination Type | B (%d) | [ENUM_CATEGORY](enums.md#ENUM_CATEGORY) | 0 | |
+| Warp Destination Type | B (%d) | [ENUM_CATEGORY](enums.md#enum_category) | 0 | |
 | Destination Target ID | i (%d) | 0:1:1000000000 | 0 | |
 | Damipoly ID | i (%d) | -1:1:255 | -1 | |
 
@@ -1130,14 +1130,14 @@ Sets the desired network sync state.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Yield souls | B (%d) | [ENUM_BOOL](enums.md#ENUM_BOOL) | 1 | |
+| Yield souls | B (%d) | [ENUM_BOOL](enums.md#enum_bool) | 1 | |
 
 ### 5 - Invalidate character
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Is Enabled | B (%d) | [ENUM_ENABLE_STATE](enums.md#ENUM_ENABLE_STATE) | 0 | |
+| Is Enabled | B (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
 
 ### 6 - EzState instruction request
 
@@ -1176,7 +1176,7 @@ Sets the desired network sync state.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Is Enabled | B (%d) | [ENUM_ENABLE_STATE](enums.md#ENUM_ENABLE_STATE) | 0 | |
+| Is Enabled | B (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
 
 ### 11 - イベントターゲット指定
 
@@ -1192,7 +1192,7 @@ Sets whether the character can take damage and will not die from said damage
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Is Enabled | B (%d) | [ENUM_ENABLE_STATE](enums.md#ENUM_ENABLE_STATE) | 0 | |
+| Is Enabled | B (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
 
 ### 13 - Set character's "Nest" (Probably AI Home Location)
 
@@ -1215,7 +1215,7 @@ Set whether the character is invicible to damage
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Is Enabled | B (%d) | [ENUM_ENABLE_STATE](enums.md#ENUM_ENABLE_STATE) | 0 | |
+| Is Enabled | B (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
 
 ### 16 - Clear AI Target List
 
@@ -1267,12 +1267,12 @@ Set whether the character is invicible to damage
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
 | Part NPC type | h (%d) | 0:1:10000 | 0 | |
-| Part Index | h (%d) | [ENUM_SITE_TYPE](enums.md#ENUM_SITE_TYPE) | 1 | |
+| Part Index | h (%d) | [ENUM_SITE_TYPE](enums.md#enum_site_type) | 1 | |
 | Part HP | i (%d) | -1:1:1000000000 | 0 | |
 | Partial Damage Correction | f (%d) | 0.0:1.0:9999.0 | 1.0 | |
 | Body Damage Correction | f (%d) | 0.0:1.0:9999.0 | 1.0 | |
-| Is Invincible | B (%d) | [ENUM_BOOL](enums.md#ENUM_BOOL) | 0 | |
-| Start in stop state? | B (%d) | [ENUM_BOOL](enums.md#ENUM_BOOL) | 0 | |
+| Is Invincible | B (%d) | [ENUM_BOOL](enums.md#enum_bool) | 0 | |
+| Start in stop state? | B (%d) | [ENUM_BOOL](enums.md#enum_bool) | 0 | |
 
 ### 23 - Set multipart-NPC part HP
 
@@ -1281,7 +1281,7 @@ Set whether the character is invicible to damage
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
 | Part NPC type | i (%d) | 0:1:10000 | 0 | |
 | Desired HP | i (%d) | -100000000:1:100000000 | 0 | |
-| Overwrite Max HP? | B (%d) | [ENUM_BOOL](enums.md#ENUM_BOOL) | 0 | |
+| Overwrite Max HP? | B (%d) | [ENUM_BOOL](enums.md#enum_bool) | 0 | |
 
 ### 24 - Set multipart-NPC part SE and SFX
 
@@ -1306,7 +1306,7 @@ Set whether the character is invicible to damage
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
 | Bit Number | B (%d) | 0:1:32 | 0 | |
-| Switch type | B (%d) | [ENUM_ON_OFF_CHANGE](enums.md#ENUM_ON_OFF_CHANGE) | 1 | |
+| Switch type | B (%d) | [ENUM_ON_OFF_CHANGE](enums.md#enum_on_off_change) | 1 | |
 
 ### 27 - Change character hitbox mask
 
@@ -1314,7 +1314,7 @@ Set whether the character is invicible to damage
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
 | Bit Number | B (%d) | 0:1:32 | 0 | |
-| Switch type | B (%d) | [ENUM_ON_OFF_CHANGE](enums.md#ENUM_ON_OFF_CHANGE) | 1 | |
+| Switch type | B (%d) | [ENUM_ON_OFF_CHANGE](enums.md#enum_on_off_change) | 1 | |
 
 ### 28 - Set Network Update Authority
 
@@ -1323,7 +1323,7 @@ Sets if this player should be the authority for the data about a given entity.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Authority Level | i (%d) | [ENUM_UPDATE_AUTH](enums.md#ENUM_UPDATE_AUTH) | 0 | |
+| Authority Level | i (%d) | [ENUM_UPDATE_AUTH](enums.md#enum_update_auth) | 0 | |
 
 ### 29 - "Setting to remove from back lead"
 
@@ -1332,21 +1332,21 @@ Sets if this player should be the authority for the data about a given entity.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Should be Removed? | B (%d) | [ENUM_BOOL](enums.md#ENUM_BOOL) | 1 | |
+| Should be Removed? | B (%d) | [ENUM_BOOL](enums.md#enum_bool) | 1 | |
 
 ### 30 - Set Health Bar Display
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Is Enabled | B (%d) | [ENUM_ENABLE_STATE](enums.md#ENUM_ENABLE_STATE) | 0 | |
+| Is Enabled | B (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
 
 ### 31 - Set Character Map Collision
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Disable Collision? | B (%d) | [ENUM_BOOL](enums.md#ENUM_BOOL) | 1 | |
+| Disable Collision? | B (%d) | [ENUM_BOOL](enums.md#enum_bool) | 1 | |
 
 ### 32 - Issue AI Event Request
 
@@ -1370,15 +1370,15 @@ Sets if this player should be the authority for the data about a given entity.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Fixed Frequency? | B (%d) | [ENUM_BOOL](enums.md#ENUM_BOOL) | 1 | |
-| Frequency | b (%d) | [ENUM_CHARACTER_UPDATE_RATE](enums.md#ENUM_CHARACTER_UPDATE_RATE) | 0 | |
+| Fixed Frequency? | B (%d) | [ENUM_BOOL](enums.md#enum_bool) | 1 | |
+| Frequency | b (%d) | [ENUM_CHARACTER_UPDATE_RATE](enums.md#enum_character_update_rate) | 0 | |
 
 ### 35 - Set Entity "Back Lead" Status
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Is Enabled | B (%d) | [ENUM_ENABLE_STATE](enums.md#ENUM_ENABLE_STATE) | 0 | |
+| Is Enabled | B (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
 
 ### 36 - Hellkite Breath Control
 
@@ -1405,7 +1405,7 @@ Sets if this player should be the authority for the data about a given entity.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Is Enabled | B (%d) | [ENUM_ENABLE_STATE](enums.md#ENUM_ENABLE_STATE) | 0 | |
+| Is Enabled | B (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
 
 ### 40 - Issue Warp Request and set floor
 
@@ -1414,7 +1414,7 @@ Sets if this player should be the authority for the data about a given entity.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Warp Destination Type | B (%d) | [ENUM_CATEGORY](enums.md#ENUM_CATEGORY) | 0 | |
+| Warp Destination Type | B (%d) | [ENUM_CATEGORY](enums.md#enum_category) | 0 | |
 | Destination Target ID | i (%d) | 0:1:1000000000 | 0 | |
 | Damipoly ID | i (%d) | -1:1:255 | -1 | |
 | Warp Desination Hitbox Entity ID | i (%d) | 0:1:1000000000 | 0 | |
@@ -1424,7 +1424,7 @@ Sets if this player should be the authority for the data about a given entity.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Warp Destination Type | B (%d) | [ENUM_CATEGORY](enums.md#ENUM_CATEGORY) | 0 | |
+| Warp Destination Type | B (%d) | [ENUM_CATEGORY](enums.md#enum_category) | 0 | |
 | Destination Target ID | i (%d) | 0:1:1000000000 | 0 | |
 | Damipoly ID | i (%d) | -1:1:255 | -1 | |
 
@@ -1435,7 +1435,7 @@ Sets if this player should be the authority for the data about a given entity.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Warp Destination Type | B (%d) | [ENUM_CATEGORY](enums.md#ENUM_CATEGORY) | 0 | |
+| Warp Destination Type | B (%d) | [ENUM_CATEGORY](enums.md#enum_category) | 0 | |
 | Destination Target ID | i (%d) | 0:1:1000000000 | 0 | |
 | Damipoly ID | i (%d) | -1:1:255 | -1 | |
 | Floor Entity ID to copy | i (%d) | 0:1:1000000000 | 0 | |
@@ -1445,14 +1445,14 @@ Sets if this player should be the authority for the data about a given entity.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Interpolation Method | B (%d) | [ENUM_INTERPOLATION_STATE](enums.md#ENUM_INTERPOLATION_STATE) | 0 | |
+| Interpolation Method | B (%d) | [ENUM_INTERPOLATION_STATE](enums.md#enum_interpolation_state) | 0 | |
 
 ### 44 - Switch character allegience and exit forced standby animation
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Team Type | B (%d) | [ENUM_TEAM_TYPE](enums.md#ENUM_TEAM_TYPE) | 0 | |
+| Team Type | B (%d) | [ENUM_TEAM_TYPE](enums.md#enum_team_type) | 0 | |
 
 ### 45 - NPC Humanity Registration
 
@@ -1482,14 +1482,14 @@ Sets if this player should be the authority for the data about a given entity.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Target Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Activated? | B (%d) | [ENUM_ENABLE_STATE](enums.md#ENUM_ENABLE_STATE) | 0 | |
+| Activated? | B (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
 
 ### 4 - Treasure activation
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Target Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Activated? | B (%d) | [ENUM_ENABLE_STATE](enums.md#ENUM_ENABLE_STATE) | 0 | |
+| Activated? | B (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
 
 ### 5 - ObjAct start
 
@@ -1505,7 +1505,7 @@ Sets if this player should be the authority for the data about a given entity.
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
 | Object parameter ID | i (%d) | -1:1:1000000000 | -1 | |
-| Activated? | B (%d) | [ENUM_ENABLE_STATE](enums.md#ENUM_ENABLE_STATE) | 0 | |
+| Activated? | B (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
 
 ### 7 - "Reproduction of object animation"
 
@@ -1533,7 +1533,7 @@ Sets if this player should be the authority for the data about a given entity.
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
 | Damipoly ID | i (%d) | 0:1:1000000000 | 0 | |
 | Behavior ID | i (%d) | 0:1:1000000000 | 0 | |
-| Target type | i (%d) | [ENUM_DAMAGE_TARGET_TYPE](enums.md#ENUM_DAMAGE_TARGET_TYPE) | 1 | |
+| Target type | i (%d) | [ENUM_DAMAGE_TARGET_TYPE](enums.md#enum_damage_target_type) | 1 | |
 | Radius | f (%0.3f) | 0.0:1.0:9999.0 | 0.0 | |
 | Life | f (%0.3f) | 0.0:1.0:9999.0 | 0.0 | |
 | Repetition Time (seconds) | f (%0.3f) | 0.0:1.0:9999.0 | 0.0 | |
@@ -1545,7 +1545,7 @@ Sets if this player should be the authority for the data about a given entity.
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
 | Area ID | B (%d) | 0:1:99 | 0 | |
 | Block ID | B (%d) | 0:1:99 | 0 | |
-| Statue type | B (%d) | [ENUM_STATUE_TYPE](enums.md#ENUM_STATUE_TYPE) | 0 | |
+| Statue type | B (%d) | [ENUM_STATUE_TYPE](enums.md#enum_statue_type) | 0 | |
 
 ### 11 - Warp Object to Character
 
@@ -1566,7 +1566,7 @@ Sets if this player should be the authority for the data about a given entity.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Target Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Invulnerable? | B (%d) | [ENUM_ENABLE_STATE](enums.md#ENUM_ENABLE_STATE) | 0 | |
+| Invulnerable? | B (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
 
 ### 14 - ObjAct activation (IDX Designation)
 
@@ -1575,7 +1575,7 @@ Sets if this player should be the authority for the data about a given entity.
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
 | Object parameter ID | i (%d) | -1:1:1000000000 | -1 | |
 | Relative Target Index | i (%d) | -1:1:1000000000 | -1 | |
-| Activated? | B (%d) | [ENUM_ENABLE_STATE](enums.md#ENUM_ENABLE_STATE) | 0 | |
+| Activated? | B (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
 
 ### 15 - "Treasure redemption"
 
@@ -1592,7 +1592,7 @@ Sets if this player should be the authority for the data about a given entity.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Should Erase only root | B (%d) | [ENUM_BOOL](enums.md#ENUM_BOOL) | 1 | |
+| Should Erase only root | B (%d) | [ENUM_BOOL](enums.md#enum_bool) | 1 | |
 
 ### 2 - Create Map SFX
 
@@ -1604,7 +1604,7 @@ Sets if this player should be the authority for the data about a given entity.
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| SFX Type | i (%d) | [ENUM_CATEGORY](enums.md#ENUM_CATEGORY) | 0 | |
+| SFX Type | i (%d) | [ENUM_CATEGORY](enums.md#enum_category) | 0 | |
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
 | Damipoly ID | i (%d) | -1:1:1000000000 | -1 | |
 | SFX ID | i (%d) | 0:1:1000000000 | 0 | |
@@ -1622,7 +1622,7 @@ Sets if this player should be the authority for the data about a given entity.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Object Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Delete root? | i (%d) | [ENUM_BOOL](enums.md#ENUM_BOOL) | 1 | |
+| Delete root? | i (%d) | [ENUM_BOOL](enums.md#enum_bool) | 1 | |
 
 ## 2007 - Messages
 
@@ -1631,8 +1631,8 @@ Sets if this player should be the authority for the data about a given entity.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Message ID | i (%d) | 0:1:1000000000 | 0 | |
-| Button Type | h (%d) | [ENUM_BUTTON_TYPE](enums.md#ENUM_BUTTON_TYPE) | 0 | |
-| Number of Buttons | h (%d) | [ENUM_BUTTON_NUMBER](enums.md#ENUM_BUTTON_NUMBER) | 6 | |
+| Button Type | h (%d) | [ENUM_BUTTON_TYPE](enums.md#enum_button_type) | 0 | |
+| Number of Buttons | h (%d) | [ENUM_BUTTON_NUMBER](enums.md#enum_button_number) | 6 | |
 | Entity ID | i (%d) | -1:1:1000000000 | -1 | |
 | Display Distance | f (%.3f) | 0.0:0.00999999977648:100.0 | 0.0 | |
 
@@ -1642,14 +1642,14 @@ Displays texts such as the "Victory Achieved" and "You Died" messages.
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Banner Type | B (%d) | [ENUM_TEXT_BANNER_TYPE](enums.md#ENUM_TEXT_BANNER_TYPE) | 8 | |
+| Banner Type | B (%d) | [ENUM_TEXT_BANNER_TYPE](enums.md#enum_text_banner_type) | 8 | |
 
 ### 3 - Display Status Explanation Message
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Message ID | i (%d) | 0:1:1000000000 | 0 | |
-| Pad Enabled? | B (%d) | [ENUM_ENABLE_STATE](enums.md#ENUM_ENABLE_STATE) | 0 | |
+| Pad Enabled? | B (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
 
 ### 4 - Display Battlefield Message
 
@@ -1702,7 +1702,7 @@ Displays texts such as the "Victory Achieved" and "You Died" messages.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Vibration ID | i (%d) | 0:1:1000000000 | 0 | |
-| SFX Type | i (%d) | [ENUM_CATEGORY](enums.md#ENUM_CATEGORY) | 0 | |
+| SFX Type | i (%d) | [ENUM_CATEGORY](enums.md#enum_category) | 0 | |
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
 | Damipoly ID | i (%d) | -1:1:1000000000 | -1 | |
 | Shake offset | f (%.3f) | 0.0:0.00999999977648:999.0 | 0.0 | |
@@ -1779,10 +1779,10 @@ Displays texts such as the "Victory Achieved" and "You Died" messages.
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
-| Playback settings | B (%d) | [ENUM_ON_OFF](enums.md#ENUM_ON_OFF) | 0 | Param name could be 'Enabled' |
+| Playback settings | B (%d) | [ENUM_ON_OFF](enums.md#enum_on_off) | 0 | Param name could be 'Enabled' |
 | SlotNo | H (%.d) | 0:1:20 | 0 | |
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Sound Type | i (%d) | [ENUM_SOUND_TYPE](enums.md#ENUM_SOUND_TYPE) | 0 | |
+| Sound Type | i (%d) | [ENUM_SOUND_TYPE](enums.md#enum_sound_type) | 0 | |
 | Sound ID | i (%d) | 0:1:1000000000 | 0 | |
 
 ### 2 - Play Sound Effect
@@ -1790,7 +1790,7 @@ Displays texts such as the "Victory Achieved" and "You Died" messages.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Sound type | i (%d) | [ENUM_SOUND_TYPE](enums.md#ENUM_SOUND_TYPE) | 0 | |
+| Sound type | i (%d) | [ENUM_SOUND_TYPE](enums.md#enum_sound_type) | 0 | |
 | Sound ID | i (%d) | 0:1:1000000000 | 0 | |
 
 ### 3 - Enable Map Sound
@@ -1798,7 +1798,7 @@ Displays texts such as the "Victory Achieved" and "You Died" messages.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Enalbled | B (%d) | [ENUM_ENABLE_STATE](enums.md#ENUM_ENABLE_STATE) | 0 | |
+| Enalbled | B (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
 
 ## 2011 - Hitboxes
 
@@ -1807,14 +1807,14 @@ Displays texts such as the "Victory Achieved" and "You Died" messages.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Hitbox Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Activated? | B (%d) | [ENUM_ENABLE_STATE](enums.md#ENUM_ENABLE_STATE) | 0 | |
+| Activated? | B (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
 
 ### 2 - *Activate Hit Part Back Lead Mask*
 
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Hitbox Entity ID | i (%d) | 0:1:1000000000 | 0 | |
-| Activated? | B (%d) | [ENUM_ENABLE_STATE](enums.md#ENUM_ENABLE_STATE) | 0 | |
+| Activated? | B (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
 
 ## 2012 - Map
 
@@ -1823,7 +1823,7 @@ Displays texts such as the "Victory Achieved" and "You Died" messages.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Map Part ID | i (%d) | 0:1:1000000000 | 0 | |
-| Activated? | B (%d) | [ENUM_ENABLE_STATE](enums.md#ENUM_ENABLE_STATE) | 0 | |
+| Activated? | B (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
 
 ^\t\t([iIBfh])\s[0-9]+\s(%[0-9]*d|%[0-9.]+[fｆ])\s(.*)?\s\[(-?\d+(.[0-9]+)?:-?\d+(.[0-9]+)?:-?\d+(.[0-9]+)?|ENUM[a-zA-Z\_]+)\]\((Default: -?\d+(.[0-9]+)?)\)$
 | $3 | $1 ($2) | $4 | $8 | |
