@@ -52,7 +52,7 @@
 
 
 ## ENUM_CLASS_TYPE
- * Note: The translations are not accurate. Instead, they are based on what classes the game actually has corresponding to each value.
+***Note:*** The translations are not accurate. Instead, they are based on what classes the game actually has corresponding to each value.
 
     0. Warrior
     1. Knight
@@ -291,8 +291,8 @@
     4095. Forced
 
 ## ENUM_COVENANT_TYPE
-* This is not a real enum in the file, but it's convenient to record these values somewhere.
-* It's normally just encoded as integer value between 0 and 20.
+This is not a real enum in the file, but it's convenient to record these values somewhere.  
+It's normally just encoded as integer value between 0 and 20.
 
     0. None
     1. Way of White
