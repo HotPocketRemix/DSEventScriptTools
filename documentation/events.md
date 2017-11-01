@@ -1823,7 +1823,4 @@ Displays texts such as the "Victory Achieved" and "You Died" messages.
 | Name | Type (Format) | Values | Default Value | Notes |
 |-|-|-|-|-|
 | Map Part ID | i (%d) | 0:1:1000000000 | 0 | |
-| Activated? | B (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 | |
-
-^\t\t([iIBfh])\s[0-9]+\s(%[0-9]*d|%[0-9.]+[fｆ])\s(.*)?\s\[(-?\d+(.[0-9]+)?:-?\d+(.[0-9]+)?:-?\d+(.[0-9]+)?|ENUM[a-zA-Z\_]+)\]\((Default: -?\d+(.[0-9]+)?)\)$
-| $3 | $1 ($2) | $4 | $8 | |
+| Activated? | B (%d) | [ENUM_ENABLE_STATE](enums.md#enum_enable_state) | 0 |
