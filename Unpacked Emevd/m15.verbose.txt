@@ -1,3 +1,12 @@
-Event ID: 0, Int: 0
+EVD-DS1
+
+Event ID: 0, Ignores Bonfire Rest
 Parameters: {} ()
-      0 Set Area Texture ParamBank Slot Index (Area ID: 15, Texture ParamBank Slot Index: 0)
+      0 Set Area DrawParam Bank Slot Index (Area ID: 15, Area DrawParam Bank Slot Index: 0)
+
+
+String Table:
+
+
+
+Linked .emevd Files:

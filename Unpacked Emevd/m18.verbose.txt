@@ -1,124 +1,133 @@
-Event ID: 0, Int: 0
-Parameters: {} ()
-      0 Initialize Event (Event ID: 900, Slot Number: 0, Arguments: {0})
-      1 Initialize Event (Event ID: 901, Slot Number: 0, Arguments: {0})
-      2 Initialize Event (Event ID: 902, Slot Number: 0, Arguments: {0})
-      3 Initialize Event (Event ID: 903, Slot Number: 0, Arguments: {0})
+EVD-DS1
 
-Event ID: 900, Int: 0
+Event ID: 0, Ignores Bonfire Rest
 Parameters: {} ()
-      0 END event IF Event ID: 00000000 is ON
-      1 CONDITION: IF Event ID: 00000000 is ON --> Register MAIN
-      2 SKIP 1 lines IF it is FALSE that player is in Map<18><1>
-      3 Request forced death of Entity ID: 1810800 (Yields souls: TRUE)
-      4 SET Event Flag ID 3 to ON
-      5 SET Event Flag ID 16 to ON
-      6 SET Event Flag ID 11010160 to ON
-      7 SET Event Flag ID 11010700 to ON
-      8 SET Event Flag ID 11010901 to ON
-      9 SET Event Flag ID 11020300 to ON
-     10 SET Event Flag ID 11810000 to ON
-     11 SET Event Flag ID 11810001 to ON
-     12 SET Event Flag ID 11810002 to ON
+      0 Initialize Event (Event Slot ID: 0, Event ID: 900, Parameters: 0)
+      1 Initialize Event (Event Slot ID: 0, Event ID: 901, Parameters: 0)
+      2 Initialize Event (Event Slot ID: 0, Event ID: 902, Parameters: 0)
+      3 Initialize Event (Event Slot ID: 0, Event ID: 903, Parameters: 0)
 
-Event ID: 901, Int: 0
+Event ID: 900, Ignores Bonfire Rest
 Parameters: {} ()
-      0 END event IF Event ID: 00000000 is ON
-      1 CONDITION: IF Event ID: 00000000 is ON --> Register MAIN
-      2 SKIP 1 lines IF it is FALSE that player is in Map<18><1>
-      3 Request forced death of Entity ID: 1810800 (Yields souls: TRUE)
-      4 SET Event Flag ID 2 to ON
-      5 SET Event Flag ID 3 to ON
-      6 SET Event Flag ID 9 to ON
-      7 SET Event Flag ID 16 to ON
-      8 SET Event Flag ID 11010160 to ON
-      9 SET Event Flag ID 61010514 to ON
-     10 SET Event Flag ID 11010700 to ON
-     11 SET Event Flag ID 11010901 to ON
-     12 SET Event Flag ID 11010902 to ON
-     13 SET Event Flag ID 11020300 to ON
-     14 SET Event Flag ID 11400200 to ON
-     15 SET Event Flag ID 11500200 to ON
-     16 SET Event Flag ID 11810000 to ON
-     17 SET Event Flag ID 11810001 to ON
-     18 SET Event Flag ID 11810002 to ON
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event ID, Target Event Flag ID: 00000000)
+      1 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event ID, Target Event Flag ID: 00000000)
+      2 SKIP IF Player In/Out Map (Number Of Skipped Lines: 1, Inside: FALSE, Area ID: 18, Block ID: 1)
+      3 Force Character Death (Entity ID: 1810800, Should Receive Souls: TRUE)
+      4 Set Event Flag (Event Flag ID: 3, Flag State: ON)
+      5 Set Event Flag (Event Flag ID: 16, Flag State: ON)
+      6 Set Event Flag (Event Flag ID: 11010160, Flag State: ON)
+      7 Set Event Flag (Event Flag ID: 11010700, Flag State: ON)
+      8 Set Event Flag (Event Flag ID: 11010901, Flag State: ON)
+      9 Set Event Flag (Event Flag ID: 11020300, Flag State: ON)
+     10 Set Event Flag (Event Flag ID: 11810000, Flag State: ON)
+     11 Set Event Flag (Event Flag ID: 11810001, Flag State: ON)
+     12 Set Event Flag (Event Flag ID: 11810002, Flag State: ON)
 
-Event ID: 902, Int: 0
+Event ID: 901, Ignores Bonfire Rest
 Parameters: {} ()
-      0 END event IF Event ID: 00000000 is ON
-      1 CONDITION: IF Event ID: 00000000 is ON --> Register MAIN
-      2 SKIP 1 lines IF it is FALSE that player is in Map<18><1>
-      3 Request forced death of Entity ID: 1810800 (Yields souls: TRUE)
-      4 SET Event Flag ID 2 to ON
-      5 SET Event Flag ID 3 to ON
-      6 SET Event Flag ID 5 to ON
-      7 SET Event Flag ID 9 to ON
-      8 SET Event Flag ID 10 to ON
-      9 SET Event Flag ID 11 to ON
-     10 SET Event Flag ID 12 to ON
-     11 SET Event Flag ID 13 to ON
-     12 SET Event Flag ID 16 to ON
-     13 SET Event Flag ID 200 to ON
-     14 SET Event Flag ID 202 to ON
-     15 SET Event Flag ID 203 to ON
-     16 SET Event Flag ID 204 to ON
-     17 SET Event Flag ID 205 to ON
-     18 SET Event Flag ID 207 to ON
-     19 SET Event Flag ID 710 to ON
-     20 SET Event Flag ID 822 to ON
-     21 SET Event Flag ID 1644 to ON
-     22 SET Event Flag ID 11010700 to ON
-     23 SET Event Flag ID 11010901 to ON
-     24 SET Event Flag ID 11010902 to ON
-     25 SET Event Flag ID 11020100 to ON
-     26 SET Event Flag ID 11020101 to ON
-     27 SET Event Flag ID 11020300 to ON
-     28 SET Event Flag ID 11400200 to ON
-     29 SET Event Flag ID 11500200 to ON
-     30 SET Event Flag ID 11800100 to ON
-     31 SET Event Flag ID 11810000 to ON
-     32 SET Event Flag ID 11810001 to ON
-     33 SET Event Flag ID 11810002 to ON
-     34 SET Event Flag ID 71800026 to ON
-     35 SET Event Flag ID 71800028 to ON
-     36 SET Event Flag ID 71800029 to ON
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event ID, Target Event Flag ID: 00000000)
+      1 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event ID, Target Event Flag ID: 00000000)
+      2 SKIP IF Player In/Out Map (Number Of Skipped Lines: 1, Inside: FALSE, Area ID: 18, Block ID: 1)
+      3 Force Character Death (Entity ID: 1810800, Should Receive Souls: TRUE)
+      4 Set Event Flag (Event Flag ID: 2, Flag State: ON)
+      5 Set Event Flag (Event Flag ID: 3, Flag State: ON)
+      6 Set Event Flag (Event Flag ID: 9, Flag State: ON)
+      7 Set Event Flag (Event Flag ID: 16, Flag State: ON)
+      8 Set Event Flag (Event Flag ID: 11010160, Flag State: ON)
+      9 Set Event Flag (Event Flag ID: 61010514, Flag State: ON)
+     10 Set Event Flag (Event Flag ID: 11010700, Flag State: ON)
+     11 Set Event Flag (Event Flag ID: 11010901, Flag State: ON)
+     12 Set Event Flag (Event Flag ID: 11010902, Flag State: ON)
+     13 Set Event Flag (Event Flag ID: 11020300, Flag State: ON)
+     14 Set Event Flag (Event Flag ID: 11400200, Flag State: ON)
+     15 Set Event Flag (Event Flag ID: 11500200, Flag State: ON)
+     16 Set Event Flag (Event Flag ID: 11810000, Flag State: ON)
+     17 Set Event Flag (Event Flag ID: 11810001, Flag State: ON)
+     18 Set Event Flag (Event Flag ID: 11810002, Flag State: ON)
 
-Event ID: 903, Int: 0
+Event ID: 902, Ignores Bonfire Rest
 Parameters: {} ()
-      0 END event IF Event ID: 00000000 is ON
-      1 CONDITION: IF Event ID: 00000000 is ON --> Register MAIN
-      2 SKIP 1 lines IF it is FALSE that player is in Map<18><1>
-      3 Request forced death of Entity ID: 1810800 (Yields souls: TRUE)
-      4 SET Event Flag ID 2 to ON
-      5 SET Event Flag ID 3 to ON
-      6 SET Event Flag ID 6 to ON
-      7 SET Event Flag ID 7 to ON
-      8 SET Event Flag ID 9 to ON
-      9 SET Event Flag ID 11 to ON
-     10 SET Event Flag ID 12 to ON
-     11 SET Event Flag ID 14 to ON
-     12 SET Event Flag ID 16 to ON
-     13 SET Event Flag ID 200 to ON
-     14 SET Event Flag ID 202 to ON
-     15 SET Event Flag ID 203 to ON
-     16 SET Event Flag ID 205 to ON
-     17 SET Event Flag ID 206 to ON
-     18 SET Event Flag ID 207 to ON
-     19 SET Event Flag ID 710 to ON
-     20 SET Event Flag ID 822 to ON
-     21 SET Event Flag ID 1644 to ON
-     22 SET Event Flag ID 11010700 to ON
-     23 SET Event Flag ID 11010901 to ON
-     24 SET Event Flag ID 11010902 to ON
-     25 SET Event Flag ID 11020100 to ON
-     26 SET Event Flag ID 11020101 to ON
-     27 SET Event Flag ID 11020300 to ON
-     28 SET Event Flag ID 11400200 to ON
-     29 SET Event Flag ID 11500200 to ON
-     30 SET Event Flag ID 11800100 to ON
-     31 SET Event Flag ID 11810000 to ON
-     32 SET Event Flag ID 11810001 to ON
-     33 SET Event Flag ID 11810002 to ON
-     34 SET Event Flag ID 71800026 to ON
-     35 SET Event Flag ID 71800028 to ON
-     36 SET Event Flag ID 71800029 to ON
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event ID, Target Event Flag ID: 00000000)
+      1 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event ID, Target Event Flag ID: 00000000)
+      2 SKIP IF Player In/Out Map (Number Of Skipped Lines: 1, Inside: FALSE, Area ID: 18, Block ID: 1)
+      3 Force Character Death (Entity ID: 1810800, Should Receive Souls: TRUE)
+      4 Set Event Flag (Event Flag ID: 2, Flag State: ON)
+      5 Set Event Flag (Event Flag ID: 3, Flag State: ON)
+      6 Set Event Flag (Event Flag ID: 5, Flag State: ON)
+      7 Set Event Flag (Event Flag ID: 9, Flag State: ON)
+      8 Set Event Flag (Event Flag ID: 10, Flag State: ON)
+      9 Set Event Flag (Event Flag ID: 11, Flag State: ON)
+     10 Set Event Flag (Event Flag ID: 12, Flag State: ON)
+     11 Set Event Flag (Event Flag ID: 13, Flag State: ON)
+     12 Set Event Flag (Event Flag ID: 16, Flag State: ON)
+     13 Set Event Flag (Event Flag ID: 200, Flag State: ON)
+     14 Set Event Flag (Event Flag ID: 202, Flag State: ON)
+     15 Set Event Flag (Event Flag ID: 203, Flag State: ON)
+     16 Set Event Flag (Event Flag ID: 204, Flag State: ON)
+     17 Set Event Flag (Event Flag ID: 205, Flag State: ON)
+     18 Set Event Flag (Event Flag ID: 207, Flag State: ON)
+     19 Set Event Flag (Event Flag ID: 710, Flag State: ON)
+     20 Set Event Flag (Event Flag ID: 822, Flag State: ON)
+     21 Set Event Flag (Event Flag ID: 1644, Flag State: ON)
+     22 Set Event Flag (Event Flag ID: 11010700, Flag State: ON)
+     23 Set Event Flag (Event Flag ID: 11010901, Flag State: ON)
+     24 Set Event Flag (Event Flag ID: 11010902, Flag State: ON)
+     25 Set Event Flag (Event Flag ID: 11020100, Flag State: ON)
+     26 Set Event Flag (Event Flag ID: 11020101, Flag State: ON)
+     27 Set Event Flag (Event Flag ID: 11020300, Flag State: ON)
+     28 Set Event Flag (Event Flag ID: 11400200, Flag State: ON)
+     29 Set Event Flag (Event Flag ID: 11500200, Flag State: ON)
+     30 Set Event Flag (Event Flag ID: 11800100, Flag State: ON)
+     31 Set Event Flag (Event Flag ID: 11810000, Flag State: ON)
+     32 Set Event Flag (Event Flag ID: 11810001, Flag State: ON)
+     33 Set Event Flag (Event Flag ID: 11810002, Flag State: ON)
+     34 Set Event Flag (Event Flag ID: 71800026, Flag State: ON)
+     35 Set Event Flag (Event Flag ID: 71800028, Flag State: ON)
+     36 Set Event Flag (Event Flag ID: 71800029, Flag State: ON)
+
+Event ID: 903, Ignores Bonfire Rest
+Parameters: {} ()
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event ID, Target Event Flag ID: 00000000)
+      1 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event ID, Target Event Flag ID: 00000000)
+      2 SKIP IF Player In/Out Map (Number Of Skipped Lines: 1, Inside: FALSE, Area ID: 18, Block ID: 1)
+      3 Force Character Death (Entity ID: 1810800, Should Receive Souls: TRUE)
+      4 Set Event Flag (Event Flag ID: 2, Flag State: ON)
+      5 Set Event Flag (Event Flag ID: 3, Flag State: ON)
+      6 Set Event Flag (Event Flag ID: 6, Flag State: ON)
+      7 Set Event Flag (Event Flag ID: 7, Flag State: ON)
+      8 Set Event Flag (Event Flag ID: 9, Flag State: ON)
+      9 Set Event Flag (Event Flag ID: 11, Flag State: ON)
+     10 Set Event Flag (Event Flag ID: 12, Flag State: ON)
+     11 Set Event Flag (Event Flag ID: 14, Flag State: ON)
+     12 Set Event Flag (Event Flag ID: 16, Flag State: ON)
+     13 Set Event Flag (Event Flag ID: 200, Flag State: ON)
+     14 Set Event Flag (Event Flag ID: 202, Flag State: ON)
+     15 Set Event Flag (Event Flag ID: 203, Flag State: ON)
+     16 Set Event Flag (Event Flag ID: 205, Flag State: ON)
+     17 Set Event Flag (Event Flag ID: 206, Flag State: ON)
+     18 Set Event Flag (Event Flag ID: 207, Flag State: ON)
+     19 Set Event Flag (Event Flag ID: 710, Flag State: ON)
+     20 Set Event Flag (Event Flag ID: 822, Flag State: ON)
+     21 Set Event Flag (Event Flag ID: 1644, Flag State: ON)
+     22 Set Event Flag (Event Flag ID: 11010700, Flag State: ON)
+     23 Set Event Flag (Event Flag ID: 11010901, Flag State: ON)
+     24 Set Event Flag (Event Flag ID: 11010902, Flag State: ON)
+     25 Set Event Flag (Event Flag ID: 11020100, Flag State: ON)
+     26 Set Event Flag (Event Flag ID: 11020101, Flag State: ON)
+     27 Set Event Flag (Event Flag ID: 11020300, Flag State: ON)
+     28 Set Event Flag (Event Flag ID: 11400200, Flag State: ON)
+     29 Set Event Flag (Event Flag ID: 11500200, Flag State: ON)
+     30 Set Event Flag (Event Flag ID: 11800100, Flag State: ON)
+     31 Set Event Flag (Event Flag ID: 11810000, Flag State: ON)
+     32 Set Event Flag (Event Flag ID: 11810001, Flag State: ON)
+     33 Set Event Flag (Event Flag ID: 11810002, Flag State: ON)
+     34 Set Event Flag (Event Flag ID: 71800026, Flag State: ON)
+     35 Set Event Flag (Event Flag ID: 71800028, Flag State: ON)
+     36 Set Event Flag (Event Flag ID: 71800029, Flag State: ON)
+
+
+String Table:
+
+
+
+Linked .emevd Files:

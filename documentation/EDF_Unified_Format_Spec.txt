@@ -1,0 +1,114 @@
+# uW and sW represent unsigned/signed integers of size 4 or 8 bytes
+#  depending on if the game targets 32-bit or 64-bit.
+# ('W' for 'word size')
+
+CLASS
+    uW class_index
+    uW num_of_instructions
+    uW instr_table_offset       # Offset from start of [main|extra]_instr_table to begin reading this class' instructions.
+    uW name_offset              # Offset from start of string_table to the name of this instruction class.
+    z4                          # DS1 only.
+
+INSTR
+    uW instr_index
+    uW num_of_arguments
+    uW arg_table_offset     # Offset from start of [main|extra]_arg_table to begin reading this instruction's arguments.
+    uW name_offset          # Offset from start of string_table to the name of this instruction.
+    z4                      # DS1 only.
+
+enum <u4> ARG_TYPE
+    0x00000000, # u8
+    0x00000001, # u16
+    0x00000002, # u32
+    0x00000003, # s8
+    0x00000004, # s16
+    0x00000005, # s32
+    0x00000006, # f32
+    0x00000008  # u64 - offset from start of string_table to string argument.
+    
+ARG
+    uW name_offset          # Offset from start of string_table to the name of this argument.
+    ARG_TYPE arg_type
+    { # BB
+        u1 unknown1         # Unknown bitflag.
+        u1 unknown2         # Unknown bitflag.
+        u1 unknown3         # Unknown bitflag.
+        u1 unknown4         # Unknown bitflag.
+    }
+    s4 enum_table_offset    # Offset from start of enum_table to the enum to use for this argument, or -1 if this argument is not an enum.
+    z4                      # BB only.
+    uW arg_default          # Interpreted according to arg_type, with padding as needed.
+    uW arg_min              # Interpreted according to arg_type, with padding as needed.
+    uW arg_max              # Interpreted according to arg_type, with padding as needed.
+    uW arg_increment        # Interpreted according to arg_type, with padding as needed.
+    uW format_code_offset   # Offset from start of string_table to the format string used to format this argument.
+    { # DS1
+        u1 unknown1         # Unknown bitflag.
+        u1 unknown2         # Unknown bitflag.
+        u1 unknown3         # Unknown bitflag.
+        u1 unknown4         # Unknown bitflag.
+    }
+
+ENUM_VALUE
+    uW string_offset    # Offset from start of string_table to the name of this enum value.
+    u4 enum_value
+    z4
+
+ENUM
+    uW string_offset        # Offset from start of string_table to the name of this enum.
+    uW num_of_enum_values   # Number of distinct ENUM_VALUEs in this enum.
+    uW enum_value_offset    # Offset from start of enum_value_table to begin reading this enum's values.
+    z4                      # Only in DS1.
+
+EDF_FILE
+    # Begin EDF Header
+    c4 magic                                            # 'EDF\0'
+    u4 version1
+    u4 version2
+                                                        # DS1 has version1 0x00000000 and version2 0x00CC0065
+                                                        # BB  has version1 0x0000FF00 and version2 0x00CC0065
+                                                        # Other games are unknown because they do not ship .emedf files.
+    u4 filesize
+    uW num_of_main_classes
+    uW offset_to_main_class_table
+    uW num_of_main_instrs
+    uW offset_to_main_instr_table
+    uW num_of_main_args
+    uW offset_to_main_arg_table
+    uW num_of_extra_classes                             # Extra classes, etc. are not used by the event script system.
+    uW offset_to_extra_class_table                      #  Their purpose is unknown.
+    uW num_of_extra_instrs         
+    uW offset_to_extra_instr_table
+    uW num_of_extra_args
+    uW offset_to_extra_arg_table
+    uW num_of_enums
+    uW offset_to_enum_table
+    uW num_of_enum_values
+    uW offset_to_enum_value_table
+    uW length_of_strings
+    uW offset_to_strings
+    uW unknown
+    z4              # Only in DS1
+    # End EDF Header
+    
+    # Offset: offset_to_main_class_table
+    CLASS main_class_table[num_of_main_classes]
+    # Offset: offset_to_main_instr_table
+    INSTR main_instr_table[num_of_main_instrs]
+    # Offset: offset_to_main_arg_table
+    ARG main_arg_table[num_of_main_args]
+    
+    # Offset: offset_to_extra_class_table
+    CLASS extra_class_table[num_of_extra_classes]
+    # Offset: offset_to_extra_instr_table
+    INSTR extra_instr_table[num_of_extra_instrs]
+    # Offset: offset_to_extra_arg_table
+    ARG extra_arg_table[num_of_extra_args]
+    
+    # Offset: offset_to_enum_table
+    ENUM enum_table[num_of_enums]
+    # Offset: offset_to_enum_value_table
+    ENUM_VALUE enum_value_table[num_of_enum_values]
+    # Offset: offset_to_strings
+    u1 string_table[offset_to_strings]                  # Strings are stored as NUL-terminated UTF-16.
+EOF

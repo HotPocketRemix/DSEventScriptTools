@@ -1,1169 +1,1178 @@
-Event ID: 0, Int: 0
-Parameters: {} ()
-      0 END event IF multiplayer status is Client
-      1 SET Event Flag ID 760 to OFF
-      2 SET Event Flag ID 762 to OFF
-      3 SET Event Flag ID 765 to OFF
-      4 Initialize Event (Event ID: 260, Slot Number: 0, Arguments: {11810000, 10010600, 0})
-      5 Initialize Event (Event ID: 260, Slot Number: 1, Arguments: {257, 10010610, 0})
-      6 Initialize Event (Event ID: 260, Slot Number: 2, Arguments: {710, 10010620, 0})
-      7 Initialize Event (Event ID: 761, Slot Number: 0, Arguments: {0})
-      8 Initialize Event (Event ID: 763, Slot Number: 0, Arguments: {0})
-      9 Initialize Event (Event ID: 290, Slot Number: 0, Arguments: {0})
-     10 Initialize Event (Event ID: 701, Slot Number: 0, Arguments: {0})
-     11 Initialize Event (Event ID: 702, Slot Number: 0, Arguments: {0})
-     12 Initialize Event (Event ID: 717, Slot Number: 0, Arguments: {0})
-     13 Initialize Event (Event ID: 718, Slot Number: 0, Arguments: {0})
-     14 Initialize Event (Event ID: 706, Slot Number: 0, Arguments: {0})
-     15 Initialize Event (Event ID: 740, Slot Number: 0, Arguments: {0})
-     16 Initialize Event (Event ID: 750, Slot Number: 0, Arguments: {0})
-     17 Initialize Event (Event ID: 752, Slot Number: 0, Arguments: {0})
-     18 Initialize Event (Event ID: 757, Slot Number: 0, Arguments: {0})
-     19 Initialize Event (Event ID: 758, Slot Number: 0, Arguments: {0})
-     20 Initialize Event (Event ID: 759, Slot Number: 0, Arguments: {0})
-     21 Initialize Event (Event ID: 754, Slot Number: 0, Arguments: {0})
-     22 Initialize Event (Event ID: 770, Slot Number: 0, Arguments: {0})
-     23 Initialize Event (Event ID: 772, Slot Number: 0, Arguments: {0})
-     24 Initialize Event (Event ID: 730, Slot Number: 0, Arguments: {0})
-     25 Initialize Event (Event ID: 731, Slot Number: 0, Arguments: {0})
-     26 Initialize Event (Event ID: 766, Slot Number: 0, Arguments: {0})
-     27 Initialize Event (Event ID: 710, Slot Number: 0, Arguments: {0})
-     28 Initialize Event (Event ID: 711, Slot Number: 0, Arguments: {2500, 711})
-     29 Initialize Event (Event ID: 711, Slot Number: 1, Arguments: {2501, 712})
-     30 Initialize Event (Event ID: 711, Slot Number: 2, Arguments: {2502, 713})
-     31 Initialize Event (Event ID: 711, Slot Number: 3, Arguments: {2504, 714})
-     32 Initialize Event (Event ID: 715, Slot Number: 0, Arguments: {0})
-     33 Initialize Event (Event ID: 716, Slot Number: 0, Arguments: {0})
-     34 Initialize Event (Event ID: 8131, Slot Number: 0, Arguments: {202, 203})
-     35 Initialize Event (Event ID: 8131, Slot Number: 1, Arguments: {204, 205})
-     36 Initialize Event (Event ID: 8131, Slot Number: 2, Arguments: {206, 207})
-     37 Initialize Event (Event ID: 8131, Slot Number: 3, Arguments: {208, 209})
-     38 Initialize Event (Event ID: 8131, Slot Number: 4, Arguments: {210, 211})
-     39 Initialize Event (Event ID: 8131, Slot Number: 5, Arguments: {212, 213})
-     40 Initialize Event (Event ID: 8131, Slot Number: 6, Arguments: {214, 215})
-     41 Initialize Event (Event ID: 819, Slot Number: 0, Arguments: {0})
-     42 Initialize Event (Event ID: 970, Slot Number: 0, Arguments: {2, 2500, 9020, 9030})
-     43 Initialize Event (Event ID: 970, Slot Number: 1, Arguments: {11010901, 0, 9000, 9030})
-     44 Initialize Event (Event ID: 970, Slot Number: 2, Arguments: {11010902, 2510, 9000, 9030})
-     45 Initialize Event (Event ID: 970, Slot Number: 3, Arguments: {3, 0, 9020, 0})
-     46 Initialize Event (Event ID: 970, Slot Number: 4, Arguments: {4, 2520, 9020, 0})
-     47 Initialize Event (Event ID: 970, Slot Number: 5, Arguments: {11200900, 2530, 9000, 0})
-     48 Initialize Event (Event ID: 970, Slot Number: 6, Arguments: {5, 2540, 9000, 9030})
-     49 Initialize Event (Event ID: 970, Slot Number: 7, Arguments: {6, 2550, 9000, 9030})
-     50 Initialize Event (Event ID: 970, Slot Number: 8, Arguments: {7, 2560, 9000, 0})
-     51 Initialize Event (Event ID: 970, Slot Number: 9, Arguments: {9, 2570, 9020, 0})
-     52 Initialize Event (Event ID: 970, Slot Number: 10, Arguments: {11410900, 0, 9000, 9030})
-     53 Initialize Event (Event ID: 970, Slot Number: 11, Arguments: {11410410, 0, 9000, 0})
-     54 Initialize Event (Event ID: 970, Slot Number: 12, Arguments: {11410901, 0, 9000, 9030})
-     55 Initialize Event (Event ID: 970, Slot Number: 13, Arguments: {10, 2580, 9000, 0})
-     56 Initialize Event (Event ID: 970, Slot Number: 14, Arguments: {11, 2590, 9000, 0})
-     57 Initialize Event (Event ID: 970, Slot Number: 15, Arguments: {11510900, 2600, 0, 0})
-     58 Initialize Event (Event ID: 970, Slot Number: 16, Arguments: {11510902, 2610, 9000, 0})
-     59 Initialize Event (Event ID: 970, Slot Number: 17, Arguments: {11510903, 2620, 9000, 0})
-     60 Initialize Event (Event ID: 970, Slot Number: 18, Arguments: {13, 2630, 9010, 0})
-     61 Initialize Event (Event ID: 970, Slot Number: 19, Arguments: {14, 2640, 9000, 0})
-     62 Initialize Event (Event ID: 970, Slot Number: 20, Arguments: {15, 2650, 0, 0})
-     63 Initialize Event (Event ID: 970, Slot Number: 21, Arguments: {16, 2660, 9000, 0})
-     64 Initialize Event (Event ID: 970, Slot Number: 22, Arguments: {11810900, 0, 9000, 9030})
-     65 Initialize Event (Event ID: 970, Slot Number: 23, Arguments: {11210000, 2680, 9000, 0})
-     66 Initialize Event (Event ID: 970, Slot Number: 24, Arguments: {11210001, 2690, 0, 0})
-     67 Initialize Event (Event ID: 970, Slot Number: 25, Arguments: {17, 2700, 9040, 0})
-     68 Initialize Event (Event ID: 970, Slot Number: 26, Arguments: {11210004, 2710, 0, 0})
-     69 Initialize Event (Event ID: 250, Slot Number: 0, Arguments: {2600, 250})
-     70 Initialize Event (Event ID: 250, Slot Number: 1, Arguments: {2601, 251})
-     71 Initialize Event (Event ID: 250, Slot Number: 2, Arguments: {2602, 252})
-     72 Initialize Event (Event ID: 250, Slot Number: 3, Arguments: {2603, 253})
-     73 Initialize Event (Event ID: 250, Slot Number: 4, Arguments: {2604, 254})
-     74 Initialize Event (Event ID: 250, Slot Number: 5, Arguments: {2605, 255})
-     75 Initialize Event (Event ID: 250, Slot Number: 6, Arguments: {2606, 256})
-     76 Initialize Event (Event ID: 250, Slot Number: 7, Arguments: {2607, 257})
-     77 Initialize Event (Event ID: 250, Slot Number: 8, Arguments: {2608, 258})
-     78 Initialize Event (Event ID: 250, Slot Number: 9, Arguments: {2609, 259})
-     79 Initialize Event (Event ID: 350, Slot Number: 0, Arguments: {350, 800})
-     80 Initialize Event (Event ID: 350, Slot Number: 1, Arguments: {351, 801})
-     81 Initialize Event (Event ID: 350, Slot Number: 2, Arguments: {352, 802})
-     82 Initialize Event (Event ID: 350, Slot Number: 6, Arguments: {356, 806})
-     83 Initialize Event (Event ID: 350, Slot Number: 7, Arguments: {357, 807})
-     84 Initialize Event (Event ID: 350, Slot Number: 8, Arguments: {358, 808})
-     85 Initialize Event (Event ID: 350, Slot Number: 9, Arguments: {359, 809})
-     86 Initialize Event (Event ID: 350, Slot Number: 10, Arguments: {360, 810})
-     87 Initialize Event (Event ID: 350, Slot Number: 12, Arguments: {362, 812})
-     88 Initialize Event (Event ID: 350, Slot Number: 13, Arguments: {363, 813})
-     89 Initialize Event (Event ID: 780, Slot Number: 0, Arguments: {1000, 780})
-     90 Initialize Event (Event ID: 780, Slot Number: 1, Arguments: {1010, 781})
-     91 Initialize Event (Event ID: 780, Slot Number: 2, Arguments: {1020, 782})
-     92 Initialize Event (Event ID: 780, Slot Number: 3, Arguments: {1030, 783})
-     93 Initialize Event (Event ID: 780, Slot Number: 4, Arguments: {1040, 784})
-     94 Initialize Event (Event ID: 780, Slot Number: 5, Arguments: {1050, 785})
-     95 Initialize Event (Event ID: 780, Slot Number: 6, Arguments: {1060, 786})
-     96 Initialize Event (Event ID: 780, Slot Number: 7, Arguments: {1070, 787})
-     97 Initialize Event (Event ID: 780, Slot Number: 8, Arguments: {1080, 788})
-     98 Initialize Event (Event ID: 780, Slot Number: 9, Arguments: {1090, 789})
-     99 Initialize Event (Event ID: 780, Slot Number: 10, Arguments: {1100, 790})
-    100 Initialize Event (Event ID: 780, Slot Number: 11, Arguments: {1110, 791})
-    101 Initialize Event (Event ID: 780, Slot Number: 12, Arguments: {1120, 792})
-    102 Initialize Event (Event ID: 780, Slot Number: 13, Arguments: {1130, 793})
-    103 Initialize Event (Event ID: 870, Slot Number: 0, Arguments: {0, 850})
-    104 Initialize Event (Event ID: 870, Slot Number: 1, Arguments: {1, 851})
-    105 Initialize Event (Event ID: 870, Slot Number: 2, Arguments: {2, 852})
-    106 Initialize Event (Event ID: 870, Slot Number: 3, Arguments: {3, 853})
-    107 Initialize Event (Event ID: 870, Slot Number: 4, Arguments: {4, 854})
-    108 Initialize Event (Event ID: 870, Slot Number: 5, Arguments: {5, 855})
-    109 Initialize Event (Event ID: 870, Slot Number: 6, Arguments: {6, 856})
-    110 Initialize Event (Event ID: 870, Slot Number: 7, Arguments: {7, 857})
-    111 Initialize Event (Event ID: 870, Slot Number: 8, Arguments: {8, 858})
-    112 Initialize Event (Event ID: 870, Slot Number: 9, Arguments: {9, 859})
-    113 Initialize Event (Event ID: 840, Slot Number: 0, Arguments: {840, 7905, 6370, 4294967295})
-    114 Initialize Event (Event ID: 840, Slot Number: 1, Arguments: {841, 7905, 6072, 4294967295})
-    115 Initialize Event (Event ID: 840, Slot Number: 2, Arguments: {842, 7905, 6080, 4294967295})
-    116 Initialize Event (Event ID: 840, Slot Number: 3, Arguments: {843, 7905, 6001, 4294967295})
-    117 Initialize Event (Event ID: 840, Slot Number: 4, Arguments: {844, 7898, 10000, 7896})
-    118 Initialize Event (Event ID: 840, Slot Number: 5, Arguments: {845, 7905, 6340, 4294967295})
-    119 Initialize Event (Event ID: 840, Slot Number: 6, Arguments: {846, 7905, 6341, 4294967295})
-    120 Initialize Event (Event ID: 840, Slot Number: 7, Arguments: {847, 7913, 10000, 7911})
-    121 Initialize Event (Event ID: 840, Slot Number: 8, Arguments: {848, 7905, 6380, 4294967295})
-    122 Initialize Event (Event ID: 840, Slot Number: 9, Arguments: {849, 7905, 1400700, 4294967295})
-    123 Initialize Event (Event ID: 690, Slot Number: 0, Arguments: {600, 4, 16, 1175})
-    124 Initialize Event (Event ID: 719, Slot Number: 0, Arguments: {0})
-    125 Initialize Event (Event ID: 720, Slot Number: 0, Arguments: {0})
-    126 Initialize Event (Event ID: 721, Slot Number: 0, Arguments: {0})
-    127 Initialize Event (Event ID: 722, Slot Number: 0, Arguments: {0})
-    128 Initialize Event (Event ID: 723, Slot Number: 0, Arguments: {0})
-    129 Initialize Event (Event ID: 724, Slot Number: 0, Arguments: {0})
-    130 Initialize Event (Event ID: 725, Slot Number: 0, Arguments: {0})
-    131 Initialize Event (Event ID: 726, Slot Number: 0, Arguments: {0})
-    132 Initialize Event (Event ID: 727, Slot Number: 0, Arguments: {0})
-    133 Initialize Event (Event ID: 745, Slot Number: 0, Arguments: {0})
-    134 Initialize Event (Event ID: 818, Slot Number: 0, Arguments: {0})
-    135 Initialize Event (Event ID: 810, Slot Number: 0, Arguments: {0})
-    136 Initialize Event (Event ID: 812, Slot Number: 0, Arguments: {51400350})
-    137 Initialize Event (Event ID: 812, Slot Number: 1, Arguments: {51010050})
-    138 Initialize Event (Event ID: 822, Slot Number: 0, Arguments: {0})
-    139 Initialize Event (Event ID: 823, Slot Number: 0, Arguments: {0})
-    140 Initialize Event (Event ID: 910, Slot Number: 0, Arguments: {11400591, 1280})
-    141 Initialize Event (Event ID: 911, Slot Number: 0, Arguments: {11010591, 1000, 1})
-    142 Initialize Event (Event ID: 911, Slot Number: 1, Arguments: {11510590, 1010, 1})
-    143 Initialize Event (Event ID: 911, Slot Number: 2, Arguments: {11700591, 1020, 1})
-    144 Initialize Event (Event ID: 911, Slot Number: 3, Arguments: {11000591, 1030, 1})
-    145 Initialize Event (Event ID: 911, Slot Number: 4, Arguments: {11400590, 1040, 1})
-    146 Initialize Event (Event ID: 911, Slot Number: 5, Arguments: {11410594, 1050, 1})
-    147 Initialize Event (Event ID: 911, Slot Number: 6, Arguments: {11020594, 1060, 1})
-    148 Initialize Event (Event ID: 911, Slot Number: 7, Arguments: {11020595, 1070, 1})
-    149 Initialize Event (Event ID: 911, Slot Number: 8, Arguments: {11810590, 1082, 1})
-    150 Initialize Event (Event ID: 911, Slot Number: 9, Arguments: {11810591, 1080, 1})
-    151 Initialize Event (Event ID: 911, Slot Number: 10, Arguments: {11510592, 1090, 1})
-    152 Initialize Event (Event ID: 911, Slot Number: 11, Arguments: {11600592, 1100, 1})
-    153 Initialize Event (Event ID: 911, Slot Number: 12, Arguments: {11020602, 1110, 1})
-    154 Initialize Event (Event ID: 911, Slot Number: 13, Arguments: {11010594, 1120, 1})
-    155 Initialize Event (Event ID: 911, Slot Number: 14, Arguments: {11010595, 1130, 1})
-    156 Initialize Event (Event ID: 911, Slot Number: 15, Arguments: {11020599, 1140, 1})
-    157 Initialize Event (Event ID: 911, Slot Number: 16, Arguments: {11020607, 1150, 1})
-    158 Initialize Event (Event ID: 911, Slot Number: 17, Arguments: {11200592, 1160, 1})
-    159 Initialize Event (Event ID: 911, Slot Number: 18, Arguments: {11200593, 1170, 1})
-    160 Initialize Event (Event ID: 911, Slot Number: 19, Arguments: {11200594, 1180, 1})
-    161 Initialize Event (Event ID: 911, Slot Number: 20, Arguments: {11300590, 1190, 1})
-    162 Initialize Event (Event ID: 911, Slot Number: 21, Arguments: {11300591, 1200, 1})
-    163 Initialize Event (Event ID: 911, Slot Number: 22, Arguments: {11310590, 1210, 1})
-    164 Initialize Event (Event ID: 911, Slot Number: 23, Arguments: {11310592, 1220, 1})
-    165 Initialize Event (Event ID: 911, Slot Number: 24, Arguments: {11310593, 1230, 1})
-    166 Initialize Event (Event ID: 911, Slot Number: 25, Arguments: {11310594, 1240, 1})
-    167 Initialize Event (Event ID: 911, Slot Number: 26, Arguments: {11320590, 1250, 1})
-    168 Initialize Event (Event ID: 911, Slot Number: 27, Arguments: {11320581, 1260, 1})
-    169 Initialize Event (Event ID: 911, Slot Number: 28, Arguments: {11320593, 1270, 1})
-    170 Initialize Event (Event ID: 911, Slot Number: 29, Arguments: {11400592, 1290, 1})
-    171 Initialize Event (Event ID: 911, Slot Number: 30, Arguments: {11400594, 1300, 1})
-    172 Initialize Event (Event ID: 911, Slot Number: 31, Arguments: {11400596, 1310, 1})
-    173 Initialize Event (Event ID: 911, Slot Number: 32, Arguments: {11400597, 1320, 1})
-    174 Initialize Event (Event ID: 911, Slot Number: 33, Arguments: {11400598, 1330, 1})
-    175 Initialize Event (Event ID: 911, Slot Number: 34, Arguments: {11400599, 1340, 1})
-    176 Initialize Event (Event ID: 911, Slot Number: 35, Arguments: {11510595, 1350, 1})
-    177 Initialize Event (Event ID: 911, Slot Number: 36, Arguments: {11510596, 1360, 1})
-    178 Initialize Event (Event ID: 911, Slot Number: 37, Arguments: {11510597, 1370, 1})
-    179 Initialize Event (Event ID: 911, Slot Number: 38, Arguments: {11600594, 1380, 1})
-    180 Initialize Event (Event ID: 911, Slot Number: 39, Arguments: {11600595, 1390, 1})
-    181 Initialize Event (Event ID: 911, Slot Number: 40, Arguments: {11600596, 1400, 1})
-    182 Initialize Event (Event ID: 911, Slot Number: 41, Arguments: {11010598, 1410, 0})
-    183 Initialize Event (Event ID: 911, Slot Number: 42, Arguments: {11210590, 1500, 1})
-    184 Initialize Event (Event ID: 911, Slot Number: 43, Arguments: {11210593, 1510, 1})
-    185 Initialize Event (Event ID: 911, Slot Number: 44, Arguments: {11210594, 1520, 1})
-    186 Initialize Event (Event ID: 911, Slot Number: 45, Arguments: {11600580, 1401, 1})
-    187 Initialize Event (Event ID: 911, Slot Number: 46, Arguments: {11600581, 1402, 1})
-    188 Initialize Event (Event ID: 911, Slot Number: 47, Arguments: {11600582, 1403, 1})
-    189 Initialize Event (Event ID: 911, Slot Number: 48, Arguments: {11600583, 1404, 1})
-    190 Initialize Event (Event ID: 890, Slot Number: 0, Arguments: {11310580, 1221, 1})
-    191 Initialize Event (Event ID: 890, Slot Number: 1, Arguments: {11510580, 1361, 1})
-    192 Initialize Event (Event ID: 890, Slot Number: 2, Arguments: {11510581, 1371, 1})
-    193 Initialize Event (Event ID: 890, Slot Number: 3, Arguments: {11320592, 1261, 1})
-    194 Initialize Event (Event ID: 960, Slot Number: 0, Arguments: {1322, 6190, 6190})
-    195 Initialize Event (Event ID: 960, Slot Number: 1, Arguments: {1315, 6180, 1100})
-    196 Initialize Event (Event ID: 960, Slot Number: 2, Arguments: {1402, 6230, 6230})
-    197 Initialize Event (Event ID: 960, Slot Number: 3, Arguments: {1402, 6230, 6231})
-    198 Initialize Event (Event ID: 8200, Slot Number: 0, Arguments: {3, 5500, 50000120, 11010594})
-    199 Initialize Event (Event ID: 8200, Slot Number: 1, Arguments: {3, 5510, 50000130, 11010595})
-    200 Initialize Event (Event ID: 8200, Slot Number: 2, Arguments: {2, 103, 50000160, 11200592})
-    201 Initialize Event (Event ID: 8200, Slot Number: 3, Arguments: {3, 240, 50000170, 11200593})
-    202 Initialize Event (Event ID: 8200, Slot Number: 4, Arguments: {2, 124, 50000180, 11200594})
-    203 Initialize Event (Event ID: 8200, Slot Number: 5, Arguments: {0, 453000, 50000220, 11310592})
-    204 Initialize Event (Event ID: 8200, Slot Number: 6, Arguments: {3, 5100, 50000225, 11310580})
-    205 Initialize Event (Event ID: 8200, Slot Number: 7, Arguments: {3, 5110, 50000230, 11310593})
-    206 Initialize Event (Event ID: 8200, Slot Number: 8, Arguments: {3, 114, 50000265, 11320581})
-    207 Initialize Event (Event ID: 8200, Slot Number: 9, Arguments: {3, 377, 50000260, 11320592})
-    208 Initialize Event (Event ID: 8200, Slot Number: 10, Arguments: {3, 378, 50000270, 11320593})
-    209 Initialize Event (Event ID: 8200, Slot Number: 11, Arguments: {3, 4500, 50000310, 11400596})
-    210 Initialize Event (Event ID: 8200, Slot Number: 12, Arguments: {3, 4520, 50000320, 11400597})
-    211 Initialize Event (Event ID: 8200, Slot Number: 13, Arguments: {3, 4510, 50000330, 11400598})
-    212 Initialize Event (Event ID: 8200, Slot Number: 14, Arguments: {2, 130, 50000350, 11510595})
-    213 Initialize Event (Event ID: 8200, Slot Number: 15, Arguments: {3, 113, 50000360, 11510596})
-    214 Initialize Event (Event ID: 8200, Slot Number: 16, Arguments: {2, 102, 50000365, 11510580})
-    215 Initialize Event (Event ID: 8200, Slot Number: 17, Arguments: {3, 5910, 50000370, 11510597})
-    216 Initialize Event (Event ID: 8200, Slot Number: 18, Arguments: {0, 1366000, 50000375, 11510581})
-    217 Initialize Event (Event ID: 8200, Slot Number: 19, Arguments: {0, 904000, 50000380, 11600594})
-    218 Initialize Event (Event ID: 8200, Slot Number: 20, Arguments: {3, 102, 50000390, 11600595})
-    219 Initialize Event (Event ID: 8200, Slot Number: 21, Arguments: {0, 210000, 50000400, 11600596})
-    220 Initialize Event (Event ID: 8200, Slot Number: 22, Arguments: {1, 40000, 50000410, 11600580})
-    221 Initialize Event (Event ID: 8200, Slot Number: 23, Arguments: {1, 41000, 50000420, 11600581})
-    222 Initialize Event (Event ID: 8200, Slot Number: 24, Arguments: {1, 42000, 50000430, 11600582})
-    223 Initialize Event (Event ID: 8200, Slot Number: 25, Arguments: {1, 43000, 50000440, 11600583})
-    224 Initialize Event (Event ID: 8300, Slot Number: 0, Arguments: {3, 100, 50000000})
-    225 Initialize Event (Event ID: 8300, Slot Number: 1, Arguments: {3, 101, 51100330})
-    226 Initialize Event (Event ID: 8300, Slot Number: 2, Arguments: {3, 102, 50000390})
-    227 Initialize Event (Event ID: 8300, Slot Number: 3, Arguments: {3, 106, 11017020})
-    228 Initialize Event (Event ID: 8300, Slot Number: 4, Arguments: {3, 108, 11607020})
-    229 Initialize Event (Event ID: 8300, Slot Number: 5, Arguments: {3, 112, 11407080})
-    230 Initialize Event (Event ID: 8300, Slot Number: 6, Arguments: {3, 2508, 11007010})
-    231 Initialize Event (Event ID: 8090, Slot Number: 0, Arguments: {3, 510, 11217010})
-    232 Initialize Event (Event ID: 8090, Slot Number: 1, Arguments: {3, 511, 11217020})
-    233 Initialize Event (Event ID: 8090, Slot Number: 2, Arguments: {3, 512, 11217030})
-    234 Initialize Event (Event ID: 8090, Slot Number: 3, Arguments: {3, 513, 11217040})
-    235 Initialize Event (Event ID: 8090, Slot Number: 4, Arguments: {3, 514, 11217050})
+EVD-DS1
 
-Event ID: 50, Int: 0
+Event ID: 0, Ignores Bonfire Rest
 Parameters: {} ()
-      0 SKIP 80 lines IF Event Flag ID: 00000909 is ON
-      1 SKIP 1 lines IF Event Flag ID: 00001000 to 00001029 are not all OFF
-      2 SET Event Flag ID 1000 to ON
-      3 SKIP 1 lines IF Event Flag ID: 00001030 to 00001059 are not all OFF
-      4 SET Event Flag ID 1030 to ON
-      5 SKIP 1 lines IF Event Flag ID: 00001060 to 00001089 are not all OFF
-      6 SET Event Flag ID 1060 to ON
-      7 SKIP 1 lines IF Event Flag ID: 00001090 to 00001109 are not all OFF
-      8 SET Event Flag ID 1090 to ON
-      9 SKIP 1 lines IF Event Flag ID: 00001110 to 00001119 are not all OFF
-     10 SET Event Flag ID 1110 to ON
-     11 SKIP 1 lines IF Event Flag ID: 00001120 to 00001139 are not all OFF
-     12 SET Event Flag ID 1120 to ON
-     13 SKIP 1 lines IF Event Flag ID: 00001140 to 00001169 are not all OFF
-     14 SET Event Flag ID 1140 to ON
-     15 SKIP 1 lines IF Event Flag ID: 00001170 to 00001189 are not all OFF
-     16 SET Event Flag ID 1170 to ON
-     17 SKIP 1 lines IF Event Flag ID: 00001190 to 00001209 are not all OFF
-     18 SET Event Flag ID 1202 to ON
-     19 SKIP 1 lines IF Event Flag ID: 00001210 to 00001219 are not all OFF
-     20 SET Event Flag ID 1210 to ON
-     21 SKIP 1 lines IF Event Flag ID: 00001220 to 00001229 are not all OFF
-     22 SET Event Flag ID 1220 to ON
-     23 SKIP 1 lines IF Event Flag ID: 00001230 to 00001239 are not all OFF
-     24 SET Event Flag ID 1230 to ON
-     25 SKIP 1 lines IF Event Flag ID: 00001240 to 00001249 are not all OFF
-     26 SET Event Flag ID 1240 to ON
-     27 SKIP 1 lines IF Event Flag ID: 00001250 to 00001259 are not all OFF
-     28 SET Event Flag ID 1250 to ON
-     29 SKIP 1 lines IF Event Flag ID: 00001270 to 00001279 are not all OFF
-     30 SET Event Flag ID 1270 to ON
-     31 SKIP 1 lines IF Event Flag ID: 00001280 to 00001289 are not all OFF
-     32 SET Event Flag ID 1280 to ON
-     33 SKIP 1 lines IF Event Flag ID: 00001290 to 00001309 are not all OFF
-     34 SET Event Flag ID 1290 to ON
-     35 SKIP 1 lines IF Event Flag ID: 00001310 to 00001319 are not all OFF
-     36 SET Event Flag ID 1310 to ON
-     37 SKIP 1 lines IF Event Flag ID: 00001320 to 00001339 are not all OFF
-     38 SET Event Flag ID 1320 to ON
-     39 SKIP 1 lines IF Event Flag ID: 00001340 to 00001359 are not all OFF
-     40 SET Event Flag ID 1340 to ON
-     41 SKIP 1 lines IF Event Flag ID: 00001360 to 00001379 are not all OFF
-     42 SET Event Flag ID 1360 to ON
-     43 SKIP 1 lines IF Event Flag ID: 00001380 to 00001399 are not all OFF
-     44 SET Event Flag ID 1380 to ON
-     45 SKIP 1 lines IF Event Flag ID: 00001400 to 00001409 are not all OFF
-     46 SET Event Flag ID 1400 to ON
-     47 SKIP 1 lines IF Event Flag ID: 00001410 to 00001419 are not all OFF
-     48 SET Event Flag ID 1410 to ON
-     49 SKIP 1 lines IF Event Flag ID: 00001420 to 00001429 are not all OFF
-     50 SET Event Flag ID 1420 to ON
-     51 SKIP 1 lines IF Event Flag ID: 00001430 to 00001459 are not all OFF
-     52 SET Event Flag ID 1430 to ON
-     53 SKIP 1 lines IF Event Flag ID: 00001460 to 00001489 are not all OFF
-     54 SET Event Flag ID 1460 to ON
-     55 SKIP 1 lines IF Event Flag ID: 00001490 to 00001539 are not all OFF
-     56 SET Event Flag ID 1490 to ON
-     57 SKIP 1 lines IF Event Flag ID: 00001540 to 00001569 are not all OFF
-     58 SET Event Flag ID 1540 to ON
-     59 SKIP 1 lines IF Event Flag ID: 00001570 to 00001599 are not all OFF
-     60 SET Event Flag ID 1570 to ON
-     61 SKIP 1 lines IF Event Flag ID: 00001600 to 00001619 are not all OFF
-     62 SET Event Flag ID 1600 to ON
-     63 SKIP 1 lines IF Event Flag ID: 00001620 to 00001639 are not all OFF
-     64 SET Event Flag ID 1620 to ON
-     65 SKIP 1 lines IF Event Flag ID: 00001640 to 00001669 are not all OFF
-     66 SET Event Flag ID 1640 to ON
-     67 SKIP 1 lines IF Event Flag ID: 00001670 to 00001679 are not all OFF
-     68 SET Event Flag ID 1670 to ON
-     69 SKIP 1 lines IF Event Flag ID: 00001690 to 00001699 are not all OFF
-     70 SET Event Flag ID 1690 to ON
-     71 SKIP 1 lines IF Event Flag ID: 00001700 to 00001709 are not all OFF
-     72 SET Event Flag ID 1700 to ON
-     73 SKIP 1 lines IF Event Flag ID: 00001710 to 00001729 are not all OFF
-     74 SET Event Flag ID 1710 to ON
-     75 SKIP 1 lines IF Event Flag ID: 00001760 to 00001769 are not all OFF
-     76 SET Event Flag ID 1760 to ON
-     77 SKIP 1 lines IF Event Flag ID: 00001770 to 00001779 are not all OFF
-     78 SET Event Flag ID 1770 to ON
-     79 SKIP 1 lines IF Event Flag ID: 00001780 to 00001789 are not all OFF
-     80 SET Event Flag ID 1780 to ON
-     81 SKIP 1 lines IF Event Flag ID: 00001820 to 00001839 are not all OFF
-     82 SET Event Flag ID 1820 to ON
-     83 SKIP 1 lines IF Event Flag ID: 00001840 to 00001859 are not all OFF
-     84 SET Event Flag ID 1840 to ON
-     85 SKIP 1 lines IF Event Flag ID: 00001860 to 00001869 are not all OFF
-     86 SET Event Flag ID 1860 to ON
-     87 SKIP 1 lines IF Event Flag ID: 00001870 to 00001889 are not all OFF
-     88 SET Event Flag ID 1870 to ON
-     89 SKIP 24 lines IF Event Flag ID: 00000909 is ON
-     90 SET Event Flag ID 11807020 to ON
-     91 SET Event Flag ID 11807030 to ON
-     92 SET Event Flag ID 11807040 to ON
-     93 SET Event Flag ID 11807050 to ON
-     94 SET Event Flag ID 11807060 to ON
-     95 SET Event Flag ID 11807070 to ON
-     96 SET Event Flag ID 11807080 to ON
-     97 SET Event Flag ID 11807090 to ON
-     98 SET Event Flag ID 11807100 to ON
-     99 SET Event Flag ID 11807110 to ON
-    100 SET Event Flag ID 11807120 to ON
-    101 SET Event Flag ID 11807130 to ON
-    102 SET Event Flag ID 11807170 to ON
-    103 SET Event Flag ID 11807180 to ON
-    104 SET Event Flag ID 11807190 to ON
-    105 SET Event Flag ID 11807200 to ON
-    106 SET Event Flag ID 11807210 to ON
-    107 SET Event Flag ID 11807220 to ON
-    108 SET Event Flag ID 11807230 to ON
-    109 SET Event Flag ID 11807240 to ON
-    110 SET Event Flag ID 11217060 to ON
-    111 SET Event Flag ID 11217070 to ON
-    112 SET Event Flag ID 11217080 to ON
-    113 SET Event Flag ID 11217090 to ON
-    114 SKIP 4 lines IF Event Flag ID: 00000909 is ON
-    115 SET Event Flag ID 909 to ON
-    116 SET Event Flag ID 814 to ON
-    117 SET Event Flag ID 50006071 to ON
-    118 SET Event Flag ID 50006080 to ON
+      0 END IF Multiplayer State (Execution End Type: End, Desired Multiplayer State: Client)
+      1 Set Event Flag (Event Flag ID: 760, Flag State: OFF)
+      2 Set Event Flag (Event Flag ID: 762, Flag State: OFF)
+      3 Set Event Flag (Event Flag ID: 765, Flag State: OFF)
+      4 Initialize Event (Event Slot ID: 0, Event ID: 260, Parameters: 11810000){, 10010600, 0}
+      5 Initialize Event (Event Slot ID: 1, Event ID: 260, Parameters: 257){, 10010610, 0}
+      6 Initialize Event (Event Slot ID: 2, Event ID: 260, Parameters: 710){, 10010620, 0}
+      7 Initialize Event (Event Slot ID: 0, Event ID: 761, Parameters: 0)
+      8 Initialize Event (Event Slot ID: 0, Event ID: 763, Parameters: 0)
+      9 Initialize Event (Event Slot ID: 0, Event ID: 290, Parameters: 0)
+     10 Initialize Event (Event Slot ID: 0, Event ID: 701, Parameters: 0)
+     11 Initialize Event (Event Slot ID: 0, Event ID: 702, Parameters: 0)
+     12 Initialize Event (Event Slot ID: 0, Event ID: 717, Parameters: 0)
+     13 Initialize Event (Event Slot ID: 0, Event ID: 718, Parameters: 0)
+     14 Initialize Event (Event Slot ID: 0, Event ID: 706, Parameters: 0)
+     15 Initialize Event (Event Slot ID: 0, Event ID: 740, Parameters: 0)
+     16 Initialize Event (Event Slot ID: 0, Event ID: 750, Parameters: 0)
+     17 Initialize Event (Event Slot ID: 0, Event ID: 752, Parameters: 0)
+     18 Initialize Event (Event Slot ID: 0, Event ID: 757, Parameters: 0)
+     19 Initialize Event (Event Slot ID: 0, Event ID: 758, Parameters: 0)
+     20 Initialize Event (Event Slot ID: 0, Event ID: 759, Parameters: 0)
+     21 Initialize Event (Event Slot ID: 0, Event ID: 754, Parameters: 0)
+     22 Initialize Event (Event Slot ID: 0, Event ID: 770, Parameters: 0)
+     23 Initialize Event (Event Slot ID: 0, Event ID: 772, Parameters: 0)
+     24 Initialize Event (Event Slot ID: 0, Event ID: 730, Parameters: 0)
+     25 Initialize Event (Event Slot ID: 0, Event ID: 731, Parameters: 0)
+     26 Initialize Event (Event Slot ID: 0, Event ID: 766, Parameters: 0)
+     27 Initialize Event (Event Slot ID: 0, Event ID: 710, Parameters: 0)
+     28 Initialize Event (Event Slot ID: 0, Event ID: 711, Parameters: 2500){, 711}
+     29 Initialize Event (Event Slot ID: 1, Event ID: 711, Parameters: 2501){, 712}
+     30 Initialize Event (Event Slot ID: 2, Event ID: 711, Parameters: 2502){, 713}
+     31 Initialize Event (Event Slot ID: 3, Event ID: 711, Parameters: 2504){, 714}
+     32 Initialize Event (Event Slot ID: 0, Event ID: 715, Parameters: 0)
+     33 Initialize Event (Event Slot ID: 0, Event ID: 716, Parameters: 0)
+     34 Initialize Event (Event Slot ID: 0, Event ID: 8131, Parameters: 202){, 203}
+     35 Initialize Event (Event Slot ID: 1, Event ID: 8131, Parameters: 204){, 205}
+     36 Initialize Event (Event Slot ID: 2, Event ID: 8131, Parameters: 206){, 207}
+     37 Initialize Event (Event Slot ID: 3, Event ID: 8131, Parameters: 208){, 209}
+     38 Initialize Event (Event Slot ID: 4, Event ID: 8131, Parameters: 210){, 211}
+     39 Initialize Event (Event Slot ID: 5, Event ID: 8131, Parameters: 212){, 213}
+     40 Initialize Event (Event Slot ID: 6, Event ID: 8131, Parameters: 214){, 215}
+     41 Initialize Event (Event Slot ID: 0, Event ID: 819, Parameters: 0)
+     42 Initialize Event (Event Slot ID: 0, Event ID: 970, Parameters: 2){, 2500, 9020, 9030}
+     43 Initialize Event (Event Slot ID: 1, Event ID: 970, Parameters: 11010901){, 0, 9000, 9030}
+     44 Initialize Event (Event Slot ID: 2, Event ID: 970, Parameters: 11010902){, 2510, 9000, 9030}
+     45 Initialize Event (Event Slot ID: 3, Event ID: 970, Parameters: 3){, 0, 9020, 0}
+     46 Initialize Event (Event Slot ID: 4, Event ID: 970, Parameters: 4){, 2520, 9020, 0}
+     47 Initialize Event (Event Slot ID: 5, Event ID: 970, Parameters: 11200900){, 2530, 9000, 0}
+     48 Initialize Event (Event Slot ID: 6, Event ID: 970, Parameters: 5){, 2540, 9000, 9030}
+     49 Initialize Event (Event Slot ID: 7, Event ID: 970, Parameters: 6){, 2550, 9000, 9030}
+     50 Initialize Event (Event Slot ID: 8, Event ID: 970, Parameters: 7){, 2560, 9000, 0}
+     51 Initialize Event (Event Slot ID: 9, Event ID: 970, Parameters: 9){, 2570, 9020, 0}
+     52 Initialize Event (Event Slot ID: 10, Event ID: 970, Parameters: 11410900){, 0, 9000, 9030}
+     53 Initialize Event (Event Slot ID: 11, Event ID: 970, Parameters: 11410410){, 0, 9000, 0}
+     54 Initialize Event (Event Slot ID: 12, Event ID: 970, Parameters: 11410901){, 0, 9000, 9030}
+     55 Initialize Event (Event Slot ID: 13, Event ID: 970, Parameters: 10){, 2580, 9000, 0}
+     56 Initialize Event (Event Slot ID: 14, Event ID: 970, Parameters: 11){, 2590, 9000, 0}
+     57 Initialize Event (Event Slot ID: 15, Event ID: 970, Parameters: 11510900){, 2600, 0, 0}
+     58 Initialize Event (Event Slot ID: 16, Event ID: 970, Parameters: 11510902){, 2610, 9000, 0}
+     59 Initialize Event (Event Slot ID: 17, Event ID: 970, Parameters: 11510903){, 2620, 9000, 0}
+     60 Initialize Event (Event Slot ID: 18, Event ID: 970, Parameters: 13){, 2630, 9010, 0}
+     61 Initialize Event (Event Slot ID: 19, Event ID: 970, Parameters: 14){, 2640, 9000, 0}
+     62 Initialize Event (Event Slot ID: 20, Event ID: 970, Parameters: 15){, 2650, 0, 0}
+     63 Initialize Event (Event Slot ID: 21, Event ID: 970, Parameters: 16){, 2660, 9000, 0}
+     64 Initialize Event (Event Slot ID: 22, Event ID: 970, Parameters: 11810900){, 0, 9000, 9030}
+     65 Initialize Event (Event Slot ID: 23, Event ID: 970, Parameters: 11210000){, 2680, 9000, 0}
+     66 Initialize Event (Event Slot ID: 24, Event ID: 970, Parameters: 11210001){, 2690, 0, 0}
+     67 Initialize Event (Event Slot ID: 25, Event ID: 970, Parameters: 17){, 2700, 9040, 0}
+     68 Initialize Event (Event Slot ID: 26, Event ID: 970, Parameters: 11210004){, 2710, 0, 0}
+     69 Initialize Event (Event Slot ID: 0, Event ID: 250, Parameters: 2600){, 250}
+     70 Initialize Event (Event Slot ID: 1, Event ID: 250, Parameters: 2601){, 251}
+     71 Initialize Event (Event Slot ID: 2, Event ID: 250, Parameters: 2602){, 252}
+     72 Initialize Event (Event Slot ID: 3, Event ID: 250, Parameters: 2603){, 253}
+     73 Initialize Event (Event Slot ID: 4, Event ID: 250, Parameters: 2604){, 254}
+     74 Initialize Event (Event Slot ID: 5, Event ID: 250, Parameters: 2605){, 255}
+     75 Initialize Event (Event Slot ID: 6, Event ID: 250, Parameters: 2606){, 256}
+     76 Initialize Event (Event Slot ID: 7, Event ID: 250, Parameters: 2607){, 257}
+     77 Initialize Event (Event Slot ID: 8, Event ID: 250, Parameters: 2608){, 258}
+     78 Initialize Event (Event Slot ID: 9, Event ID: 250, Parameters: 2609){, 259}
+     79 Initialize Event (Event Slot ID: 0, Event ID: 350, Parameters: 350){, 800}
+     80 Initialize Event (Event Slot ID: 1, Event ID: 350, Parameters: 351){, 801}
+     81 Initialize Event (Event Slot ID: 2, Event ID: 350, Parameters: 352){, 802}
+     82 Initialize Event (Event Slot ID: 6, Event ID: 350, Parameters: 356){, 806}
+     83 Initialize Event (Event Slot ID: 7, Event ID: 350, Parameters: 357){, 807}
+     84 Initialize Event (Event Slot ID: 8, Event ID: 350, Parameters: 358){, 808}
+     85 Initialize Event (Event Slot ID: 9, Event ID: 350, Parameters: 359){, 809}
+     86 Initialize Event (Event Slot ID: 10, Event ID: 350, Parameters: 360){, 810}
+     87 Initialize Event (Event Slot ID: 12, Event ID: 350, Parameters: 362){, 812}
+     88 Initialize Event (Event Slot ID: 13, Event ID: 350, Parameters: 363){, 813}
+     89 Initialize Event (Event Slot ID: 0, Event ID: 780, Parameters: 1000){, 780}
+     90 Initialize Event (Event Slot ID: 1, Event ID: 780, Parameters: 1010){, 781}
+     91 Initialize Event (Event Slot ID: 2, Event ID: 780, Parameters: 1020){, 782}
+     92 Initialize Event (Event Slot ID: 3, Event ID: 780, Parameters: 1030){, 783}
+     93 Initialize Event (Event Slot ID: 4, Event ID: 780, Parameters: 1040){, 784}
+     94 Initialize Event (Event Slot ID: 5, Event ID: 780, Parameters: 1050){, 785}
+     95 Initialize Event (Event Slot ID: 6, Event ID: 780, Parameters: 1060){, 786}
+     96 Initialize Event (Event Slot ID: 7, Event ID: 780, Parameters: 1070){, 787}
+     97 Initialize Event (Event Slot ID: 8, Event ID: 780, Parameters: 1080){, 788}
+     98 Initialize Event (Event Slot ID: 9, Event ID: 780, Parameters: 1090){, 789}
+     99 Initialize Event (Event Slot ID: 10, Event ID: 780, Parameters: 1100){, 790}
+    100 Initialize Event (Event Slot ID: 11, Event ID: 780, Parameters: 1110){, 791}
+    101 Initialize Event (Event Slot ID: 12, Event ID: 780, Parameters: 1120){, 792}
+    102 Initialize Event (Event Slot ID: 13, Event ID: 780, Parameters: 1130){, 793}
+    103 Initialize Event (Event Slot ID: 0, Event ID: 870, Parameters: 0){, 850}
+    104 Initialize Event (Event Slot ID: 1, Event ID: 870, Parameters: 1){, 851}
+    105 Initialize Event (Event Slot ID: 2, Event ID: 870, Parameters: 2){, 852}
+    106 Initialize Event (Event Slot ID: 3, Event ID: 870, Parameters: 3){, 853}
+    107 Initialize Event (Event Slot ID: 4, Event ID: 870, Parameters: 4){, 854}
+    108 Initialize Event (Event Slot ID: 5, Event ID: 870, Parameters: 5){, 855}
+    109 Initialize Event (Event Slot ID: 6, Event ID: 870, Parameters: 6){, 856}
+    110 Initialize Event (Event Slot ID: 7, Event ID: 870, Parameters: 7){, 857}
+    111 Initialize Event (Event Slot ID: 8, Event ID: 870, Parameters: 8){, 858}
+    112 Initialize Event (Event Slot ID: 9, Event ID: 870, Parameters: 9){, 859}
+    113 Initialize Event (Event Slot ID: 0, Event ID: 840, Parameters: 840){, 7905, 6370, 4294967295}
+    114 Initialize Event (Event Slot ID: 1, Event ID: 840, Parameters: 841){, 7905, 6072, 4294967295}
+    115 Initialize Event (Event Slot ID: 2, Event ID: 840, Parameters: 842){, 7905, 6080, 4294967295}
+    116 Initialize Event (Event Slot ID: 3, Event ID: 840, Parameters: 843){, 7905, 6001, 4294967295}
+    117 Initialize Event (Event Slot ID: 4, Event ID: 840, Parameters: 844){, 7898, 10000, 7896}
+    118 Initialize Event (Event Slot ID: 5, Event ID: 840, Parameters: 845){, 7905, 6340, 4294967295}
+    119 Initialize Event (Event Slot ID: 6, Event ID: 840, Parameters: 846){, 7905, 6341, 4294967295}
+    120 Initialize Event (Event Slot ID: 7, Event ID: 840, Parameters: 847){, 7913, 10000, 7911}
+    121 Initialize Event (Event Slot ID: 8, Event ID: 840, Parameters: 848){, 7905, 6380, 4294967295}
+    122 Initialize Event (Event Slot ID: 9, Event ID: 840, Parameters: 849){, 7905, 1400700, 4294967295}
+    123 Initialize Event (Event Slot ID: 0, Event ID: 690, Parameters: 600){, 4, 16, 1175}
+    124 Initialize Event (Event Slot ID: 0, Event ID: 719, Parameters: 0)
+    125 Initialize Event (Event Slot ID: 0, Event ID: 720, Parameters: 0)
+    126 Initialize Event (Event Slot ID: 0, Event ID: 721, Parameters: 0)
+    127 Initialize Event (Event Slot ID: 0, Event ID: 722, Parameters: 0)
+    128 Initialize Event (Event Slot ID: 0, Event ID: 723, Parameters: 0)
+    129 Initialize Event (Event Slot ID: 0, Event ID: 724, Parameters: 0)
+    130 Initialize Event (Event Slot ID: 0, Event ID: 725, Parameters: 0)
+    131 Initialize Event (Event Slot ID: 0, Event ID: 726, Parameters: 0)
+    132 Initialize Event (Event Slot ID: 0, Event ID: 727, Parameters: 0)
+    133 Initialize Event (Event Slot ID: 0, Event ID: 745, Parameters: 0)
+    134 Initialize Event (Event Slot ID: 0, Event ID: 818, Parameters: 0)
+    135 Initialize Event (Event Slot ID: 0, Event ID: 810, Parameters: 0)
+    136 Initialize Event (Event Slot ID: 0, Event ID: 812, Parameters: 51400350)
+    137 Initialize Event (Event Slot ID: 1, Event ID: 812, Parameters: 51010050)
+    138 Initialize Event (Event Slot ID: 0, Event ID: 822, Parameters: 0)
+    139 Initialize Event (Event Slot ID: 0, Event ID: 823, Parameters: 0)
+    140 Initialize Event (Event Slot ID: 0, Event ID: 910, Parameters: 11400591){, 1280}
+    141 Initialize Event (Event Slot ID: 0, Event ID: 911, Parameters: 11010591){, 1000, 1}
+    142 Initialize Event (Event Slot ID: 1, Event ID: 911, Parameters: 11510590){, 1010, 1}
+    143 Initialize Event (Event Slot ID: 2, Event ID: 911, Parameters: 11700591){, 1020, 1}
+    144 Initialize Event (Event Slot ID: 3, Event ID: 911, Parameters: 11000591){, 1030, 1}
+    145 Initialize Event (Event Slot ID: 4, Event ID: 911, Parameters: 11400590){, 1040, 1}
+    146 Initialize Event (Event Slot ID: 5, Event ID: 911, Parameters: 11410594){, 1050, 1}
+    147 Initialize Event (Event Slot ID: 6, Event ID: 911, Parameters: 11020594){, 1060, 1}
+    148 Initialize Event (Event Slot ID: 7, Event ID: 911, Parameters: 11020595){, 1070, 1}
+    149 Initialize Event (Event Slot ID: 8, Event ID: 911, Parameters: 11810590){, 1082, 1}
+    150 Initialize Event (Event Slot ID: 9, Event ID: 911, Parameters: 11810591){, 1080, 1}
+    151 Initialize Event (Event Slot ID: 10, Event ID: 911, Parameters: 11510592){, 1090, 1}
+    152 Initialize Event (Event Slot ID: 11, Event ID: 911, Parameters: 11600592){, 1100, 1}
+    153 Initialize Event (Event Slot ID: 12, Event ID: 911, Parameters: 11020602){, 1110, 1}
+    154 Initialize Event (Event Slot ID: 13, Event ID: 911, Parameters: 11010594){, 1120, 1}
+    155 Initialize Event (Event Slot ID: 14, Event ID: 911, Parameters: 11010595){, 1130, 1}
+    156 Initialize Event (Event Slot ID: 15, Event ID: 911, Parameters: 11020599){, 1140, 1}
+    157 Initialize Event (Event Slot ID: 16, Event ID: 911, Parameters: 11020607){, 1150, 1}
+    158 Initialize Event (Event Slot ID: 17, Event ID: 911, Parameters: 11200592){, 1160, 1}
+    159 Initialize Event (Event Slot ID: 18, Event ID: 911, Parameters: 11200593){, 1170, 1}
+    160 Initialize Event (Event Slot ID: 19, Event ID: 911, Parameters: 11200594){, 1180, 1}
+    161 Initialize Event (Event Slot ID: 20, Event ID: 911, Parameters: 11300590){, 1190, 1}
+    162 Initialize Event (Event Slot ID: 21, Event ID: 911, Parameters: 11300591){, 1200, 1}
+    163 Initialize Event (Event Slot ID: 22, Event ID: 911, Parameters: 11310590){, 1210, 1}
+    164 Initialize Event (Event Slot ID: 23, Event ID: 911, Parameters: 11310592){, 1220, 1}
+    165 Initialize Event (Event Slot ID: 24, Event ID: 911, Parameters: 11310593){, 1230, 1}
+    166 Initialize Event (Event Slot ID: 25, Event ID: 911, Parameters: 11310594){, 1240, 1}
+    167 Initialize Event (Event Slot ID: 26, Event ID: 911, Parameters: 11320590){, 1250, 1}
+    168 Initialize Event (Event Slot ID: 27, Event ID: 911, Parameters: 11320581){, 1260, 1}
+    169 Initialize Event (Event Slot ID: 28, Event ID: 911, Parameters: 11320593){, 1270, 1}
+    170 Initialize Event (Event Slot ID: 29, Event ID: 911, Parameters: 11400592){, 1290, 1}
+    171 Initialize Event (Event Slot ID: 30, Event ID: 911, Parameters: 11400594){, 1300, 1}
+    172 Initialize Event (Event Slot ID: 31, Event ID: 911, Parameters: 11400596){, 1310, 1}
+    173 Initialize Event (Event Slot ID: 32, Event ID: 911, Parameters: 11400597){, 1320, 1}
+    174 Initialize Event (Event Slot ID: 33, Event ID: 911, Parameters: 11400598){, 1330, 1}
+    175 Initialize Event (Event Slot ID: 34, Event ID: 911, Parameters: 11400599){, 1340, 1}
+    176 Initialize Event (Event Slot ID: 35, Event ID: 911, Parameters: 11510595){, 1350, 1}
+    177 Initialize Event (Event Slot ID: 36, Event ID: 911, Parameters: 11510596){, 1360, 1}
+    178 Initialize Event (Event Slot ID: 37, Event ID: 911, Parameters: 11510597){, 1370, 1}
+    179 Initialize Event (Event Slot ID: 38, Event ID: 911, Parameters: 11600594){, 1380, 1}
+    180 Initialize Event (Event Slot ID: 39, Event ID: 911, Parameters: 11600595){, 1390, 1}
+    181 Initialize Event (Event Slot ID: 40, Event ID: 911, Parameters: 11600596){, 1400, 1}
+    182 Initialize Event (Event Slot ID: 41, Event ID: 911, Parameters: 11010598){, 1410, 0}
+    183 Initialize Event (Event Slot ID: 42, Event ID: 911, Parameters: 11210590){, 1500, 1}
+    184 Initialize Event (Event Slot ID: 43, Event ID: 911, Parameters: 11210593){, 1510, 1}
+    185 Initialize Event (Event Slot ID: 44, Event ID: 911, Parameters: 11210594){, 1520, 1}
+    186 Initialize Event (Event Slot ID: 45, Event ID: 911, Parameters: 11600580){, 1401, 1}
+    187 Initialize Event (Event Slot ID: 46, Event ID: 911, Parameters: 11600581){, 1402, 1}
+    188 Initialize Event (Event Slot ID: 47, Event ID: 911, Parameters: 11600582){, 1403, 1}
+    189 Initialize Event (Event Slot ID: 48, Event ID: 911, Parameters: 11600583){, 1404, 1}
+    190 Initialize Event (Event Slot ID: 0, Event ID: 890, Parameters: 11310580){, 1221, 1}
+    191 Initialize Event (Event Slot ID: 1, Event ID: 890, Parameters: 11510580){, 1361, 1}
+    192 Initialize Event (Event Slot ID: 2, Event ID: 890, Parameters: 11510581){, 1371, 1}
+    193 Initialize Event (Event Slot ID: 3, Event ID: 890, Parameters: 11320592){, 1261, 1}
+    194 Initialize Event (Event Slot ID: 0, Event ID: 960, Parameters: 1322){, 6190, 6190}
+    195 Initialize Event (Event Slot ID: 1, Event ID: 960, Parameters: 1315){, 6180, 1100}
+    196 Initialize Event (Event Slot ID: 2, Event ID: 960, Parameters: 1402){, 6230, 6230}
+    197 Initialize Event (Event Slot ID: 3, Event ID: 960, Parameters: 1402){, 6230, 6231}
+    198 Initialize Event (Event Slot ID: 0, Event ID: 8200, Parameters: 3){, 5500, 50000120, 11010594}
+    199 Initialize Event (Event Slot ID: 1, Event ID: 8200, Parameters: 3){, 5510, 50000130, 11010595}
+    200 Initialize Event (Event Slot ID: 2, Event ID: 8200, Parameters: 2){, 103, 50000160, 11200592}
+    201 Initialize Event (Event Slot ID: 3, Event ID: 8200, Parameters: 3){, 240, 50000170, 11200593}
+    202 Initialize Event (Event Slot ID: 4, Event ID: 8200, Parameters: 2){, 124, 50000180, 11200594}
+    203 Initialize Event (Event Slot ID: 5, Event ID: 8200, Parameters: 0){, 453000, 50000220, 11310592}
+    204 Initialize Event (Event Slot ID: 6, Event ID: 8200, Parameters: 3){, 5100, 50000225, 11310580}
+    205 Initialize Event (Event Slot ID: 7, Event ID: 8200, Parameters: 3){, 5110, 50000230, 11310593}
+    206 Initialize Event (Event Slot ID: 8, Event ID: 8200, Parameters: 3){, 114, 50000265, 11320581}
+    207 Initialize Event (Event Slot ID: 9, Event ID: 8200, Parameters: 3){, 377, 50000260, 11320592}
+    208 Initialize Event (Event Slot ID: 10, Event ID: 8200, Parameters: 3){, 378, 50000270, 11320593}
+    209 Initialize Event (Event Slot ID: 11, Event ID: 8200, Parameters: 3){, 4500, 50000310, 11400596}
+    210 Initialize Event (Event Slot ID: 12, Event ID: 8200, Parameters: 3){, 4520, 50000320, 11400597}
+    211 Initialize Event (Event Slot ID: 13, Event ID: 8200, Parameters: 3){, 4510, 50000330, 11400598}
+    212 Initialize Event (Event Slot ID: 14, Event ID: 8200, Parameters: 2){, 130, 50000350, 11510595}
+    213 Initialize Event (Event Slot ID: 15, Event ID: 8200, Parameters: 3){, 113, 50000360, 11510596}
+    214 Initialize Event (Event Slot ID: 16, Event ID: 8200, Parameters: 2){, 102, 50000365, 11510580}
+    215 Initialize Event (Event Slot ID: 17, Event ID: 8200, Parameters: 3){, 5910, 50000370, 11510597}
+    216 Initialize Event (Event Slot ID: 18, Event ID: 8200, Parameters: 0){, 1366000, 50000375, 11510581}
+    217 Initialize Event (Event Slot ID: 19, Event ID: 8200, Parameters: 0){, 904000, 50000380, 11600594}
+    218 Initialize Event (Event Slot ID: 20, Event ID: 8200, Parameters: 3){, 102, 50000390, 11600595}
+    219 Initialize Event (Event Slot ID: 21, Event ID: 8200, Parameters: 0){, 210000, 50000400, 11600596}
+    220 Initialize Event (Event Slot ID: 22, Event ID: 8200, Parameters: 1){, 40000, 50000410, 11600580}
+    221 Initialize Event (Event Slot ID: 23, Event ID: 8200, Parameters: 1){, 41000, 50000420, 11600581}
+    222 Initialize Event (Event Slot ID: 24, Event ID: 8200, Parameters: 1){, 42000, 50000430, 11600582}
+    223 Initialize Event (Event Slot ID: 25, Event ID: 8200, Parameters: 1){, 43000, 50000440, 11600583}
+    224 Initialize Event (Event Slot ID: 0, Event ID: 8300, Parameters: 3){, 100, 50000000}
+    225 Initialize Event (Event Slot ID: 1, Event ID: 8300, Parameters: 3){, 101, 51100330}
+    226 Initialize Event (Event Slot ID: 2, Event ID: 8300, Parameters: 3){, 102, 50000390}
+    227 Initialize Event (Event Slot ID: 3, Event ID: 8300, Parameters: 3){, 106, 11017020}
+    228 Initialize Event (Event Slot ID: 4, Event ID: 8300, Parameters: 3){, 108, 11607020}
+    229 Initialize Event (Event Slot ID: 5, Event ID: 8300, Parameters: 3){, 112, 11407080}
+    230 Initialize Event (Event Slot ID: 6, Event ID: 8300, Parameters: 3){, 2508, 11007010}
+    231 Initialize Event (Event Slot ID: 0, Event ID: 8090, Parameters: 3){, 510, 11217010}
+    232 Initialize Event (Event Slot ID: 1, Event ID: 8090, Parameters: 3){, 511, 11217020}
+    233 Initialize Event (Event Slot ID: 2, Event ID: 8090, Parameters: 3){, 512, 11217030}
+    234 Initialize Event (Event Slot ID: 3, Event ID: 8090, Parameters: 3){, 513, 11217040}
+    235 Initialize Event (Event Slot ID: 4, Event ID: 8090, Parameters: 3){, 514, 11217050}
 
-Event ID: 290, Int: 0
+Event ID: 50, Ignores Bonfire Rest
 Parameters: {} ()
-      0 END event IF Event ID: 00000000 is ON
-      1 Batch SET Event Flag IDs from 280 to 290 to ON
-      2 CONDITION: IF player's class is Knight --> Register OR(01)
-      3 CONDITION: IF player's class is Cleric --> Register OR(01)
-      4 CONDITION: IF register OR(01) is TRUE --> Register AND(01)
-      5 CONDITION: IF register OR(01) is FALSE --> Register AND(02)
-      6 CONDITION: IF register AND(01) is TRUE --> Register OR(02)
-      7 CONDITION: IF register AND(02) is TRUE --> Register OR(02)
-      8 CONDITION: IF register OR(02) is TRUE --> Register MAIN
-      9 SKIP 2 lines IF register AND(02) is TRUE
-     10 SET Event Flag ID 287 to OFF
-     11 END event
-     12 SET Event Flag ID 288 to OFF
+      0 SKIP IF Event Flag (Number Of Skipped Lines: 80, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000909)
+      1 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001000, Ending Target Event Flag ID: 00001029)
+      2 Set Event Flag (Event Flag ID: 1000, Flag State: ON)
+      3 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001030, Ending Target Event Flag ID: 00001059)
+      4 Set Event Flag (Event Flag ID: 1030, Flag State: ON)
+      5 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001060, Ending Target Event Flag ID: 00001089)
+      6 Set Event Flag (Event Flag ID: 1060, Flag State: ON)
+      7 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001090, Ending Target Event Flag ID: 00001109)
+      8 Set Event Flag (Event Flag ID: 1090, Flag State: ON)
+      9 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001110, Ending Target Event Flag ID: 00001119)
+     10 Set Event Flag (Event Flag ID: 1110, Flag State: ON)
+     11 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001120, Ending Target Event Flag ID: 00001139)
+     12 Set Event Flag (Event Flag ID: 1120, Flag State: ON)
+     13 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001140, Ending Target Event Flag ID: 00001169)
+     14 Set Event Flag (Event Flag ID: 1140, Flag State: ON)
+     15 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001170, Ending Target Event Flag ID: 00001189)
+     16 Set Event Flag (Event Flag ID: 1170, Flag State: ON)
+     17 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001190, Ending Target Event Flag ID: 00001209)
+     18 Set Event Flag (Event Flag ID: 1202, Flag State: ON)
+     19 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001210, Ending Target Event Flag ID: 00001219)
+     20 Set Event Flag (Event Flag ID: 1210, Flag State: ON)
+     21 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001220, Ending Target Event Flag ID: 00001229)
+     22 Set Event Flag (Event Flag ID: 1220, Flag State: ON)
+     23 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001230, Ending Target Event Flag ID: 00001239)
+     24 Set Event Flag (Event Flag ID: 1230, Flag State: ON)
+     25 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001240, Ending Target Event Flag ID: 00001249)
+     26 Set Event Flag (Event Flag ID: 1240, Flag State: ON)
+     27 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001250, Ending Target Event Flag ID: 00001259)
+     28 Set Event Flag (Event Flag ID: 1250, Flag State: ON)
+     29 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001270, Ending Target Event Flag ID: 00001279)
+     30 Set Event Flag (Event Flag ID: 1270, Flag State: ON)
+     31 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001280, Ending Target Event Flag ID: 00001289)
+     32 Set Event Flag (Event Flag ID: 1280, Flag State: ON)
+     33 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001290, Ending Target Event Flag ID: 00001309)
+     34 Set Event Flag (Event Flag ID: 1290, Flag State: ON)
+     35 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001310, Ending Target Event Flag ID: 00001319)
+     36 Set Event Flag (Event Flag ID: 1310, Flag State: ON)
+     37 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001320, Ending Target Event Flag ID: 00001339)
+     38 Set Event Flag (Event Flag ID: 1320, Flag State: ON)
+     39 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001340, Ending Target Event Flag ID: 00001359)
+     40 Set Event Flag (Event Flag ID: 1340, Flag State: ON)
+     41 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001360, Ending Target Event Flag ID: 00001379)
+     42 Set Event Flag (Event Flag ID: 1360, Flag State: ON)
+     43 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001380, Ending Target Event Flag ID: 00001399)
+     44 Set Event Flag (Event Flag ID: 1380, Flag State: ON)
+     45 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001400, Ending Target Event Flag ID: 00001409)
+     46 Set Event Flag (Event Flag ID: 1400, Flag State: ON)
+     47 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001410, Ending Target Event Flag ID: 00001419)
+     48 Set Event Flag (Event Flag ID: 1410, Flag State: ON)
+     49 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001420, Ending Target Event Flag ID: 00001429)
+     50 Set Event Flag (Event Flag ID: 1420, Flag State: ON)
+     51 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001430, Ending Target Event Flag ID: 00001459)
+     52 Set Event Flag (Event Flag ID: 1430, Flag State: ON)
+     53 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001460, Ending Target Event Flag ID: 00001489)
+     54 Set Event Flag (Event Flag ID: 1460, Flag State: ON)
+     55 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001490, Ending Target Event Flag ID: 00001539)
+     56 Set Event Flag (Event Flag ID: 1490, Flag State: ON)
+     57 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001540, Ending Target Event Flag ID: 00001569)
+     58 Set Event Flag (Event Flag ID: 1540, Flag State: ON)
+     59 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001570, Ending Target Event Flag ID: 00001599)
+     60 Set Event Flag (Event Flag ID: 1570, Flag State: ON)
+     61 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001600, Ending Target Event Flag ID: 00001619)
+     62 Set Event Flag (Event Flag ID: 1600, Flag State: ON)
+     63 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001620, Ending Target Event Flag ID: 00001639)
+     64 Set Event Flag (Event Flag ID: 1620, Flag State: ON)
+     65 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001640, Ending Target Event Flag ID: 00001669)
+     66 Set Event Flag (Event Flag ID: 1640, Flag State: ON)
+     67 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001670, Ending Target Event Flag ID: 00001679)
+     68 Set Event Flag (Event Flag ID: 1670, Flag State: ON)
+     69 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001690, Ending Target Event Flag ID: 00001699)
+     70 Set Event Flag (Event Flag ID: 1690, Flag State: ON)
+     71 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001700, Ending Target Event Flag ID: 00001709)
+     72 Set Event Flag (Event Flag ID: 1700, Flag State: ON)
+     73 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001710, Ending Target Event Flag ID: 00001729)
+     74 Set Event Flag (Event Flag ID: 1710, Flag State: ON)
+     75 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001760, Ending Target Event Flag ID: 00001769)
+     76 Set Event Flag (Event Flag ID: 1760, Flag State: ON)
+     77 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001770, Ending Target Event Flag ID: 00001779)
+     78 Set Event Flag (Event Flag ID: 1770, Flag State: ON)
+     79 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001780, Ending Target Event Flag ID: 00001789)
+     80 Set Event Flag (Event Flag ID: 1780, Flag State: ON)
+     81 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001820, Ending Target Event Flag ID: 00001839)
+     82 Set Event Flag (Event Flag ID: 1820, Flag State: ON)
+     83 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001840, Ending Target Event Flag ID: 00001859)
+     84 Set Event Flag (Event Flag ID: 1840, Flag State: ON)
+     85 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001860, Ending Target Event Flag ID: 00001869)
+     86 Set Event Flag (Event Flag ID: 1860, Flag State: ON)
+     87 SKIP IF Batch Event Flags (Number Of Skipped Lines: 1, Desired Flag State: Not All OFF, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 00001870, Ending Target Event Flag ID: 00001889)
+     88 Set Event Flag (Event Flag ID: 1870, Flag State: ON)
+     89 SKIP IF Event Flag (Number Of Skipped Lines: 24, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000909)
+     90 Set Event Flag (Event Flag ID: 11807020, Flag State: ON)
+     91 Set Event Flag (Event Flag ID: 11807030, Flag State: ON)
+     92 Set Event Flag (Event Flag ID: 11807040, Flag State: ON)
+     93 Set Event Flag (Event Flag ID: 11807050, Flag State: ON)
+     94 Set Event Flag (Event Flag ID: 11807060, Flag State: ON)
+     95 Set Event Flag (Event Flag ID: 11807070, Flag State: ON)
+     96 Set Event Flag (Event Flag ID: 11807080, Flag State: ON)
+     97 Set Event Flag (Event Flag ID: 11807090, Flag State: ON)
+     98 Set Event Flag (Event Flag ID: 11807100, Flag State: ON)
+     99 Set Event Flag (Event Flag ID: 11807110, Flag State: ON)
+    100 Set Event Flag (Event Flag ID: 11807120, Flag State: ON)
+    101 Set Event Flag (Event Flag ID: 11807130, Flag State: ON)
+    102 Set Event Flag (Event Flag ID: 11807170, Flag State: ON)
+    103 Set Event Flag (Event Flag ID: 11807180, Flag State: ON)
+    104 Set Event Flag (Event Flag ID: 11807190, Flag State: ON)
+    105 Set Event Flag (Event Flag ID: 11807200, Flag State: ON)
+    106 Set Event Flag (Event Flag ID: 11807210, Flag State: ON)
+    107 Set Event Flag (Event Flag ID: 11807220, Flag State: ON)
+    108 Set Event Flag (Event Flag ID: 11807230, Flag State: ON)
+    109 Set Event Flag (Event Flag ID: 11807240, Flag State: ON)
+    110 Set Event Flag (Event Flag ID: 11217060, Flag State: ON)
+    111 Set Event Flag (Event Flag ID: 11217070, Flag State: ON)
+    112 Set Event Flag (Event Flag ID: 11217080, Flag State: ON)
+    113 Set Event Flag (Event Flag ID: 11217090, Flag State: ON)
+    114 SKIP IF Event Flag (Number Of Skipped Lines: 4, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000909)
+    115 Set Event Flag (Event Flag ID: 909, Flag State: ON)
+    116 Set Event Flag (Event Flag ID: 814, Flag State: ON)
+    117 Set Event Flag (Event Flag ID: 50006071, Flag State: ON)
+    118 Set Event Flag (Event Flag ID: 50006080, Flag State: ON)
 
-Event ID: 701, Int: 0
+Event ID: 290, Ignores Bonfire Rest
 Parameters: {} ()
-      0 END event IF Event ID: 00000000 is ON
-      1 Disable Vagrant Spawning: FALSE
-      2 CONDITION: IF it is TRUE that player is in Map<18><1> --> Register MAIN
-      3 Disable Vagrant Spawning: TRUE
-      4 CONDITION: IF Event Flag ID: 11810000 is ON --> Register MAIN
-      5 Disable Vagrant Spawning: FALSE
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event ID, Target Event Flag ID: 00000000)
+      1 Batch Set Event Flags (Event Flag ID Start: 280, Event Flag ID End: 290, Flag State: ON)
+      2 IF Player's Class (Result Condition Group: OR(01), Class: Knight)
+      3 IF Player's Class (Result Condition Group: OR(01), Class: Cleric)
+      4 IF Condition Group (Result Condition Group: AND(01), Desired Condition Group State: PASS, Target Condition Group: OR(01))
+      5 IF Condition Group (Result Condition Group: AND(02), Desired Condition Group State: FAIL, Target Condition Group: OR(01))
+      6 IF Condition Group (Result Condition Group: OR(02), Desired Condition Group State: PASS, Target Condition Group: AND(01))
+      7 IF Condition Group (Result Condition Group: OR(02), Desired Condition Group State: PASS, Target Condition Group: AND(02))
+      8 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: OR(02))
+      9 SKIP IF Condition Group State (Compiled) (Number Of Skipped Lines: 2, Desired Condition Group State: PASS, Target Condition Group: AND(02))
+     10 Set Event Flag (Event Flag ID: 287, Flag State: OFF)
+     11 END Unconditionally (Execution End Type: End)
+     12 Set Event Flag (Event Flag ID: 288, Flag State: OFF)
 
-Event ID: 702, Int: 0
+Event ID: 701, Ignores Bonfire Rest
 Parameters: {} ()
-      0 SET Event Flag ID 702 to OFF
-      1 CONDITION: IF Event Flag ID: 11800210 is OFF --> Register AND(01)
-      2 CONDITION: IF it is TRUE that player is in Map<18><0> --> Register AND(01)
-      3 CONDITION: IF register AND(01) is TRUE --> Register MAIN
-      4 SET Event Flag ID 702 to ON
-      5 CONDITION: IF it is FALSE that player is in Map<18><0> --> Register OR(01)
-      6 CONDITION: IF Event Flag ID: 11800210 is ON --> Register OR(01)
-      7 CONDITION: IF register OR(01) is TRUE --> Register MAIN
-      8 SET Event Flag ID 702 to OFF
-      9 RESTART event
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event ID, Target Event Flag ID: 00000000)
+      1 Disable Vagrant Spawning (Disabled: FALSE)
+      2 IF Player In/Out Map (Result Condition Group: MAIN, Should Player Be Inside: TRUE, Area ID: 18, Block ID: 1)
+      3 Disable Vagrant Spawning (Disabled: TRUE)
+      4 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11810000)
+      5 Disable Vagrant Spawning (Disabled: FALSE)
 
-Event ID: 717, Int: 0
+Event ID: 702, Ignores Bonfire Rest
 Parameters: {} ()
-      0 SET Event Flag ID 717 to OFF
-      1 CONDITION: IF Event Flag ID: 00000710 is OFF --> Register AND(01)
-      2 CONDITION: IF it is TRUE that player is in Map<16><0> --> Register AND(01)
-      3 CONDITION: IF local player is standing on Hitbox Entity ID: 01603300 --> Register AND(01)
-      4 CONDITION: IF register AND(01) is TRUE --> Register MAIN
-      5 SET Event Flag ID 717 to ON
-      6 CONDITION: IF local player is standing on Hitbox Entity ID: 01603300 --> Register AND(02)
-      7 CONDITION: IF register AND(02) is FALSE --> Register MAIN
-      8 SET Event Flag ID 717 to OFF
-      9 RESTART event
+      0 Set Event Flag (Event Flag ID: 702, Flag State: OFF)
+      1 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: OFF, Target Event Flag Type: Event Flag, Target Event Flag ID: 11800210)
+      2 IF Player In/Out Map (Result Condition Group: AND(01), Should Player Be Inside: TRUE, Area ID: 18, Block ID: 0)
+      3 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: AND(01))
+      4 Set Event Flag (Event Flag ID: 702, Flag State: ON)
+      5 IF Player In/Out Map (Result Condition Group: OR(01), Should Player Be Inside: FALSE, Area ID: 18, Block ID: 0)
+      6 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11800210)
+      7 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: OR(01))
+      8 Set Event Flag (Event Flag ID: 702, Flag State: OFF)
+      9 END Unconditionally (Execution End Type: Restart)
 
-Event ID: 718, Int: 0
+Event ID: 717, Ignores Bonfire Rest
 Parameters: {} ()
-      0 END event IF Event Flag ID: 00008120 is OFF
-      1 Display Status Explanation Message (Message ID: 10010650, ENABLE Pad)
-      2 SET Event Flag ID 8120 to OFF
+      0 Set Event Flag (Event Flag ID: 717, Flag State: OFF)
+      1 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: OFF, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000710)
+      2 IF Player In/Out Map (Result Condition Group: AND(01), Should Player Be Inside: TRUE, Area ID: 16, Block ID: 0)
+      3 IF Player Standing On Hit (Result Condition Group: AND(01), Hitbox Entity ID: 01603300)
+      4 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: AND(01))
+      5 Set Event Flag (Event Flag ID: 717, Flag State: ON)
+      6 IF Player Standing On Hit (Result Condition Group: AND(02), Hitbox Entity ID: 01603300)
+      7 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: FAIL, Target Condition Group: AND(02))
+      8 Set Event Flag (Event Flag ID: 717, Flag State: OFF)
+      9 END Unconditionally (Execution End Type: Restart)
 
-Event ID: 706, Int: 0
+Event ID: 718, Ignores Bonfire Rest
 Parameters: {} ()
-      0 CONDITION: IF Event Flag ID: 00000710 is ON --> Register MAIN
-      1 SET Event Flag ID 706 to ON
-      2 CONDITION: IF Event Flag ID: 11705170 is ON --> Register OR(01)
-      3 CONDITION: IF it is TRUE that player is in Map<11><0> --> Register OR(01)
-      4 CONDITION: IF register OR(01) is TRUE --> Register MAIN
-      5 SET Event Flag ID 706 to OFF
-      6 CONDITION: IF Event Flag ID: 11705170 is OFF --> Register AND(01)
-      7 CONDITION: IF it is FALSE that player is in Map<11><0> --> Register AND(01)
-      8 CONDITION: IF register AND(01) is TRUE --> Register MAIN
-      9 RESTART event
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: OFF, Target Event Flag Type: Event Flag, Target Event Flag ID: 00008120)
+      1 Display Status Message (Message ID: 10010650, Pad State: Enabled)
+      2 Set Event Flag (Event Flag ID: 8120, Flag State: OFF)
 
-Event ID: 710, Int: 0
+Event ID: 706, Ignores Bonfire Rest
 Parameters: {} ()
-      0 END event IF Event ID: 00000000 is ON
-      1 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00002510) --> Register MAIN
-      2 SET Event Flag ID 710 to ON
+      0 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000710)
+      1 Set Event Flag (Event Flag ID: 706, Flag State: ON)
+      2 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11705170)
+      3 IF Player In/Out Map (Result Condition Group: OR(01), Should Player Be Inside: TRUE, Area ID: 11, Block ID: 0)
+      4 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: OR(01))
+      5 Set Event Flag (Event Flag ID: 706, Flag State: OFF)
+      6 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: OFF, Target Event Flag Type: Event Flag, Target Event Flag ID: 11705170)
+      7 IF Player In/Out Map (Result Condition Group: AND(01), Should Player Be Inside: FALSE, Area ID: 11, Block ID: 0)
+      8 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: AND(01))
+      9 END Unconditionally (Execution End Type: Restart)
 
-Event ID: 711, Int: 0
+Event ID: 710, Ignores Bonfire Rest
+Parameters: {} ()
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event ID, Target Event Flag ID: 00000000)
+      1 IF Player Has/Doesn't Have Item (Result Condition Group: MAIN, Item Type: Goods, Item ID: 00002510, Desired Possession State: Owns)
+      2 Set Event Flag (Event Flag ID: 710, Flag State: ON)
+
+Event ID: 711, Ignores Bonfire Rest
 Parameters: {X0:3, X4:7} (ii)
-      0 END event IF Event ID with Slot Number: 00000000 is ON
-      1 CONDITION: IF player Owns Item (Item Type: Item, Item ID: X0:3) --> Register MAIN
-      2 SET Event Flag ID X4:7 to ON
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event ID + Slot Number, Target Event Flag ID: 00000000)
+      1 IF Player Has/Doesn't Have Item (Result Condition Group: MAIN, Item Type: Goods, Item ID: X0:3, Desired Possession State: Owns)
+      2 Set Event Flag (Event Flag ID: X4:7, Flag State: ON)
 
-Event ID: 715, Int: 0
+Event ID: 715, Ignores Bonfire Rest
 Parameters: {} ()
-      0 SET Event Flag ID 715 to OFF
-      1 CONDITION: IF Event Flag ID: 11010595 is ON --> Register AND(01)
-      2 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00000702) --> Register AND(01)
-      3 CONDITION: IF player Does not own Item (Item Type: Item, Item ID: 00005520) (Including in their BBox)--> Register AND(01)
-      4 CONDITION: IF player's covenant is Warrior of Sunlight --> Register AND(01)
-      5 CONDITION: IF register AND(01) is TRUE --> Register MAIN
-      6 SET Event Flag ID 715 to ON
-      7 CONDITION: IF player Does not own Item (Item Type: Item, Item ID: 00000702) --> Register OR(01)
-      8 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005520) (Including in their BBox)--> Register OR(01)
-      9 CONDITION: IF player's covenant is Warrior of Sunlight --> Register AND(02)
-     10 CONDITION: IF register AND(02) is FALSE --> Register OR(01)
-     11 CONDITION: IF register OR(01) is TRUE --> Register MAIN
-     12 RESTART event
+      0 Set Event Flag (Event Flag ID: 715, Flag State: OFF)
+      1 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11010595)
+      2 IF Player Has/Doesn't Have Item (Result Condition Group: AND(01), Item Type: Goods, Item ID: 00000702, Desired Possession State: Owns)
+      3 IF Player Has/Doesn't Have Item Including BBox (Result Condition Group: AND(01), Item Type: Goods, Item ID: 00005520, Desired Possession State: Doesn't Own)
+      4 IF Player's Covenant (Result Condition Group: AND(01), Covenant Index: 3)
+      5 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: AND(01))
+      6 Set Event Flag (Event Flag ID: 715, Flag State: ON)
+      7 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00000702, Desired Possession State: Doesn't Own)
+      8 IF Player Has/Doesn't Have Item Including BBox (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005520, Desired Possession State: Owns)
+      9 IF Player's Covenant (Result Condition Group: AND(02), Covenant Index: 3)
+     10 IF Condition Group (Result Condition Group: OR(01), Desired Condition Group State: FAIL, Target Condition Group: AND(02))
+     11 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: OR(01))
+     12 END Unconditionally (Execution End Type: Restart)
 
-Event ID: 716, Int: 0
+Event ID: 716, Ignores Bonfire Rest
 Parameters: {} ()
-      0 END event IF Event ID: 00000000 is ON
-      1 CONDITION: IF Event Flag ID: 50000082 is ON --> Register MAIN
-      2 SET Event Flag ID 716 to ON
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event ID, Target Event Flag ID: 00000000)
+      1 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 50000082)
+      2 Set Event Flag (Event Flag ID: 716, Flag State: ON)
 
-Event ID: 8131, Int: 0
+Event ID: 8131, Ignores Bonfire Rest
 Parameters: {X0:3, X4:7} (ii)
-      0 END event IF Event ID with Slot Number: 00000000 is ON
-      1 CONDITION: IF player Owns Item (Item Type: Item, Item ID: X0:3) --> Register OR(01)
-      2 CONDITION: IF player Owns Item (Item Type: Item, Item ID: X4:7) --> Register OR(01)
-      3 CONDITION: IF register OR(01) is TRUE --> Register MAIN
-      4 SKIP 1 lines IF (Event Flag ID: X0:3) != (Event Flag ID: 202)
-      5 SET Event Flag ID 8131 to ON
-      6 SKIP 1 lines IF (Event Flag ID: X0:3) != (Event Flag ID: 204)
-      7 Batch SET Event Flag IDs from 8131 to 8132 to ON
-      8 SKIP 1 lines IF (Event Flag ID: X0:3) != (Event Flag ID: 206)
-      9 Batch SET Event Flag IDs from 8131 to 8133 to ON
-     10 SKIP 1 lines IF (Event Flag ID: X0:3) != (Event Flag ID: 208)
-     11 Batch SET Event Flag IDs from 8131 to 8134 to ON
-     12 SKIP 1 lines IF (Event Flag ID: X0:3) != (Event Flag ID: 210)
-     13 Batch SET Event Flag IDs from 8131 to 8135 to ON
-     14 SKIP 1 lines IF (Event Flag ID: X0:3) != (Event Flag ID: 212)
-     15 Batch SET Event Flag IDs from 8131 to 8136 to ON
-     16 SKIP 1 lines IF (Event Flag ID: X0:3) != (Event Flag ID: 214)
-     17 Batch SET Event Flag IDs from 8131 to 8137 to ON
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event ID + Slot Number, Target Event Flag ID: 00000000)
+      1 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: X0:3, Desired Possession State: Owns)
+      2 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: X4:7, Desired Possession State: Owns)
+      3 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: OR(01))
+      4 SKIP IF Comparison (Number Of Skipped Lines: 1, Comparison Type: !=, Left-hand Side: X0:3, Right-hand Side: 202)
+      5 Set Event Flag (Event Flag ID: 8131, Flag State: ON)
+      6 SKIP IF Comparison (Number Of Skipped Lines: 1, Comparison Type: !=, Left-hand Side: X0:3, Right-hand Side: 204)
+      7 Batch Set Event Flags (Event Flag ID Start: 8131, Event Flag ID End: 8132, Flag State: ON)
+      8 SKIP IF Comparison (Number Of Skipped Lines: 1, Comparison Type: !=, Left-hand Side: X0:3, Right-hand Side: 206)
+      9 Batch Set Event Flags (Event Flag ID Start: 8131, Event Flag ID End: 8133, Flag State: ON)
+     10 SKIP IF Comparison (Number Of Skipped Lines: 1, Comparison Type: !=, Left-hand Side: X0:3, Right-hand Side: 208)
+     11 Batch Set Event Flags (Event Flag ID Start: 8131, Event Flag ID End: 8134, Flag State: ON)
+     12 SKIP IF Comparison (Number Of Skipped Lines: 1, Comparison Type: !=, Left-hand Side: X0:3, Right-hand Side: 210)
+     13 Batch Set Event Flags (Event Flag ID Start: 8131, Event Flag ID End: 8135, Flag State: ON)
+     14 SKIP IF Comparison (Number Of Skipped Lines: 1, Comparison Type: !=, Left-hand Side: X0:3, Right-hand Side: 212)
+     15 Batch Set Event Flags (Event Flag ID Start: 8131, Event Flag ID End: 8136, Flag State: ON)
+     16 SKIP IF Comparison (Number Of Skipped Lines: 1, Comparison Type: !=, Left-hand Side: X0:3, Right-hand Side: 214)
+     17 Batch Set Event Flags (Event Flag ID Start: 8131, Event Flag ID End: 8137, Flag State: ON)
 
-Event ID: 819, Int: 0
+Event ID: 819, Ignores Bonfire Rest
 Parameters: {} ()
-      0 END event IF Event ID: 00000000 is ON
-      1 CONDITION: IF Event Flag ID: 11017040 is ON --> Register OR(01)
-      2 CONDITION: IF Event Flag ID: 11017170 is ON --> Register OR(01)
-      3 CONDITION: IF register OR(01) is TRUE --> Register MAIN
-      4 SET Event Flag ID 11017040 to ON
-      5 SET Event Flag ID 11017170 to ON
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event ID, Target Event Flag ID: 00000000)
+      1 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11017040)
+      2 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11017170)
+      3 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: OR(01))
+      4 Set Event Flag (Event Flag ID: 11017040, Flag State: ON)
+      5 Set Event Flag (Event Flag ID: 11017170, Flag State: ON)
 
-Event ID: 719, Int: 0
+Event ID: 719, Ignores Bonfire Rest
 Parameters: {} ()
-      0 END event IF Event ID: 00000000 is ON
-      1 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003000) --> Register OR(01)
-      2 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003010) --> Register OR(01)
-      3 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003020) --> Register OR(01)
-      4 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003030) --> Register OR(01)
-      5 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003040) --> Register OR(01)
-      6 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003050) --> Register OR(01)
-      7 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003060) --> Register OR(01)
-      8 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003070) --> Register OR(01)
-      9 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003100) --> Register OR(01)
-     10 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003110) --> Register OR(01)
-     11 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003120) --> Register OR(01)
-     12 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003300) --> Register OR(01)
-     13 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003310) --> Register OR(01)
-     14 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003400) --> Register OR(01)
-     15 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003410) --> Register OR(01)
-     16 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003500) --> Register OR(01)
-     17 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003510) --> Register OR(01)
-     18 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003520) --> Register OR(01)
-     19 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003530) --> Register OR(01)
-     20 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003540) --> Register OR(01)
-     21 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003550) --> Register OR(01)
-     22 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003600) --> Register OR(01)
-     23 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003610) --> Register OR(01)
-     24 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003700) --> Register OR(01)
-     25 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004000) --> Register OR(01)
-     26 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004010) --> Register OR(01)
-     27 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004020) --> Register OR(01)
-     28 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004030) --> Register OR(01)
-     29 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004040) --> Register OR(01)
-     30 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004050) --> Register OR(01)
-     31 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004060) --> Register OR(01)
-     32 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004100) --> Register OR(01)
-     33 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004110) --> Register OR(01)
-     34 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004200) --> Register OR(01)
-     35 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004210) --> Register OR(01)
-     36 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004220) --> Register OR(01)
-     37 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004300) --> Register OR(01)
-     38 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004310) --> Register OR(01)
-     39 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004360) --> Register OR(01)
-     40 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004400) --> Register OR(01)
-     41 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004500) --> Register OR(01)
-     42 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004510) --> Register OR(01)
-     43 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004520) --> Register OR(01)
-     44 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005000) --> Register OR(01)
-     45 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005010) --> Register OR(01)
-     46 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005020) --> Register OR(01)
-     47 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005030) --> Register OR(01)
-     48 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005040) --> Register OR(01)
-     49 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005050) --> Register OR(01)
-     50 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005100) --> Register OR(01)
-     51 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005110) --> Register OR(01)
-     52 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005200) --> Register OR(01)
-     53 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005210) --> Register OR(01)
-     54 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005300) --> Register OR(01)
-     55 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005310) --> Register OR(01)
-     56 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005320) --> Register OR(01)
-     57 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005400) --> Register OR(01)
-     58 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005500) --> Register OR(01)
-     59 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005510) --> Register OR(01)
-     60 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005520) --> Register OR(01)
-     61 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005600) --> Register OR(01)
-     62 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005610) --> Register OR(01)
-     63 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005700) --> Register OR(01)
-     64 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005710) --> Register OR(01)
-     65 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005800) --> Register OR(01)
-     66 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005810) --> Register OR(01)
-     67 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005900) --> Register OR(01)
-     68 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00005910) --> Register OR(01)
-     69 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003710) --> Register OR(01)
-     70 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003720) --> Register OR(01)
-     71 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003730) --> Register OR(01)
-     72 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00003740) --> Register OR(01)
-     73 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004530) --> Register OR(01)
-     74 CONDITION: IF register OR(01) is TRUE --> Register MAIN
-     75 SET Event Flag ID 719 to ON
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event ID, Target Event Flag ID: 00000000)
+      1 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003000, Desired Possession State: Owns)
+      2 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003010, Desired Possession State: Owns)
+      3 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003020, Desired Possession State: Owns)
+      4 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003030, Desired Possession State: Owns)
+      5 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003040, Desired Possession State: Owns)
+      6 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003050, Desired Possession State: Owns)
+      7 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003060, Desired Possession State: Owns)
+      8 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003070, Desired Possession State: Owns)
+      9 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003100, Desired Possession State: Owns)
+     10 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003110, Desired Possession State: Owns)
+     11 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003120, Desired Possession State: Owns)
+     12 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003300, Desired Possession State: Owns)
+     13 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003310, Desired Possession State: Owns)
+     14 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003400, Desired Possession State: Owns)
+     15 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003410, Desired Possession State: Owns)
+     16 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003500, Desired Possession State: Owns)
+     17 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003510, Desired Possession State: Owns)
+     18 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003520, Desired Possession State: Owns)
+     19 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003530, Desired Possession State: Owns)
+     20 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003540, Desired Possession State: Owns)
+     21 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003550, Desired Possession State: Owns)
+     22 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003600, Desired Possession State: Owns)
+     23 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003610, Desired Possession State: Owns)
+     24 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003700, Desired Possession State: Owns)
+     25 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004000, Desired Possession State: Owns)
+     26 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004010, Desired Possession State: Owns)
+     27 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004020, Desired Possession State: Owns)
+     28 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004030, Desired Possession State: Owns)
+     29 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004040, Desired Possession State: Owns)
+     30 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004050, Desired Possession State: Owns)
+     31 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004060, Desired Possession State: Owns)
+     32 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004100, Desired Possession State: Owns)
+     33 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004110, Desired Possession State: Owns)
+     34 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004200, Desired Possession State: Owns)
+     35 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004210, Desired Possession State: Owns)
+     36 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004220, Desired Possession State: Owns)
+     37 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004300, Desired Possession State: Owns)
+     38 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004310, Desired Possession State: Owns)
+     39 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004360, Desired Possession State: Owns)
+     40 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004400, Desired Possession State: Owns)
+     41 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004500, Desired Possession State: Owns)
+     42 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004510, Desired Possession State: Owns)
+     43 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004520, Desired Possession State: Owns)
+     44 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005000, Desired Possession State: Owns)
+     45 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005010, Desired Possession State: Owns)
+     46 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005020, Desired Possession State: Owns)
+     47 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005030, Desired Possession State: Owns)
+     48 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005040, Desired Possession State: Owns)
+     49 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005050, Desired Possession State: Owns)
+     50 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005100, Desired Possession State: Owns)
+     51 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005110, Desired Possession State: Owns)
+     52 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005200, Desired Possession State: Owns)
+     53 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005210, Desired Possession State: Owns)
+     54 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005300, Desired Possession State: Owns)
+     55 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005310, Desired Possession State: Owns)
+     56 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005320, Desired Possession State: Owns)
+     57 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005400, Desired Possession State: Owns)
+     58 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005500, Desired Possession State: Owns)
+     59 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005510, Desired Possession State: Owns)
+     60 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005520, Desired Possession State: Owns)
+     61 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005600, Desired Possession State: Owns)
+     62 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005610, Desired Possession State: Owns)
+     63 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005700, Desired Possession State: Owns)
+     64 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005710, Desired Possession State: Owns)
+     65 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005800, Desired Possession State: Owns)
+     66 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005810, Desired Possession State: Owns)
+     67 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005900, Desired Possession State: Owns)
+     68 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00005910, Desired Possession State: Owns)
+     69 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003710, Desired Possession State: Owns)
+     70 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003720, Desired Possession State: Owns)
+     71 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003730, Desired Possession State: Owns)
+     72 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00003740, Desired Possession State: Owns)
+     73 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004530, Desired Possession State: Owns)
+     74 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: OR(01))
+     75 Set Event Flag (Event Flag ID: 719, Flag State: ON)
 
-Event ID: 720, Int: 0
+Event ID: 720, Ignores Bonfire Rest
 Parameters: {} ()
-      0 END event IF Event ID: 00000000 is ON
-      1 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004020) --> Register OR(01)
-      2 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004030) --> Register OR(01)
-      3 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004040) --> Register OR(01)
-      4 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004060) --> Register OR(01)
-      5 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004110) --> Register OR(01)
-      6 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004500) --> Register OR(01)
-      7 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004510) --> Register OR(01)
-      8 CONDITION: IF player Owns Item (Item Type: Item, Item ID: 00004520) --> Register OR(01)
-      9 CONDITION: IF register OR(01) is TRUE --> Register MAIN
-     10 SET Event Flag ID 11020102 to ON
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event ID, Target Event Flag ID: 00000000)
+      1 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004020, Desired Possession State: Owns)
+      2 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004030, Desired Possession State: Owns)
+      3 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004040, Desired Possession State: Owns)
+      4 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004060, Desired Possession State: Owns)
+      5 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004110, Desired Possession State: Owns)
+      6 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004500, Desired Possession State: Owns)
+      7 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004510, Desired Possession State: Owns)
+      8 IF Player Has/Doesn't Have Item (Result Condition Group: OR(01), Item Type: Goods, Item ID: 00004520, Desired Possession State: Owns)
+      9 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: OR(01))
+     10 Set Event Flag (Event Flag ID: 11020102, Flag State: ON)
 
-Event ID: 730, Int: 0
+Event ID: 730, Ignores Bonfire Rest
 Parameters: {} ()
-      0 CONDITION: IF Event Flag ID: 00000732 is OFF --> Register AND(01)
-      1 CONDITION: IF Event Flag ID: 00008000 is ON --> Register AND(01)
-      2 CONDITION: IF register AND(01) is TRUE --> Register MAIN
-      3 SET Event Flag ID 732 to ON
-      4 SET Event Flag ID 735 to ON
-      5 RESTART event
+      0 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: OFF, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000732)
+      1 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00008000)
+      2 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: AND(01))
+      3 Set Event Flag (Event Flag ID: 732, Flag State: ON)
+      4 Set Event Flag (Event Flag ID: 735, Flag State: ON)
+      5 END Unconditionally (Execution End Type: Restart)
 
-Event ID: 731, Int: 0
+Event ID: 731, Ignores Bonfire Rest
 Parameters: {} ()
-      0 CONDITION: IF Event Flag ID: 00008000 is OFF --> Register MAIN
-      1 SET Event Flag ID 732 to OFF
-      2 SET Event Flag ID 735 to OFF
-      3 CONDITION: IF Event Flag ID: 00008000 is ON --> Register MAIN
-      4 RESTART event
+      0 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: OFF, Target Event Flag Type: Event Flag, Target Event Flag ID: 00008000)
+      1 Set Event Flag (Event Flag ID: 732, Flag State: OFF)
+      2 Set Event Flag (Event Flag ID: 735, Flag State: OFF)
+      3 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00008000)
+      4 END Unconditionally (Execution End Type: Restart)
 
-Event ID: 250, Int: 0
+Event ID: 250, Ignores Bonfire Rest
 Parameters: {X0:3, X4:7} (ii)
-      0 END event IF Event ID with Slot Number: 00000000 is ON
-      1 CONDITION: IF player Owns Item (Item Type: Item, Item ID: X0:3) --> Register MAIN
-      2 SET Event Flag ID X4:7 to ON
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event ID + Slot Number, Target Event Flag ID: 00000000)
+      1 IF Player Has/Doesn't Have Item (Result Condition Group: MAIN, Item Type: Goods, Item ID: X0:3, Desired Possession State: Owns)
+      2 Set Event Flag (Event Flag ID: X4:7, Flag State: ON)
 
-Event ID: 350, Int: 0
+Event ID: 350, Ignores Bonfire Rest
 Parameters: {X0:3, X4:7} (ii)
-      0 SKIP 2 lines IF Event ID with Slot Number: 00000000 is OFF
-      1 CONDITION: IF player Owns Item (Item Type: Item, Item ID: X4:7) --> Register AND(01)
-      2 END event IF register AND(01) is FALSE
-      3 CONDITION: IF Event Flag ID: X0:3 is ON --> Register MAIN
-      4 Remove 1 (0=All) of Item (Item Type: Item, Item ID: X4:7) from player
+      0 SKIP IF Event Flag (Number Of Skipped Lines: 2, Desired Flag State: OFF, Target Event Flag Type: Event ID + Slot Number, Target Event Flag ID: 00000000)
+      1 IF Player Has/Doesn't Have Item (Result Condition Group: AND(01), Item Type: Goods, Item ID: X4:7, Desired Possession State: Owns)
+      2 END IF Condition Group State (Uncompiled) (Execution End Type: End, Desired Condition Group State: FAIL, Target Condition Group: AND(01))
+      3 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: X0:3)
+      4 Remove Item From Player (Item Type: Goods, Item ID: X4:7, Number: 1)
 
-Event ID: 780, Int: 0
+Event ID: 780, Ignores Bonfire Rest
 Parameters: {X0:3, X4:7} (ii)
-      0 SET Event Flag ID X4:7 to OFF
-      1 CONDITION: IF player Owns Item (Item Type: Item, Item ID: X0:3) --> Register MAIN
-      2 SET Event Flag ID X4:7 to ON
-      3 CONDITION: IF player Does not own Item (Item Type: Item, Item ID: X0:3) --> Register MAIN
-      4 RESTART event
+      0 Set Event Flag (Event Flag ID: X4:7, Flag State: OFF)
+      1 IF Player Has/Doesn't Have Item (Result Condition Group: MAIN, Item Type: Goods, Item ID: X0:3, Desired Possession State: Owns)
+      2 Set Event Flag (Event Flag ID: X4:7, Flag State: ON)
+      3 IF Player Has/Doesn't Have Item (Result Condition Group: MAIN, Item Type: Goods, Item ID: X0:3, Desired Possession State: Doesn't Own)
+      4 END Unconditionally (Execution End Type: Restart)
 
-Event ID: 870, Int: 0
+Event ID: 870, Ignores Bonfire Rest
 Parameters: {X0:0, X4:7} (Bi)
-      0 CONDITION: IF player's covenant is Covenant Type[X0:0] --> Register MAIN
-      1 SET Event Flag ID X4:7 to ON
-      2 CONDITION: IF player's covenant is Covenant Type[X0:0] --> Register AND(01)
-      3 CONDITION: IF register AND(01) is FALSE --> Register MAIN
-      4 SET Event Flag ID X4:7 to OFF
-      5 RESTART event
+      0 IF Player's Covenant (Result Condition Group: MAIN, Covenant Index: X0:0)
+      1 Set Event Flag (Event Flag ID: X4:7, Flag State: ON)
+      2 IF Player's Covenant (Result Condition Group: AND(01), Covenant Index: X0:0)
+      3 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: FAIL, Target Condition Group: AND(01))
+      4 Set Event Flag (Event Flag ID: X4:7, Flag State: OFF)
+      5 END Unconditionally (Execution End Type: Restart)
 
-Event ID: 260, Int: 0
+Event ID: 260, Ignores Bonfire Rest
 Parameters: {X0:3, X4:7, X8:11} (iif)
-      0 END event IF Event Flag ID: X0:3 is ON
-      1 CONDITION: IF Event Flag ID: X0:3 is ON --> Register MAIN
-      2 WAIT X8:11s
-      3 Display Status Explanation Message (Message ID: X4:7, ENABLE Pad)
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: X0:3)
+      1 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: X0:3)
+      2 WAIT Fixed Time (Seconds) (Number Of Seconds: X8:11)
+      3 Display Status Message (Message ID: X4:7, Pad State: Enabled)
 
-Event ID: 970, Int: 0
+Event ID: 970, Ignores Bonfire Rest
 Parameters: {X0:3, X4:7, X8:11, X12:15} (iiii)
-      0 END event IF Event Flag ID: X0:3 is ON
-      1 CONDITION: IF Event Flag ID: X0:3 is ON --> Register MAIN
-      2 SKIP 1 lines IF (Event Flag ID: X4:7) == (Event Flag ID: 0)
-      3 Award Items (Item Lot ID: X4:7) (Except to Clients)
-      4 DISABLE network sync.
-      5 WAIT 5.000s
-      6 SKIP 1 lines IF (Event Flag ID: X8:11) == (Event Flag ID: 0)
-      7 Award Items (Item Lot ID: X8:11) (Except to Clients)
-      8 SKIP 1 lines IF (Event Flag ID: X12:15) == (Event Flag ID: 0)
-      9 Award Items (Item Lot ID: X12:15) (Except to Clients)
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: X0:3)
+      1 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: X0:3)
+      2 SKIP IF Comparison (Number Of Skipped Lines: 1, Comparison Type: ==, Left-hand Side: X4:7, Right-hand Side: 0)
+      3 Award Items (Including Clients) (Item Lot ID: X4:7)
+      4 Set Network Sync State (Disabled/Enabled: Disabled)
+      5 WAIT Fixed Time (Seconds) (Number Of Seconds: 5.000)
+      6 SKIP IF Comparison (Number Of Skipped Lines: 1, Comparison Type: ==, Left-hand Side: X8:11, Right-hand Side: 0)
+      7 Award Items (Including Clients) (Item Lot ID: X8:11)
+      8 SKIP IF Comparison (Number Of Skipped Lines: 1, Comparison Type: ==, Left-hand Side: X12:15, Right-hand Side: 0)
+      9 Award Items (Including Clients) (Item Lot ID: X12:15)
 
-Event ID: 911, Int: 0
+Event ID: 911, Ignores Bonfire Rest
 Parameters: {X0:3, X4:7, X8:8} (iiB)
-      0 END event IF Event Flag ID: X0:3 is ON
-      1 CONDITION: IF Event Flag ID: X0:3 is ON --> Register MAIN
-      2 Award Items (Item Lot ID: X4:7) (Except to Clients)
-      3 SET Event Flag ID X0:3 to ON/OFF[X8:8]
-      4 END event IF Event Flag ID: X0:3 is ON
-      5 RESTART event
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: X0:3)
+      1 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: X0:3)
+      2 Award Items (Including Clients) (Item Lot ID: X4:7)
+      3 Set Event Flag (Event Flag ID: X0:3, Flag State: ON/OFF[X8:8])
+      4 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: X0:3)
+      5 END Unconditionally (Execution End Type: Restart)
 
-Event ID: 890, Int: 0
+Event ID: 890, Ignores Bonfire Rest
 Parameters: {X0:3, X4:7, X8:8} (iiB)
-      0 END event IF Event Flag ID: X0:3 is ON
-      1 CONDITION: IF Event Flag ID: X0:3 is ON --> Register MAIN
-      2 Award Items (Item Lot ID: X4:7) (Except to Clients)
-      3 SET Event Flag ID X0:3 to ON/OFF[X8:8]
-      4 END event IF Event Flag ID: X0:3 is ON
-      5 RESTART event
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: X0:3)
+      1 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: X0:3)
+      2 Award Items (Including Clients) (Item Lot ID: X4:7)
+      3 Set Event Flag (Event Flag ID: X0:3, Flag State: ON/OFF[X8:8])
+      4 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: X0:3)
+      5 END Unconditionally (Execution End Type: Restart)
 
-Event ID: 960, Int: 0
+Event ID: 960, Ignores Bonfire Rest
 Parameters: {X0:3, X4:7, X8:11} (iii)
-      0 END event IF Event ID with Slot Number: 00000000 is ON
-      1 CONDITION: IF Event Flag ID: X0:3 is ON --> Register AND(01)
-      2 CONDITION: IF Entity ID: X4:7 is Dead --> Register AND(01)
-      3 CONDITION: IF register AND(01) is TRUE --> Register MAIN
-      4 Award Items (Item Lot ID: X8:11) (Except to Clients)
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event ID + Slot Number, Target Event Flag ID: 00000000)
+      1 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: X0:3)
+      2 IF Character Dead/Alive (Result Condition Group: AND(01), Target Entity ID: X4:7, Desired Life State: Dead)
+      3 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: AND(01))
+      4 Award Items (Including Clients) (Item Lot ID: X8:11)
 
-Event ID: 8200, Int: 0
+Event ID: 8200, Ignores Bonfire Rest
 Parameters: {X0:0, X4:7, X8:11, X12:15} (Biii)
-      0 END event IF Event Flag ID: X8:11 is ON
-      1 CONDITION: IF player's number of completed playthroughs is >= 001 --> Register AND(01)
-      2 END event IF register AND(01) is FALSE
-      3 CONDITION: IF player Owns Item (Item Type: Item Type[X0:0], Item ID: X4:7) (Including in their BBox)--> Register AND(02)
-      4 END event IF register AND(02) is FALSE
-      5 SET Event Flag ID X8:11 to ON
-      6 SET Event Flag ID X12:15 to ON
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: X8:11)
+      1 IF Game Cycle (Result Condition Group: AND(01), Comparison Type: >=, Completed Game Cycles Threshold: 001)
+      2 END IF Condition Group State (Uncompiled) (Execution End Type: End, Desired Condition Group State: FAIL, Target Condition Group: AND(01))
+      3 IF Player Has/Doesn't Have Item Including BBox (Result Condition Group: AND(02), Item Type: Item Type[X0:0], Item ID: X4:7, Desired Possession State: Owns)
+      4 END IF Condition Group State (Uncompiled) (Execution End Type: End, Desired Condition Group State: FAIL, Target Condition Group: AND(02))
+      5 Set Event Flag (Event Flag ID: X8:11, Flag State: ON)
+      6 Set Event Flag (Event Flag ID: X12:15, Flag State: ON)
 
-Event ID: 8300, Int: 0
+Event ID: 8300, Ignores Bonfire Rest
 Parameters: {X0:0, X4:7, X8:11} (Bii)
-      0 END event IF Event Flag ID: X8:11 is ON
-      1 CONDITION: IF player's number of completed playthroughs is >= 001 --> Register AND(01)
-      2 END event IF register AND(01) is FALSE
-      3 CONDITION: IF player Owns Item (Item Type: Item Type[X0:0], Item ID: X4:7) (Including in their BBox)--> Register AND(02)
-      4 END event IF register AND(02) is FALSE
-      5 SET Event Flag ID X8:11 to ON
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: X8:11)
+      1 IF Game Cycle (Result Condition Group: AND(01), Comparison Type: >=, Completed Game Cycles Threshold: 001)
+      2 END IF Condition Group State (Uncompiled) (Execution End Type: End, Desired Condition Group State: FAIL, Target Condition Group: AND(01))
+      3 IF Player Has/Doesn't Have Item Including BBox (Result Condition Group: AND(02), Item Type: Item Type[X0:0], Item ID: X4:7, Desired Possession State: Owns)
+      4 END IF Condition Group State (Uncompiled) (Execution End Type: End, Desired Condition Group State: FAIL, Target Condition Group: AND(02))
+      5 Set Event Flag (Event Flag ID: X8:11, Flag State: ON)
 
-Event ID: 8090, Int: 0
+Event ID: 8090, Ignores Bonfire Rest
 Parameters: {X0:0, X4:7, X8:11} (Bii)
-      0 END event IF Event Flag ID: X8:11 is ON
-      1 CONDITION: IF player's number of completed playthroughs is >= 001 --> Register AND(01)
-      2 END event IF register AND(01) is FALSE
-      3 CONDITION: IF player Owns Item (Item Type: Item Type[X0:0], Item ID: X4:7) (Including in their BBox)--> Register AND(02)
-      4 END event IF register AND(02) is FALSE
-      5 SET Event Flag ID X8:11 to ON
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: X8:11)
+      1 IF Game Cycle (Result Condition Group: AND(01), Comparison Type: >=, Completed Game Cycles Threshold: 001)
+      2 END IF Condition Group State (Uncompiled) (Execution End Type: End, Desired Condition Group State: FAIL, Target Condition Group: AND(01))
+      3 IF Player Has/Doesn't Have Item Including BBox (Result Condition Group: AND(02), Item Type: Item Type[X0:0], Item ID: X4:7, Desired Possession State: Owns)
+      4 END IF Condition Group State (Uncompiled) (Execution End Type: End, Desired Condition Group State: FAIL, Target Condition Group: AND(02))
+      5 Set Event Flag (Event Flag ID: X8:11, Flag State: ON)
 
-Event ID: 910, Int: 0
+Event ID: 910, Ignores Bonfire Rest
 Parameters: {X0:3, X4:7} (ii)
-      0 SKIP 2 lines IF Event Flag ID: X0:3 is ON
-      1 CONDITION: IF Event Flag ID: X0:3 is ON --> Register MAIN
-      2 Award Items (Item Lot ID: X4:7) (Except to Clients)
-      3 CONDITION: IF Event Flag ID: X0:3 is OFF --> Register MAIN
-      4 RESTART event
+      0 SKIP IF Event Flag (Number Of Skipped Lines: 2, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: X0:3)
+      1 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: X0:3)
+      2 Award Items (Including Clients) (Item Lot ID: X4:7)
+      3 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: OFF, Target Event Flag Type: Event Flag, Target Event Flag ID: X0:3)
+      4 END Unconditionally (Execution End Type: Restart)
 
-Event ID: 690, Int: 0
+Event ID: 690, Ignores Bonfire Rest
 Parameters: {X0:3, X4:7, X8:11, X12:15} (iIIi)
-      0 SKIP 1 lines IF Event ID with Slot Number: 00000000 is ON
-      1 CONDITION: IF Event Flag ID: X12:15 is ON --> Register MAIN
-      2 SKIP 1 lines IF Event Flag ID: 00000002 is ON
-      3 CONDITION: IF Event Flag ID: 00000002 is ON --> Register OR(01)
-      4 SKIP 1 lines IF Event Flag ID: 00000003 is ON
-      5 CONDITION: IF Event Flag ID: 00000003 is ON --> Register OR(01)
-      6 SKIP 1 lines IF Event Flag ID: 00000004 is ON
-      7 CONDITION: IF Event Flag ID: 00000004 is ON --> Register OR(01)
-      8 SKIP 1 lines IF Event Flag ID: 00000005 is ON
-      9 CONDITION: IF Event Flag ID: 00000005 is ON --> Register OR(01)
-     10 SKIP 1 lines IF Event Flag ID: 00000006 is ON
-     11 CONDITION: IF Event Flag ID: 00000006 is ON --> Register OR(01)
-     12 SKIP 1 lines IF Event Flag ID: 00000007 is ON
-     13 CONDITION: IF Event Flag ID: 00000007 is ON --> Register OR(01)
-     14 SKIP 1 lines IF Event Flag ID: 00000008 is ON
-     15 CONDITION: IF Event Flag ID: 00000008 is ON --> Register OR(01)
-     16 SKIP 1 lines IF Event Flag ID: 00000009 is ON
-     17 CONDITION: IF Event Flag ID: 00000009 is ON --> Register OR(01)
-     18 SKIP 1 lines IF Event Flag ID: 00000010 is ON
-     19 CONDITION: IF Event Flag ID: 00000010 is ON --> Register OR(01)
-     20 SKIP 1 lines IF Event Flag ID: 00000011 is ON
-     21 CONDITION: IF Event Flag ID: 00000011 is ON --> Register OR(01)
-     22 SKIP 1 lines IF Event Flag ID: 00000012 is ON
-     23 CONDITION: IF Event Flag ID: 00000012 is ON --> Register OR(01)
-     24 SKIP 1 lines IF Event Flag ID: 00000013 is ON
-     25 CONDITION: IF Event Flag ID: 00000013 is ON --> Register OR(01)
-     26 SKIP 1 lines IF Event Flag ID: 00000014 is ON
-     27 CONDITION: IF Event Flag ID: 00000014 is ON --> Register OR(01)
-     28 SKIP 1 lines IF Event Flag ID: 00000015 is ON
-     29 CONDITION: IF Event Flag ID: 00000015 is ON --> Register OR(01)
-     30 CONDITION: IF register OR(01) is TRUE --> Register MAIN
-     31 Increment Event Flag X0:3 (Number of Bits: X4:7, Maximum: X8:11)
-     32 RESTART event
+      0 SKIP IF Event Flag (Number Of Skipped Lines: 1, Desired Flag State: ON, Target Event Flag Type: Event ID + Slot Number, Target Event Flag ID: 00000000)
+      1 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: X12:15)
+      2 SKIP IF Event Flag (Number Of Skipped Lines: 1, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000002)
+      3 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000002)
+      4 SKIP IF Event Flag (Number Of Skipped Lines: 1, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000003)
+      5 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000003)
+      6 SKIP IF Event Flag (Number Of Skipped Lines: 1, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000004)
+      7 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000004)
+      8 SKIP IF Event Flag (Number Of Skipped Lines: 1, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000005)
+      9 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000005)
+     10 SKIP IF Event Flag (Number Of Skipped Lines: 1, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000006)
+     11 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000006)
+     12 SKIP IF Event Flag (Number Of Skipped Lines: 1, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000007)
+     13 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000007)
+     14 SKIP IF Event Flag (Number Of Skipped Lines: 1, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000008)
+     15 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000008)
+     16 SKIP IF Event Flag (Number Of Skipped Lines: 1, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000009)
+     17 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000009)
+     18 SKIP IF Event Flag (Number Of Skipped Lines: 1, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000010)
+     19 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000010)
+     20 SKIP IF Event Flag (Number Of Skipped Lines: 1, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000011)
+     21 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000011)
+     22 SKIP IF Event Flag (Number Of Skipped Lines: 1, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000012)
+     23 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000012)
+     24 SKIP IF Event Flag (Number Of Skipped Lines: 1, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000013)
+     25 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000013)
+     26 SKIP IF Event Flag (Number Of Skipped Lines: 1, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000014)
+     27 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000014)
+     28 SKIP IF Event Flag (Number Of Skipped Lines: 1, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000015)
+     29 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000015)
+     30 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: OR(01))
+     31 Increment Event Value (Base Event Flag ID: X0:3, Number of Used Flag Bits: X4:7, Maximum Allowed Value: X8:11)
+     32 END Unconditionally (Execution End Type: Restart)
 
-Event ID: 721, Int: 0
+Event ID: 721, Ignores Bonfire Rest
 Parameters: {} ()
-      0 END event IF Event Flag ID: 00000728 is ON
-      1 CONDITION: IF Event Flag ID: 11707000 is ON --> Register AND(01)
-      2 CONDITION: IF Event Flag ID: 11707010 is ON --> Register AND(01)
-      3 CONDITION: IF Event Flag ID: 11707020 is ON --> Register AND(01)
-      4 CONDITION: IF Event Flag ID: 11707030 is ON --> Register AND(01)
-      5 CONDITION: IF Event Flag ID: 11707040 is ON --> Register AND(01)
-      6 CONDITION: IF Event Flag ID: 11707050 is ON --> Register AND(01)
-      7 CONDITION: IF Event Flag ID: 11707060 is ON --> Register AND(01)
-      8 CONDITION: IF Event Flag ID: 11707070 is ON --> Register AND(01)
-      9 CONDITION: IF register AND(01) is TRUE --> Register MAIN
-     10 SET Event Flag ID 721 to ON
-     11 CONDITION: IF Event Flag ID: 11707090 is ON --> Register AND(02)
-     12 CONDITION: IF Event Flag ID: 11707100 is ON --> Register AND(02)
-     13 CONDITION: IF Event Flag ID: 11707110 is ON --> Register AND(02)
-     14 CONDITION: IF register AND(02) is TRUE --> Register MAIN
-     15 SET Event Flag ID 728 to ON
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000728)
+      1 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11707000)
+      2 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11707010)
+      3 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11707020)
+      4 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11707030)
+      5 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11707040)
+      6 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11707050)
+      7 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11707060)
+      8 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11707070)
+      9 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: AND(01))
+     10 Set Event Flag (Event Flag ID: 721, Flag State: ON)
+     11 IF Event Flag (Result Condition Group: AND(02), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11707090)
+     12 IF Event Flag (Result Condition Group: AND(02), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11707100)
+     13 IF Event Flag (Result Condition Group: AND(02), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11707110)
+     14 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: AND(02))
+     15 Set Event Flag (Event Flag ID: 728, Flag State: ON)
 
-Event ID: 722, Int: 0
+Event ID: 722, Ignores Bonfire Rest
 Parameters: {} ()
-      0 END event IF Event ID: 00000000 is ON
-      1 CONDITION: IF Event Flag ID: 11407120 is ON --> Register AND(01)
-      2 CONDITION: IF Event Flag ID: 11407130 is ON --> Register AND(01)
-      3 CONDITION: IF Event Flag ID: 11407150 is ON --> Register AND(01)
-      4 CONDITION: IF Event Flag ID: 11407160 is ON --> Register AND(01)
-      5 CONDITION: IF Event Flag ID: 11407170 is ON --> Register AND(01)
-      6 CONDITION: IF Event Flag ID: 11407140 is ON --> Register AND(01)
-      7 CONDITION: IF Event Flag ID: 11407180 is ON --> Register AND(01)
-      8 CONDITION: IF Event Flag ID: 11407190 is ON --> Register AND(01)
-      9 CONDITION: IF Event Flag ID: 00000010 is ON --> Register AND(01)
-     10 CONDITION: IF player Owns Item (Item Type: Weapon, Item ID: 01332500) --> Register AND(01)
-     11 CONDITION: IF register AND(01) is TRUE --> Register MAIN
-     12 SET Event Flag ID 722 to ON
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event ID, Target Event Flag ID: 00000000)
+      1 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11407120)
+      2 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11407130)
+      3 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11407150)
+      4 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11407160)
+      5 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11407170)
+      6 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11407140)
+      7 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11407180)
+      8 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11407190)
+      9 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000010)
+     10 IF Player Has/Doesn't Have Item (Result Condition Group: AND(01), Item Type: Weapon, Item ID: 01332500, Desired Possession State: Owns)
+     11 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: AND(01))
+     12 Set Event Flag (Event Flag ID: 722, Flag State: ON)
 
-Event ID: 723, Int: 0
+Event ID: 723, Ignores Bonfire Rest
 Parameters: {} ()
-      0 END event IF Event ID: 00000000 is ON
-      1 CONDITION: IF Event Flag ID: 11027130 is ON --> Register AND(01)
-      2 CONDITION: IF Event Flag ID: 11027140 is ON --> Register AND(01)
-      3 CONDITION: IF Event Flag ID: 11027150 is ON --> Register AND(01)
-      4 CONDITION: IF Event Flag ID: 11027160 is ON --> Register AND(01)
-      5 CONDITION: IF Event Flag ID: 11027170 is ON --> Register AND(01)
-      6 CONDITION: IF Event Flag ID: 11027180 is ON --> Register AND(01)
-      7 CONDITION: IF Event Flag ID: 11027190 is ON --> Register AND(01)
-      8 CONDITION: IF Event Flag ID: 11027200 is ON --> Register AND(01)
-      9 CONDITION: IF Event Flag ID: 11027210 is ON --> Register AND(01)
-     10 CONDITION: IF Event Flag ID: 11027220 is ON --> Register AND(01)
-     11 CONDITION: IF Event Flag ID: 11027230 is ON --> Register AND(01)
-     12 CONDITION: IF Event Flag ID: 11027240 is ON --> Register AND(01)
-     13 CONDITION: IF register AND(01) is TRUE --> Register MAIN
-     14 SET Event Flag ID 723 to ON
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event ID, Target Event Flag ID: 00000000)
+      1 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11027130)
+      2 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11027140)
+      3 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11027150)
+      4 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11027160)
+      5 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11027170)
+      6 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11027180)
+      7 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11027190)
+      8 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11027200)
+      9 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11027210)
+     10 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11027220)
+     11 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11027230)
+     12 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11027240)
+     13 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: AND(01))
+     14 Set Event Flag (Event Flag ID: 723, Flag State: ON)
 
-Event ID: 724, Int: 0
+Event ID: 724, Ignores Bonfire Rest
 Parameters: {} ()
-      0 END event IF Event ID: 00000000 is ON
-      1 CONDITION: IF Event Flag ID: 11017050 is ON --> Register AND(01)
-      2 CONDITION: IF Event Flag ID: 11017060 is ON --> Register AND(01)
-      3 CONDITION: IF Event Flag ID: 11017070 is ON --> Register AND(01)
-      4 CONDITION: IF Event Flag ID: 11017080 is ON --> Register AND(01)
-      5 CONDITION: IF Event Flag ID: 11017090 is ON --> Register AND(01)
-      6 CONDITION: IF Event Flag ID: 11017100 is ON --> Register AND(01)
-      7 CONDITION: IF Event Flag ID: 11017110 is ON --> Register AND(01)
-      8 CONDITION: IF Event Flag ID: 11017120 is ON --> Register AND(01)
-      9 CONDITION: IF Event Flag ID: 11017130 is ON --> Register AND(01)
-     10 CONDITION: IF register AND(01) is TRUE --> Register MAIN
-     11 SET Event Flag ID 724 to ON
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event ID, Target Event Flag ID: 00000000)
+      1 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11017050)
+      2 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11017060)
+      3 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11017070)
+      4 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11017080)
+      5 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11017090)
+      6 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11017100)
+      7 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11017110)
+      8 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11017120)
+      9 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11017130)
+     10 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: AND(01))
+     11 Set Event Flag (Event Flag ID: 724, Flag State: ON)
 
-Event ID: 725, Int: 0
+Event ID: 725, Ignores Bonfire Rest
 Parameters: {} ()
-      0 END event IF Event ID: 00000000 is ON
-      1 CONDITION: IF Number of TRUE Event Flag IDs from 11707100 to 11707190 is >= 2 --> Register MAIN
-      2 SET Event Flag ID 725 to ON
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event ID, Target Event Flag ID: 00000000)
+      1 IF Count Event Flags (Result Condition Group: MAIN, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 11707100, Ending Target Event Flag ID: 11707190, Comparison Type: >=, Count Threshold: 2)
+      2 Set Event Flag (Event Flag ID: 725, Flag State: ON)
 
-Event ID: 726, Int: 0
+Event ID: 726, Ignores Bonfire Rest
 Parameters: {} ()
-      0 END event IF Event ID: 00000000 is ON
-      1 CONDITION: IF Number of TRUE Event Flag IDs from 11607000 to 11607090 is >= 2 --> Register MAIN
-      2 SET Event Flag ID 726 to ON
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event ID, Target Event Flag ID: 00000000)
+      1 IF Count Event Flags (Result Condition Group: MAIN, Target Event Flag Type: Event Flag, Starting Target Event Flag ID: 11607000, Ending Target Event Flag ID: 11607090, Comparison Type: >=, Count Threshold: 2)
+      2 Set Event Flag (Event Flag ID: 726, Flag State: ON)
 
-Event ID: 727, Int: 0
+Event ID: 727, Ignores Bonfire Rest
 Parameters: {} ()
-      0 END event IF Event ID: 00000000 is ON
-      1 CONDITION: IF Event Flag ID: 11327000 is ON --> Register AND(01)
-      2 CONDITION: IF Event Flag ID: 11327010 is ON --> Register AND(01)
-      3 CONDITION: IF Event Flag ID: 11327020 is ON --> Register AND(01)
-      4 CONDITION: IF Event Flag ID: 11327030 is ON --> Register AND(01)
-      5 CONDITION: IF Event Flag ID: 11327040 is ON --> Register AND(01)
-      6 CONDITION: IF Event Flag ID: 11327050 is ON --> Register AND(01)
-      7 CONDITION: IF Event Flag ID: 11327060 is ON --> Register AND(01)
-      8 CONDITION: IF Event Flag ID: 11327070 is ON --> Register AND(01)
-      9 CONDITION: IF Event Flag ID: 11327080 is ON --> Register AND(01)
-     10 CONDITION: IF Event Flag ID: 11327090 is ON --> Register AND(01)
-     11 CONDITION: IF register AND(01) is TRUE --> Register MAIN
-     12 SET Event Flag ID 727 to ON
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event ID, Target Event Flag ID: 00000000)
+      1 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11327000)
+      2 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11327010)
+      3 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11327020)
+      4 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11327030)
+      5 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11327040)
+      6 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11327050)
+      7 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11327060)
+      8 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11327070)
+      9 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11327080)
+     10 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11327090)
+     11 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: AND(01))
+     12 Set Event Flag (Event Flag ID: 727, Flag State: ON)
 
-Event ID: 740, Int: 0
+Event ID: 740, Ignores Bonfire Rest
 Parameters: {} ()
-      0 CONDITION: IF player's class is Pyromancer --> Register MAIN
-      1 SET Event Flag ID 740 to ON
+      0 IF Player's Class (Result Condition Group: MAIN, Class: Pyromancer)
+      1 Set Event Flag (Event Flag ID: 740, Flag State: ON)
 
-Event ID: 745, Int: 0
+Event ID: 745, Ignores Bonfire Rest
 Parameters: {} ()
-      0 CONDITION: IF Event Flag ID: 00001604 is ON --> Register AND(07)
-      1 CONDITION: IF Event Flag ID: 00001764 is ON --> Register AND(07)
-      2 SKIP 1 lines IF register AND(07) is FALSE
-      3 CONDITION: IF Event Flag ID: 00000703 is ON --> Register MAIN
-      4 SKIP 1 lines IF Event Flag ID: 00001604 is ON
-      5 CONDITION: IF Event Flag ID: 00001604 is ON --> Register OR(01)
-      6 SKIP 1 lines IF Event Flag ID: 00001764 is ON
-      7 CONDITION: IF Event Flag ID: 00001764 is ON --> Register OR(01)
-      8 CONDITION: IF register OR(01) is TRUE --> Register AND(01)
-      9 CONDITION: IF register AND(01) is TRUE --> Register MAIN
-     10 END event
+      0 IF Event Flag (Result Condition Group: AND(07), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001604)
+      1 IF Event Flag (Result Condition Group: AND(07), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001764)
+      2 SKIP IF Condition Group State (Uncompiled) (Number Of Skipped Lines: 1, Desired Condition Group State: FAIL, Target Condition Group: AND(07))
+      3 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000703)
+      4 SKIP IF Event Flag (Number Of Skipped Lines: 1, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001604)
+      5 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001604)
+      6 SKIP IF Event Flag (Number Of Skipped Lines: 1, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001764)
+      7 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001764)
+      8 IF Condition Group (Result Condition Group: AND(01), Desired Condition Group State: PASS, Target Condition Group: OR(01))
+      9 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: AND(01))
+     10 END Unconditionally (Execution End Type: End)
 
-Event ID: 754, Int: 0
+Event ID: 754, Ignores Bonfire Rest
 Parameters: {} ()
-      0 SET Event Flag ID 754 to OFF
-      1 CONDITION: IF Event Flag ID: 00000754 is ON --> Register MAIN
-      2 SET Event Flag ID 754 to OFF
-      3 Set Special Effect (Entity ID: 10000, Special Effect ID: 4600)
-      4 Set Special Effect (Entity ID: 10000, Special Effect ID: 4601)
-      5 Create One-Off SFX (SFX Type: Character, Entity ID: 10000, Damipoly ID: 7, SFX ID: 22715)
-      6 RESTART event
+      0 Set Event Flag (Event Flag ID: 754, Flag State: OFF)
+      1 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000754)
+      2 Set Event Flag (Event Flag ID: 754, Flag State: OFF)
+      3 Set SpEffect (Entity ID: 10000, SpEffect ID: 4600)
+      4 Set SpEffect (Entity ID: 10000, SpEffect ID: 4601)
+      5 Spawn Oneshot SFX (Type: Character, Entity ID: 10000, Dummypoly ID: 7, SFX ID: 22715)
+      6 END Unconditionally (Execution End Type: Restart)
 
-Event ID: 770, Int: 0
+Event ID: 770, Ignores Bonfire Rest
 Parameters: {} ()
-      0 CONDITION: IF Event Flag ID: 00000755 is ON --> Register MAIN
-      1 SET Event Flag ID 755 to OFF
-      2 SET Event Flag ID 742 to OFF
-      3 SET Event Flag ID 743 to OFF
-      4 SET Event Flag ID 744 to OFF
-      5 SET Event Flag ID 745 to OFF
-      6 SET Event Flag ID 746 to OFF
-      7 Batch SET Event Flag IDs from 11000501 to 11000519 to OFF
-      8 Batch SET Event Flag IDs from 11010501 to 11010519 to OFF
-      9 Batch SET Event Flag IDs from 11020501 to 11020529 to OFF
-     10 Batch SET Event Flag IDs from 11100501 to 11100519 to OFF
-     11 Batch SET Event Flag IDs from 11200501 to 11200519 to OFF
-     12 Batch SET Event Flag IDs from 11300501 to 11300519 to OFF
-     13 Batch SET Event Flag IDs from 11310501 to 11310519 to OFF
-     14 Batch SET Event Flag IDs from 11320501 to 11320519 to OFF
-     15 Batch SET Event Flag IDs from 11400501 to 11400519 to OFF
-     16 Batch SET Event Flag IDs from 11410501 to 11410519 to OFF
-     17 Batch SET Event Flag IDs from 11500501 to 11500519 to OFF
-     18 Batch SET Event Flag IDs from 11510501 to 11510519 to OFF
-     19 Batch SET Event Flag IDs from 11600501 to 11600519 to OFF
-     20 Batch SET Event Flag IDs from 11700501 to 11700519 to OFF
-     21 Batch SET Event Flag IDs from 11800501 to 11800519 to OFF
-     22 Batch SET Event Flag IDs from 11810501 to 11810519 to OFF
-     23 Batch SET Event Flag IDs from 11210501 to 11210519 to OFF
-     24 SET Event Flag ID 1004 to OFF
-     25 SET Event Flag ID 1033 to OFF
-     26 SET Event Flag ID 1096 to OFF
-     27 SET Event Flag ID 1114 to OFF
-     28 SET Event Flag ID 1176 to OFF
-     29 SET Event Flag ID 1179 to OFF
-     30 SET Event Flag ID 1195 to OFF
-     31 SET Event Flag ID 1197 to OFF
-     32 SET Event Flag ID 1213 to OFF
-     33 SET Event Flag ID 1223 to OFF
-     34 SET Event Flag ID 1241 to OFF
-     35 SET Event Flag ID 1253 to OFF
-     36 SET Event Flag ID 1282 to OFF
-     37 SET Event Flag ID 1283 to OFF
-     38 SET Event Flag ID 1287 to OFF
-     39 SET Event Flag ID 1294 to OFF
-     40 SET Event Flag ID 1314 to OFF
-     41 SET Event Flag ID 1321 to OFF
-     42 SET Event Flag ID 1341 to OFF
-     43 SET Event Flag ID 1361 to OFF
-     44 SET Event Flag ID 1381 to OFF
-     45 SET Event Flag ID 1401 to OFF
-     46 SET Event Flag ID 1411 to OFF
-     47 SET Event Flag ID 1421 to OFF
-     48 SET Event Flag ID 1434 to OFF
-     49 SET Event Flag ID 1461 to OFF
-     50 SET Event Flag ID 1512 to OFF
-     51 SET Event Flag ID 1547 to OFF
-     52 SET Event Flag ID 1574 to OFF
-     53 SET Event Flag ID 1603 to OFF
-     54 SET Event Flag ID 1627 to OFF
-     55 SET Event Flag ID 1646 to OFF
-     56 SET Event Flag ID 1675 to OFF
-     57 SET Event Flag ID 1691 to OFF
-     58 SET Event Flag ID 1710 to ON
-     59 SET Event Flag ID 1711 to OFF
-     60 SET Event Flag ID 1712 to OFF
-     61 SET Event Flag ID 11200596 to OFF
-     62 SET Event Flag ID 71200035 to OFF
-     63 SET Event Flag ID 71200042 to OFF
-     64 SET Event Flag ID 1763 to OFF
-     65 SET Event Flag ID 1822 to OFF
-     66 SET Event Flag ID 1841 to OFF
-     67 SET Event Flag ID 1863 to OFF
-     68 SET Event Flag ID 1871 to OFF
-     69 Switch Entity ID: 6001 to team Ally
-     70 Switch Entity ID: 6040 to team Ally
-     71 Switch Entity ID: 6072 to team Ally
-     72 Switch Entity ID: 6190 to team Ally
-     73 Switch Entity ID: 6230 to team Ally
-     74 Switch Entity ID: 6300 to team Ally
-     75 RESTART event
+      0 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000755)
+      1 Set Event Flag (Event Flag ID: 755, Flag State: OFF)
+      2 Set Event Flag (Event Flag ID: 742, Flag State: OFF)
+      3 Set Event Flag (Event Flag ID: 743, Flag State: OFF)
+      4 Set Event Flag (Event Flag ID: 744, Flag State: OFF)
+      5 Set Event Flag (Event Flag ID: 745, Flag State: OFF)
+      6 Set Event Flag (Event Flag ID: 746, Flag State: OFF)
+      7 Batch Set Event Flags (Event Flag ID Start: 11000501, Event Flag ID End: 11000519, Flag State: OFF)
+      8 Batch Set Event Flags (Event Flag ID Start: 11010501, Event Flag ID End: 11010519, Flag State: OFF)
+      9 Batch Set Event Flags (Event Flag ID Start: 11020501, Event Flag ID End: 11020529, Flag State: OFF)
+     10 Batch Set Event Flags (Event Flag ID Start: 11100501, Event Flag ID End: 11100519, Flag State: OFF)
+     11 Batch Set Event Flags (Event Flag ID Start: 11200501, Event Flag ID End: 11200519, Flag State: OFF)
+     12 Batch Set Event Flags (Event Flag ID Start: 11300501, Event Flag ID End: 11300519, Flag State: OFF)
+     13 Batch Set Event Flags (Event Flag ID Start: 11310501, Event Flag ID End: 11310519, Flag State: OFF)
+     14 Batch Set Event Flags (Event Flag ID Start: 11320501, Event Flag ID End: 11320519, Flag State: OFF)
+     15 Batch Set Event Flags (Event Flag ID Start: 11400501, Event Flag ID End: 11400519, Flag State: OFF)
+     16 Batch Set Event Flags (Event Flag ID Start: 11410501, Event Flag ID End: 11410519, Flag State: OFF)
+     17 Batch Set Event Flags (Event Flag ID Start: 11500501, Event Flag ID End: 11500519, Flag State: OFF)
+     18 Batch Set Event Flags (Event Flag ID Start: 11510501, Event Flag ID End: 11510519, Flag State: OFF)
+     19 Batch Set Event Flags (Event Flag ID Start: 11600501, Event Flag ID End: 11600519, Flag State: OFF)
+     20 Batch Set Event Flags (Event Flag ID Start: 11700501, Event Flag ID End: 11700519, Flag State: OFF)
+     21 Batch Set Event Flags (Event Flag ID Start: 11800501, Event Flag ID End: 11800519, Flag State: OFF)
+     22 Batch Set Event Flags (Event Flag ID Start: 11810501, Event Flag ID End: 11810519, Flag State: OFF)
+     23 Batch Set Event Flags (Event Flag ID Start: 11210501, Event Flag ID End: 11210519, Flag State: OFF)
+     24 Set Event Flag (Event Flag ID: 1004, Flag State: OFF)
+     25 Set Event Flag (Event Flag ID: 1033, Flag State: OFF)
+     26 Set Event Flag (Event Flag ID: 1096, Flag State: OFF)
+     27 Set Event Flag (Event Flag ID: 1114, Flag State: OFF)
+     28 Set Event Flag (Event Flag ID: 1176, Flag State: OFF)
+     29 Set Event Flag (Event Flag ID: 1179, Flag State: OFF)
+     30 Set Event Flag (Event Flag ID: 1195, Flag State: OFF)
+     31 Set Event Flag (Event Flag ID: 1197, Flag State: OFF)
+     32 Set Event Flag (Event Flag ID: 1213, Flag State: OFF)
+     33 Set Event Flag (Event Flag ID: 1223, Flag State: OFF)
+     34 Set Event Flag (Event Flag ID: 1241, Flag State: OFF)
+     35 Set Event Flag (Event Flag ID: 1253, Flag State: OFF)
+     36 Set Event Flag (Event Flag ID: 1282, Flag State: OFF)
+     37 Set Event Flag (Event Flag ID: 1283, Flag State: OFF)
+     38 Set Event Flag (Event Flag ID: 1287, Flag State: OFF)
+     39 Set Event Flag (Event Flag ID: 1294, Flag State: OFF)
+     40 Set Event Flag (Event Flag ID: 1314, Flag State: OFF)
+     41 Set Event Flag (Event Flag ID: 1321, Flag State: OFF)
+     42 Set Event Flag (Event Flag ID: 1341, Flag State: OFF)
+     43 Set Event Flag (Event Flag ID: 1361, Flag State: OFF)
+     44 Set Event Flag (Event Flag ID: 1381, Flag State: OFF)
+     45 Set Event Flag (Event Flag ID: 1401, Flag State: OFF)
+     46 Set Event Flag (Event Flag ID: 1411, Flag State: OFF)
+     47 Set Event Flag (Event Flag ID: 1421, Flag State: OFF)
+     48 Set Event Flag (Event Flag ID: 1434, Flag State: OFF)
+     49 Set Event Flag (Event Flag ID: 1461, Flag State: OFF)
+     50 Set Event Flag (Event Flag ID: 1512, Flag State: OFF)
+     51 Set Event Flag (Event Flag ID: 1547, Flag State: OFF)
+     52 Set Event Flag (Event Flag ID: 1574, Flag State: OFF)
+     53 Set Event Flag (Event Flag ID: 1603, Flag State: OFF)
+     54 Set Event Flag (Event Flag ID: 1627, Flag State: OFF)
+     55 Set Event Flag (Event Flag ID: 1646, Flag State: OFF)
+     56 Set Event Flag (Event Flag ID: 1675, Flag State: OFF)
+     57 Set Event Flag (Event Flag ID: 1691, Flag State: OFF)
+     58 Set Event Flag (Event Flag ID: 1710, Flag State: ON)
+     59 Set Event Flag (Event Flag ID: 1711, Flag State: OFF)
+     60 Set Event Flag (Event Flag ID: 1712, Flag State: OFF)
+     61 Set Event Flag (Event Flag ID: 11200596, Flag State: OFF)
+     62 Set Event Flag (Event Flag ID: 71200035, Flag State: OFF)
+     63 Set Event Flag (Event Flag ID: 71200042, Flag State: OFF)
+     64 Set Event Flag (Event Flag ID: 1763, Flag State: OFF)
+     65 Set Event Flag (Event Flag ID: 1822, Flag State: OFF)
+     66 Set Event Flag (Event Flag ID: 1841, Flag State: OFF)
+     67 Set Event Flag (Event Flag ID: 1863, Flag State: OFF)
+     68 Set Event Flag (Event Flag ID: 1871, Flag State: OFF)
+     69 Set Character Team Type (Entity ID: 6001, Team Type: Ally)
+     70 Set Character Team Type (Entity ID: 6040, Team Type: Ally)
+     71 Set Character Team Type (Entity ID: 6072, Team Type: Ally)
+     72 Set Character Team Type (Entity ID: 6190, Team Type: Ally)
+     73 Set Character Team Type (Entity ID: 6230, Team Type: Ally)
+     74 Set Character Team Type (Entity ID: 6300, Team Type: Ally)
+     75 END Unconditionally (Execution End Type: Restart)
 
-Event ID: 772, Int: 0
+Event ID: 772, Ignores Bonfire Rest
 Parameters: {} ()
-      0 CONDITION: IF Event Flag ID: 00000744 is OFF --> Register MAIN
-      1 CONDITION: IF Event Flag ID: 00001004 is ON --> Register OR(01)
-      2 CONDITION: IF Event Flag ID: 00001033 is ON --> Register OR(01)
-      3 CONDITION: IF Event Flag ID: 00001096 is ON --> Register OR(01)
-      4 CONDITION: IF Event Flag ID: 00001114 is ON --> Register OR(01)
-      5 CONDITION: IF Event Flag ID: 00001176 is ON --> Register OR(01)
-      6 CONDITION: IF Event Flag ID: 00001179 is ON --> Register OR(01)
-      7 CONDITION: IF Event Flag ID: 00001195 is ON --> Register OR(01)
-      8 CONDITION: IF Event Flag ID: 00001197 is ON --> Register OR(01)
-      9 CONDITION: IF Event Flag ID: 00001213 is ON --> Register OR(01)
-     10 CONDITION: IF Event Flag ID: 00001223 is ON --> Register OR(01)
-     11 CONDITION: IF Event Flag ID: 00001241 is ON --> Register OR(01)
-     12 CONDITION: IF Event Flag ID: 00001253 is ON --> Register OR(01)
-     13 CONDITION: IF Event Flag ID: 00001282 is ON --> Register OR(01)
-     14 CONDITION: IF Event Flag ID: 00001283 is ON --> Register OR(01)
-     15 CONDITION: IF Event Flag ID: 00001287 is ON --> Register OR(01)
-     16 CONDITION: IF Event Flag ID: 00001294 is ON --> Register OR(01)
-     17 CONDITION: IF Event Flag ID: 00001314 is ON --> Register OR(01)
-     18 CONDITION: IF Event Flag ID: 00001321 is ON --> Register OR(01)
-     19 CONDITION: IF Event Flag ID: 00001341 is ON --> Register OR(01)
-     20 CONDITION: IF Event Flag ID: 00001361 is ON --> Register OR(01)
-     21 CONDITION: IF Event Flag ID: 00001381 is ON --> Register OR(01)
-     22 CONDITION: IF Event Flag ID: 00001401 is ON --> Register OR(01)
-     23 CONDITION: IF Event Flag ID: 00001411 is ON --> Register OR(01)
-     24 CONDITION: IF Event Flag ID: 00001421 is ON --> Register OR(01)
-     25 CONDITION: IF Event Flag ID: 00001434 is ON --> Register OR(01)
-     26 CONDITION: IF Event Flag ID: 00001461 is ON --> Register OR(01)
-     27 CONDITION: IF Event Flag ID: 00001512 is ON --> Register OR(01)
-     28 CONDITION: IF Event Flag ID: 00001547 is ON --> Register OR(01)
-     29 CONDITION: IF Event Flag ID: 00001574 is ON --> Register OR(01)
-     30 CONDITION: IF Event Flag ID: 00001603 is ON --> Register OR(01)
-     31 CONDITION: IF Event Flag ID: 00001627 is ON --> Register OR(01)
-     32 CONDITION: IF Event Flag ID: 00001646 is ON --> Register OR(01)
-     33 CONDITION: IF Event Flag ID: 00001675 is ON --> Register OR(01)
-     34 CONDITION: IF Event Flag ID: 00001691 is ON --> Register OR(01)
-     35 CONDITION: IF Event Flag ID: 00001711 is ON --> Register OR(01)
-     36 CONDITION: IF Event Flag ID: 00001712 is ON --> Register OR(01)
-     37 CONDITION: IF Event Flag ID: 71200035 is ON --> Register OR(01)
-     38 CONDITION: IF Event Flag ID: 71200042 is ON --> Register OR(01)
-     39 CONDITION: IF Event Flag ID: 00001763 is ON --> Register OR(01)
-     40 CONDITION: IF Event Flag ID: 00001822 is ON --> Register OR(01)
-     41 CONDITION: IF Event Flag ID: 00001841 is ON --> Register OR(01)
-     42 CONDITION: IF Event Flag ID: 00001863 is ON --> Register OR(01)
-     43 CONDITION: IF Event Flag ID: 00001871 is ON --> Register OR(01)
-     44 CONDITION: IF register OR(01) is TRUE --> Register MAIN
-     45 SET Event Flag ID 744 to ON
-     46 CONDITION: IF Event Flag ID: 00000744 is OFF --> Register MAIN
-     47 RESTART event
+      0 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: OFF, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000744)
+      1 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001004)
+      2 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001033)
+      3 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001096)
+      4 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001114)
+      5 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001176)
+      6 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001179)
+      7 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001195)
+      8 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001197)
+      9 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001213)
+     10 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001223)
+     11 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001241)
+     12 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001253)
+     13 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001282)
+     14 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001283)
+     15 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001287)
+     16 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001294)
+     17 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001314)
+     18 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001321)
+     19 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001341)
+     20 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001361)
+     21 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001381)
+     22 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001401)
+     23 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001411)
+     24 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001421)
+     25 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001434)
+     26 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001461)
+     27 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001512)
+     28 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001547)
+     29 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001574)
+     30 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001603)
+     31 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001627)
+     32 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001646)
+     33 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001675)
+     34 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001691)
+     35 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001711)
+     36 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001712)
+     37 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 71200035)
+     38 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 71200042)
+     39 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001763)
+     40 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001822)
+     41 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001841)
+     42 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001863)
+     43 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00001871)
+     44 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: OR(01))
+     45 Set Event Flag (Event Flag ID: 744, Flag State: ON)
+     46 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: OFF, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000744)
+     47 END Unconditionally (Execution End Type: Restart)
 
-Event ID: 761, Int: 0
+Event ID: 761, Ignores Bonfire Rest
 Parameters: {} ()
-      0 DISABLE network sync.
-      1 CONDITION: IF Event Flag ID: 00000760 is ON --> Register MAIN
-      2 WAIT 200 frames
-      3 SET Event Flag ID 760 to OFF
-      4 RESTART event
+      0 Set Network Sync State (Disabled/Enabled: Disabled)
+      1 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000760)
+      2 WAIT Fixed Time (Frames) (Number Of Frames: 200)
+      3 Set Event Flag (Event Flag ID: 760, Flag State: OFF)
+      4 END Unconditionally (Execution End Type: Restart)
 
-Event ID: 763, Int: 0
+Event ID: 763, Ignores Bonfire Rest
 Parameters: {} ()
-      0 DISABLE network sync.
-      1 CONDITION: IF Event Flag ID: 00000762 is ON --> Register MAIN
-      2 Force Entity ID: 10000 to play Animation ID: 7697 (Loop: FALSE, Wait for completion: FALSE, Do not wait for transition: FALSE)
-      3 WAIT 3.500s
-      4 SET Event Flag ID 762 to OFF
-      5 WAIT 2.800s
-      6 SET Event Flag ID 764 to OFF
-      7 Force Entity ID: 10000 to play Animation ID: 7701 (Loop: TRUE, Wait for completion: FALSE, Do not wait for transition: FALSE)
-      8 RESTART event
+      0 Set Network Sync State (Disabled/Enabled: Disabled)
+      1 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000762)
+      2 Force Animation Playback (Entity ID: 10000, Animation ID: 7697, Should Loop: FALSE, Should Wait For Completion: FALSE, Ignore Wait For Transition: FALSE)
+      3 WAIT Fixed Time (Seconds) (Number Of Seconds: 3.500)
+      4 Set Event Flag (Event Flag ID: 762, Flag State: OFF)
+      5 WAIT Fixed Time (Seconds) (Number Of Seconds: 2.800)
+      6 Set Event Flag (Event Flag ID: 764, Flag State: OFF)
+      7 Force Animation Playback (Entity ID: 10000, Animation ID: 7701, Should Loop: TRUE, Should Wait For Completion: FALSE, Ignore Wait For Transition: FALSE)
+      8 END Unconditionally (Execution End Type: Restart)
 
-Event ID: 750, Int: 0
+Event ID: 750, Ignores Bonfire Rest
 Parameters: {} ()
-      0 DISABLE network sync.
-      1 CONDITION: IF Entity ID: 00010000 has Special Effect ID: 71 is TRUE --> Register OR(01)
-      2 CONDITION: IF Entity ID: 00010000 has Special Effect ID: 72 is TRUE --> Register OR(01)
-      3 CONDITION: IF Entity ID: 00010000 has Special Effect ID: 73 is TRUE --> Register OR(01)
-      4 CONDITION: IF Entity ID: 00010000 has Special Effect ID: 74 is TRUE --> Register OR(01)
-      5 CONDITION: IF Event Flag ID: 00000751 is ON --> Register OR(01)
-      6 CONDITION: IF register OR(01) is TRUE --> Register MAIN
-      7 SET Event Flag ID 751 to ON
-      8 CONDITION: IF Entity ID: 00010000 has Special Effect ID: 71 is FALSE --> Register AND(01)
-      9 CONDITION: IF Entity ID: 00010000 has Special Effect ID: 72 is FALSE --> Register AND(01)
-     10 CONDITION: IF Entity ID: 00010000 has Special Effect ID: 73 is FALSE --> Register AND(01)
-     11 CONDITION: IF Entity ID: 00010000 has Special Effect ID: 74 is FALSE --> Register AND(01)
-     12 CONDITION: IF register AND(01) is TRUE --> Register MAIN
-     13 SET Event Flag ID 751 to OFF
-     14 RESTART event
+      0 Set Network Sync State (Disabled/Enabled: Disabled)
+      1 IF Character Has SpEffect (Result Condition Group: OR(01), Target Entity ID: 00010000, SpEffect ID: 71, Should Have: TRUE)
+      2 IF Character Has SpEffect (Result Condition Group: OR(01), Target Entity ID: 00010000, SpEffect ID: 72, Should Have: TRUE)
+      3 IF Character Has SpEffect (Result Condition Group: OR(01), Target Entity ID: 00010000, SpEffect ID: 73, Should Have: TRUE)
+      4 IF Character Has SpEffect (Result Condition Group: OR(01), Target Entity ID: 00010000, SpEffect ID: 74, Should Have: TRUE)
+      5 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000751)
+      6 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: OR(01))
+      7 Set Event Flag (Event Flag ID: 751, Flag State: ON)
+      8 IF Character Has SpEffect (Result Condition Group: AND(01), Target Entity ID: 00010000, SpEffect ID: 71, Should Have: FALSE)
+      9 IF Character Has SpEffect (Result Condition Group: AND(01), Target Entity ID: 00010000, SpEffect ID: 72, Should Have: FALSE)
+     10 IF Character Has SpEffect (Result Condition Group: AND(01), Target Entity ID: 00010000, SpEffect ID: 73, Should Have: FALSE)
+     11 IF Character Has SpEffect (Result Condition Group: AND(01), Target Entity ID: 00010000, SpEffect ID: 74, Should Have: FALSE)
+     12 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: AND(01))
+     13 Set Event Flag (Event Flag ID: 751, Flag State: OFF)
+     14 END Unconditionally (Execution End Type: Restart)
 
-Event ID: 752, Int: 0
+Event ID: 752, Ignores Bonfire Rest
 Parameters: {} ()
-      0 DISABLE network sync.
-      1 CONDITION: IF Entity ID: 00010000 has Special Effect ID: 5213 is TRUE --> Register OR(01)
-      2 CONDITION: IF Entity ID: 00010000 has Special Effect ID: 5214 is TRUE --> Register OR(01)
-      3 CONDITION: IF Event Flag ID: 00000753 is ON --> Register OR(01)
-      4 CONDITION: IF register OR(01) is TRUE --> Register MAIN
-      5 SET Event Flag ID 753 to ON
-      6 CONDITION: IF Entity ID: 00010000 has Special Effect ID: 5213 is FALSE --> Register AND(01)
-      7 CONDITION: IF Entity ID: 00010000 has Special Effect ID: 5214 is FALSE --> Register AND(01)
-      8 CONDITION: IF register AND(01) is TRUE --> Register MAIN
-      9 SET Event Flag ID 753 to OFF
-     10 SET Event Flag ID 11400591 to OFF
-     11 RESTART event
+      0 Set Network Sync State (Disabled/Enabled: Disabled)
+      1 IF Character Has SpEffect (Result Condition Group: OR(01), Target Entity ID: 00010000, SpEffect ID: 5213, Should Have: TRUE)
+      2 IF Character Has SpEffect (Result Condition Group: OR(01), Target Entity ID: 00010000, SpEffect ID: 5214, Should Have: TRUE)
+      3 IF Event Flag (Result Condition Group: OR(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000753)
+      4 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: OR(01))
+      5 Set Event Flag (Event Flag ID: 753, Flag State: ON)
+      6 IF Character Has SpEffect (Result Condition Group: AND(01), Target Entity ID: 00010000, SpEffect ID: 5213, Should Have: FALSE)
+      7 IF Character Has SpEffect (Result Condition Group: AND(01), Target Entity ID: 00010000, SpEffect ID: 5214, Should Have: FALSE)
+      8 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: AND(01))
+      9 Set Event Flag (Event Flag ID: 753, Flag State: OFF)
+     10 Set Event Flag (Event Flag ID: 11400591, Flag State: OFF)
+     11 END Unconditionally (Execution End Type: Restart)
 
-Event ID: 757, Int: 0
+Event ID: 757, Ignores Bonfire Rest
 Parameters: {} ()
-      0 SKIP 1 lines IF Event Flag ID: 00000757 is OFF
-      1 Display Status Explanation Message (Message ID: 10010660, ENABLE Pad)
-      2 SET Event Flag ID 757 to OFF
-      3 CONDITION: IF player Multiplayer State is Host --> Register AND(01)
-      4 CONDITION: IF Entity ID: 00010000 has Special Effect ID: 71 is FALSE --> Register AND(01)
-      5 CONDITION: IF Entity ID: 00010000 has Special Effect ID: 72 is FALSE --> Register AND(01)
-      6 CONDITION: IF Entity ID: 00010000 has Special Effect ID: 73 is FALSE --> Register AND(01)
-      7 CONDITION: IF Entity ID: 00010000 has Special Effect ID: 74 is FALSE --> Register AND(01)
-      8 CONDITION: IF Entity ID: 00010000 has Special Effect ID: 33 is TRUE --> Register OR(01)
-      9 CONDITION: IF Entity ID: 00010000 has Special Effect ID: 34 is TRUE --> Register OR(01)
-     10 CONDITION: IF register OR(01) is TRUE --> Register AND(01)
-     11 CONDITION: IF register AND(01) is TRUE --> Register MAIN
-     12 END event
+      0 SKIP IF Event Flag (Number Of Skipped Lines: 1, Desired Flag State: OFF, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000757)
+      1 Display Status Message (Message ID: 10010660, Pad State: Enabled)
+      2 Set Event Flag (Event Flag ID: 757, Flag State: OFF)
+      3 IF Multiplayer State (Result Condition Group: AND(01), Desired Multiplayer State: Host)
+      4 IF Character Has SpEffect (Result Condition Group: AND(01), Target Entity ID: 00010000, SpEffect ID: 71, Should Have: FALSE)
+      5 IF Character Has SpEffect (Result Condition Group: AND(01), Target Entity ID: 00010000, SpEffect ID: 72, Should Have: FALSE)
+      6 IF Character Has SpEffect (Result Condition Group: AND(01), Target Entity ID: 00010000, SpEffect ID: 73, Should Have: FALSE)
+      7 IF Character Has SpEffect (Result Condition Group: AND(01), Target Entity ID: 00010000, SpEffect ID: 74, Should Have: FALSE)
+      8 IF Character Has SpEffect (Result Condition Group: OR(01), Target Entity ID: 00010000, SpEffect ID: 33, Should Have: TRUE)
+      9 IF Character Has SpEffect (Result Condition Group: OR(01), Target Entity ID: 00010000, SpEffect ID: 34, Should Have: TRUE)
+     10 IF Condition Group (Result Condition Group: AND(01), Desired Condition Group State: PASS, Target Condition Group: OR(01))
+     11 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: AND(01))
+     12 END Unconditionally (Execution End Type: End)
 
-Event ID: 758, Int: 0
+Event ID: 758, Ignores Bonfire Rest
 Parameters: {} ()
-      0 SKIP 1 lines IF Event ID: 00000000 is OFF
-      1 Display Status Explanation Message (Message ID: 10010670, ENABLE Pad)
-      2 SET Event Flag ID 758 to OFF
-      3 CONDITION: IF player Multiplayer State is Host --> Register AND(01)
-      4 CONDITION: IF Entity ID: 00010000 has Health Ratio <= 0.000 --> Register AND(01)
-      5 CONDITION: IF Entity ID: 00010000 has Special Effect ID: 2130 is TRUE --> Register AND(01)
-      6 CONDITION: IF register AND(01) is TRUE --> Register MAIN
-      7 CONDITION: IF player Multiplayer State is Host --> Register AND(02)
-      8 CONDITION: IF Entity ID: 00010000 is Dead --> Register AND(02)
-      9 CONDITION: IF Entity ID: 00010000 has Special Effect ID: 2130 is FALSE --> Register AND(02)
-     10 CONDITION: IF register AND(02) is TRUE --> Register MAIN
-     11 END event
+      0 SKIP IF Event Flag (Number Of Skipped Lines: 1, Desired Flag State: OFF, Target Event Flag Type: Event ID, Target Event Flag ID: 00000000)
+      1 Display Status Message (Message ID: 10010670, Pad State: Enabled)
+      2 Set Event Flag (Event Flag ID: 758, Flag State: OFF)
+      3 IF Multiplayer State (Result Condition Group: AND(01), Desired Multiplayer State: Host)
+      4 IF HP Ratio (Result Condition Group: AND(01), Target Entity ID: 00010000, Comparison Type: <=, Target HP Ratio: 0.000)
+      5 IF Character Has SpEffect (Result Condition Group: AND(01), Target Entity ID: 00010000, SpEffect ID: 2130, Should Have: TRUE)
+      6 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: AND(01))
+      7 IF Multiplayer State (Result Condition Group: AND(02), Desired Multiplayer State: Host)
+      8 IF Character Dead/Alive (Result Condition Group: AND(02), Target Entity ID: 00010000, Desired Life State: Dead)
+      9 IF Character Has SpEffect (Result Condition Group: AND(02), Target Entity ID: 00010000, SpEffect ID: 2130, Should Have: FALSE)
+     10 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: AND(02))
+     11 END Unconditionally (Execution End Type: End)
 
-Event ID: 759, Int: 0
+Event ID: 759, Ignores Bonfire Rest
 Parameters: {} ()
-      0 SKIP 1 lines IF Event ID: 00000000 is OFF
-      1 Display Status Explanation Message (Message ID: 10010680, ENABLE Pad)
-      2 SET Event Flag ID 759 to OFF
-      3 CONDITION: IF player Multiplayer State is Host --> Register AND(01)
-      4 CONDITION: IF Entity ID: 00010000 has Health Ratio <= 0.000 --> Register AND(01)
-      5 CONDITION: IF Entity ID: 00010000 has Special Effect ID: 2131 is TRUE --> Register AND(01)
-      6 CONDITION: IF register AND(01) is TRUE --> Register MAIN
-      7 CONDITION: IF player Multiplayer State is Host --> Register AND(02)
-      8 CONDITION: IF Entity ID: 00010000 is Dead --> Register AND(02)
-      9 CONDITION: IF Entity ID: 00010000 has Special Effect ID: 2131 is FALSE --> Register AND(02)
-     10 CONDITION: IF register AND(02) is TRUE --> Register MAIN
-     11 END event
+      0 SKIP IF Event Flag (Number Of Skipped Lines: 1, Desired Flag State: OFF, Target Event Flag Type: Event ID, Target Event Flag ID: 00000000)
+      1 Display Status Message (Message ID: 10010680, Pad State: Enabled)
+      2 Set Event Flag (Event Flag ID: 759, Flag State: OFF)
+      3 IF Multiplayer State (Result Condition Group: AND(01), Desired Multiplayer State: Host)
+      4 IF HP Ratio (Result Condition Group: AND(01), Target Entity ID: 00010000, Comparison Type: <=, Target HP Ratio: 0.000)
+      5 IF Character Has SpEffect (Result Condition Group: AND(01), Target Entity ID: 00010000, SpEffect ID: 2131, Should Have: TRUE)
+      6 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: AND(01))
+      7 IF Multiplayer State (Result Condition Group: AND(02), Desired Multiplayer State: Host)
+      8 IF Character Dead/Alive (Result Condition Group: AND(02), Target Entity ID: 00010000, Desired Life State: Dead)
+      9 IF Character Has SpEffect (Result Condition Group: AND(02), Target Entity ID: 00010000, SpEffect ID: 2131, Should Have: FALSE)
+     10 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: AND(02))
+     11 END Unconditionally (Execution End Type: End)
 
-Event ID: 818, Int: 0
+Event ID: 818, Ignores Bonfire Rest
 Parameters: {} ()
-      0 SKIP 2 lines IF Event Flag ID: 11510150 is ON
-      1 CONDITION: IF Event Flag ID: 11510150 is ON --> Register MAIN
-      2 Display Status Explanation Message (Message ID: 10010690, ENABLE Pad)
-      3 CONDITION: IF Event Flag ID: 11510150 is ON --> Register AND(01)
-      4 CONDITION: IF it is FALSE that player is in Map<15><1> --> Register AND(01)
-      5 CONDITION: IF register AND(01) is TRUE --> Register MAIN
-      6 SET Event Flag ID 11510150 to OFF
-      7 RESTART event
+      0 SKIP IF Event Flag (Number Of Skipped Lines: 2, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11510150)
+      1 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11510150)
+      2 Display Status Message (Message ID: 10010690, Pad State: Enabled)
+      3 IF Event Flag (Result Condition Group: AND(01), Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 11510150)
+      4 IF Player In/Out Map (Result Condition Group: AND(01), Should Player Be Inside: FALSE, Area ID: 15, Block ID: 1)
+      5 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: AND(01))
+      6 Set Event Flag (Event Flag ID: 11510150, Flag State: OFF)
+      7 END Unconditionally (Execution End Type: Restart)
 
-Event ID: 810, Int: 0
+Event ID: 810, Ignores Bonfire Rest
 Parameters: {} ()
-      0 END event IF Event ID: 00000000 is ON
-      1 CONDITION: IF Event Flag ID: 50001031 is ON --> Register MAIN
-      2 SET Event Flag ID 810 to ON
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event ID, Target Event Flag ID: 00000000)
+      1 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 50001031)
+      2 Set Event Flag (Event Flag ID: 810, Flag State: ON)
 
-Event ID: 812, Int: 0
+Event ID: 812, Ignores Bonfire Rest
 Parameters: {X0:3} (i)
-      0 END event IF Event ID with Slot Number: 00000000 is ON
-      1 CONDITION: IF Event Flag ID: X0:3 is ON --> Register MAIN
-      2 END event
+      0 END IF Event Flag (Execution End Type: End, Desired Flag State: ON, Target Event Flag Type: Event ID + Slot Number, Target Event Flag ID: 00000000)
+      1 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: X0:3)
+      2 END Unconditionally (Execution End Type: End)
 
-Event ID: 822, Int: 0
+Event ID: 822, Ignores Bonfire Rest
 Parameters: {} ()
-      0 CONDITION: IF Event Flag ID: 00000830 is ON --> Register MAIN
-      1 CONDITION: IF 0.500s have elapsed --> Register AND(01)
-      2 CONDITION: IF it is FALSE that player is in Map<18><0> --> Register AND(01)
-      3 CONDITION: IF register AND(01) is TRUE --> Register MAIN
-      4 SET Event Flag ID 830 to OFF
-      5 RESTART event
+      0 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000830)
+      1 IF Elapsed Seconds (Result Condition Group: AND(01), Target Number Of Seconds: 0.500)
+      2 IF Player In/Out Map (Result Condition Group: AND(01), Should Player Be Inside: FALSE, Area ID: 18, Block ID: 0)
+      3 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: AND(01))
+      4 Set Event Flag (Event Flag ID: 830, Flag State: OFF)
+      5 END Unconditionally (Execution End Type: Restart)
 
-Event ID: 823, Int: 0
+Event ID: 823, Ignores Bonfire Rest
 Parameters: {} ()
-      0 CONDITION: IF Event Flag ID: 00000831 is ON --> Register MAIN
-      1 CONDITION: IF 0.500s have elapsed --> Register AND(01)
-      2 CONDITION: IF it is FALSE that player is in Map<18><0> --> Register AND(01)
-      3 CONDITION: IF register AND(01) is TRUE --> Register MAIN
-      4 SET Event Flag ID 831 to OFF
-      5 RESTART event
+      0 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000831)
+      1 IF Elapsed Seconds (Result Condition Group: AND(01), Target Number Of Seconds: 0.500)
+      2 IF Player In/Out Map (Result Condition Group: AND(01), Should Player Be Inside: FALSE, Area ID: 18, Block ID: 0)
+      3 IF Condition Group (Result Condition Group: MAIN, Desired Condition Group State: PASS, Target Condition Group: AND(01))
+      4 Set Event Flag (Event Flag ID: 831, Flag State: OFF)
+      5 END Unconditionally (Execution End Type: Restart)
 
-Event ID: 840, Int: 0
+Event ID: 840, Ignores Bonfire Rest
 Parameters: {X0:3, X4:7, X8:11, X12:15} (iiii)
-      0 SET Event Flag ID X0:3 to OFF
-      1 CONDITION: IF Event Flag ID: X0:3 is ON --> Register MAIN
-      2 SKIP 2 lines IF Event Flag ID: 00000844 is ON
-      3 SKIP 1 lines IF Event Flag ID: 00000847 is ON
-      4 Rotate Entity ID: 10000 to face Entity ID: X8:11
-      5 Force Entity ID: 10000 to play Animation ID: X4:7 (Loop: FALSE, Wait for completion: FALSE, Do not wait for transition: FALSE)
-      6 WAIT 1.000s
-      7 Play Sound Effect (Sound Type: s: SFX, Sound ID: 123456789) at Entity ID: 10000
-      8 WAIT 4.000s
-      9 SKIP 1 lines IF (Event Flag ID: X12:15) == (Event Flag ID: -1)
-     10 Force Entity ID: 10000 to play Animation ID: X12:15 (Loop: TRUE, Wait for completion: FALSE, Do not wait for transition: FALSE)
-     11 RESTART event
+      0 Set Event Flag (Event Flag ID: X0:3, Flag State: OFF)
+      1 IF Event Flag (Result Condition Group: MAIN, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: X0:3)
+      2 SKIP IF Event Flag (Number Of Skipped Lines: 2, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000844)
+      3 SKIP IF Event Flag (Number Of Skipped Lines: 1, Desired Flag State: ON, Target Event Flag Type: Event Flag, Target Event Flag ID: 00000847)
+      4 Rotate Character (Entity ID: 10000, Entity ID 2: X8:11)
+      5 Force Animation Playback (Entity ID: 10000, Animation ID: X4:7, Should Loop: FALSE, Should Wait For Completion: FALSE, Ignore Wait For Transition: FALSE)
+      6 WAIT Fixed Time (Seconds) (Number Of Seconds: 1.000)
+      7 Play SE (Entity ID: 10000, Sound Type: s: SFX, Sound ID: 123456789)
+      8 WAIT Fixed Time (Seconds) (Number Of Seconds: 4.000)
+      9 SKIP IF Comparison (Number Of Skipped Lines: 1, Comparison Type: ==, Left-hand Side: X12:15, Right-hand Side: -1)
+     10 Force Animation Playback (Entity ID: 10000, Animation ID: X12:15, Should Loop: TRUE, Should Wait For Completion: FALSE, Ignore Wait For Transition: FALSE)
+     11 END Unconditionally (Execution End Type: Restart)
 
-Event ID: 766, Int: 0
+Event ID: 766, Ignores Bonfire Rest
 Parameters: {} ()
-      0 CONDITION: IF it is TRUE that the game is in online mode --> Register AND(01)
-      1 END event IF register AND(01) is TRUE
-      2 SET Event Flag ID 765 to ON
+      0 IF Online Mode (Result Condition Group: AND(01), Online Mode: TRUE)
+      1 END IF Condition Group State (Uncompiled) (Execution End Type: End, Desired Condition Group State: PASS, Target Condition Group: AND(01))
+      2 Set Event Flag (Event Flag ID: 765, Flag State: ON)
+
+
+String Table:
+
+
+
+Linked .emevd Files:

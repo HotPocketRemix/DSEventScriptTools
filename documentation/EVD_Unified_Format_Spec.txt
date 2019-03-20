@@ -1,0 +1,109 @@
+# uW and sW represent unsigned/signed integers of size 4 or 8 bytes
+#  depending on if the game targets 32-bit or 64-bit.
+# ('W' for 'word size')
+
+enum <u4> BONFIRE_TYPE
+    0x00000000, # Event continues as normal.
+    0x00000001, # Event restarts.
+    0x00000002  # Event is terminated.
+
+EVENT
+    uW              event_id                # Unique identifier. Name is given in corresponding .emeld.
+    uW              num_of_instructions     # Number of instructions ("lines") in this event.
+    uW              instruction_offset      # Offset from start of instruction_table to begin reading this event's instructions.
+    uW              num_of_parameters       # Number of parameter substitution instructions.
+    {
+     s4     # DS1
+     s4;z4  # BB
+     s8     # DS3             
+    }               parameters_offset       # Offset from start of parameter_table to begin reading this event's 
+                                            #  parameter substitution instructions, or -1 if there are none to read.
+    BONFIRE_TYPE    handle_bonfire          # How the event should handle the player interacting with a bonfire.
+    z4
+
+INSTR
+    u4  instruction_class   # Broad class of this instruction. Description is found in the .emedf.
+    u4  instruction_index   # Index of this instruction within its class. Description is found in the .emedf.
+    uW  length_of_argument  # Number of bytes for the fixed argument array for this instruction.
+    {
+     s4     # DS1
+     s4;z4  # BB, DS3
+    }   argument_offset     # Offset from start of argument_data to begin reading this instruction's argument.
+    {
+     s4;z4  # DS1, BB
+     s8     # DS3
+    } eventlayer_offset     # Offset from start of eventlayer_table to begin reading this instruction's event layer
+                            #  or -1 if this instruction has no event layer.
+
+LAYER
+    u4  two         # Always 2
+    u4  event_layer # The event layers for the instruction, stored as packed bits. If the current layer in-game is i,
+                    #  then the instruction will run exactly when (event_layer == 0) || (event_layer & (1 << i)).
+    zW  
+    sW  minus_one   # Always -1
+    uW  one         # Always 1
+
+PARAM
+    uW  instruction_number      # Index of the instruction in the parent event to apply this parameter substitution to.
+    uW  destination_start_byte  # Byte in the target instruction's argument data where overwriting should start.
+    uW  source_start_byte       # Byte in the event's parameter data where copying should start.
+    uW  length                  # Number of bytes to copy from the event's parameter data to the target instruction's argument data.
+    {
+     z4     # DS1
+     None   # BB, DS3
+    }
+    
+LINKED
+    uW  linked_file_name_offset # Offset from start of string_table to the name of this linked file.
+    
+EVD_FILE
+    # Begin EVD Header
+    c4 magic                                        # 'EVD\0'
+    u4 version1
+    u4 version2
+                                                    # DS1 has version1 0x00000000 and version2 0x000000CC
+                                                    # BB  has version1 0x0000FF00 and version2 0x000000CC
+                                                    # DS3Test uses BB format (DS3Test are unused, possibly BB-related, but shipped with DS3.)
+                                                    # DS3 has version1 0x0001FF00 and version2 0x000000CD
+    uW filesize
+    uW num_of_events
+    uW offset_to_event_table
+    uW num_of_instrs
+    uW offset_to_instr_table
+    uW num_of_dummy                                 # Always 0
+    uW offset_to_dummy_table                        # Always = offset_to_eventlayer_table
+    uW num_of_eventlayers
+    uW offset_to_eventlayer_table
+    uW num_of_params
+    uW offset_to_param_table
+    uW num_of_linked_files
+    uW offset_to_linked_file_table
+    uW length_of_arg_data
+    uW offset_to_arg_data
+    uW length_of_strings
+    uW offset_to_strings
+    z4                                              # Only in DS1.
+    # End EVD Header
+    
+    # Offset: offset_to_event_table
+    EVENT event_table[num_of_events]
+    # Offset: offset_to_instr_table
+    INSTR instruction_table[num_of_instrs]
+    # Offset: offset_to_dummy_table
+    # Offset: offset_to_eventlayer_table
+    LAYER eventlayer_table[num_of_eventlayers]
+    # Offset: offset_to_arg_data
+    u1 argument_data[length_of_arg_data]            # Packed data consisting of all arguments for all instructions. 
+                                                    # Data is packed according to native size and alignment, i.e. C-struct-like.
+                                                    # Argument data for each instruction is zero-padded to a multiple of 4 bytes
+                                                    #  before concatination into argument_data.
+                                                    # In DS1, there is a trailing 0x00000000 at the end of argument_data that is not part 
+                                                    #  of any argument's data.
+                                                    # In BB and DS3, data is NUL-padded to a reach a multiple of 16.
+    # Offset: offset_to_param_table
+    PARAM  parameter_table[num_of_params]
+    # Offset: offset_to_linked_file_table
+    LINKED linked_file_table[num_of_linked_files]
+    # Offset: offset_to_strings
+    u1 string_table[offset_to_strings]              # Strings are stored as NUL-terminated UTF-16.
+EOF

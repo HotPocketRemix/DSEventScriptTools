@@ -1,0 +1,35 @@
+# uW and sW represent unsigned/signed integers of size 4 or 8 bytes
+#  depending on if the game targets 32-bit or 64-bit.
+# ('W' for 'word size')
+
+
+EVENT
+    uW event_id
+    uW string_offset    # Offset from start of string_table to the name of this event.
+    z4                  # Only in DS1
+
+ELD_FILE
+    # Begin ELD Header
+    c4 magic                            # 'ELD\0'
+    u4 version1
+    u4 version2
+                                        # DS1 has version1 0x00000000 and version2 0x00CC0065
+                                        # BB  has version1 0x0000FF00 and version2 0x00CC0065
+                                        # Other games are unknown because they do not ship .emeld files.
+    u4 filesize
+    uW num_of_events
+    uW offset_to_event_table
+    uW num_of_dummy1                    # Always 0
+    uW offset_to_dummy1_table           # Always = offset_to_strings
+    uW num_of_dummy2                    # Always 0
+    uW offset_to_dummy2_table           # Always = offset_to_strings
+    uW length_of_strings
+    uW offset_to_strings
+    z8                                  # Only in DS1
+    # End ELD Header
+    
+    Offset: offset_to_event_table
+    EVENT event_table[num_of_events]
+    Offset: offset_to_strings
+    u1 string_table[length_of_strings]  # Strings are stored as NUL-terminated UTF-16.
+EOF
