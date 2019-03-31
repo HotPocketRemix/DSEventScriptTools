@@ -457,7 +457,7 @@ def raw_numeric_file_content_to_event_list(file_content, filetype_override = Non
                 if filetype == None:
                     # Handle filetype override first.
                     if filetype_override != None:
-                        filetype == filetype_override
+                        filetype = filetype_override
                     else:
                         split_line = line.split(":")
                         filetype = EVD_FileType.from_string(split_line[0])
