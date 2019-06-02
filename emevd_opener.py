@@ -183,7 +183,7 @@ def emevd_file_content_to_event_list(file_content, filetype_override = None):
             master_offset += struct.calcsize("<IIIIiII")
         elif filetype == EVD_FileType.BLOODBORNE or filetype == EVD_FileType.DARK_SOULS_3_TEST:
             (event_id, num_of_instr, starting_instr_offset, num_of_dynarg,
-                starting_dynarg_offset, event_reset_mode, zero) = struct.unpack_from("<QQQQqII", file_content, offset=master_offset)
+                starting_dynarg_offset, event_reset_mode, zero) = struct.unpack_from("<QQQQi4xII", file_content, offset=master_offset)
             master_offset += struct.calcsize("<QQQQi4xII")
         elif filetype == EVD_FileType.DARK_SOULS_3:
             (event_id, num_of_instr, starting_instr_offset, num_of_dynarg,
